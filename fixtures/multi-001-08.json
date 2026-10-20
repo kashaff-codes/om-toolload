@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6095",
+  "customer_id": "CUS-23517",
+  "status": "delivered",
+  "placed_at": "2026-07-15T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-BT5",
+      "name": "bluetooth speaker",
+      "qty": 1,
+      "unit_price": 59.95,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 59.95,
+    "tax": 4.95,
+    "shipping": 0,
+    "total": 64.9
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "1689",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "704 Willow Ct",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43282"
+  },
+  "flags": {
+    "fraud_score": 0.003,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7f9e0d26fb97b7852780",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 222,
+      "shard": 51
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 593,
+      "reset_s": 10
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-07-13T13:09:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_1fa7c168b66fc217",
+      "latency_ms": 571
+    },
+    {
+      "at": "2026-07-12T13:22:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_d5b6a2b35ec0c875",
+      "latency_ms": 538
+    },
+    {
+      "at": "2026-07-14T14:11:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_81949fc89a919197",
+      "latency_ms": 412
+    },
+    {
+      "at": "2026-07-12T16:44:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_a34853ef74edcd2d",
+      "latency_ms": 217
+    },
+    {
+      "at": "2026-07-12T07:04:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_c69a2f1bd8bf1e45",
+      "latency_ms": 567
+    },
+    {
+      "at": "2026-07-13T13:05:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_7a21d0d49e4c1d03",
+      "latency_ms": 120
+    }
+  ]
+}

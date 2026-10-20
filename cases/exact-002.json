@@ -1,0 +1,165 @@
+{
+  "id": "exact-002",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-02T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I need to double-check what I was charged for the keyboards I ordered."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4802"
+          },
+          "fixture": "exact-002-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "keyboard billing"
+          },
+          "fixture": "exact-002-02"
+        },
+        {
+          "role": "assistant",
+          "text": "The payment was captured normally and there are no billing tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-80717"
+          },
+          "fixture": "exact-002-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-002-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-80717"
+          },
+          "fixture": "exact-002-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-002-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another cable organizer. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1127"
+          },
+          "fixture": "exact-002-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "cable organizer order history"
+          },
+          "fixture": "exact-002-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last cable organizer order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-18T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-80717"
+          },
+          "fixture": "exact-002-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-002-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "How much was I charged in total for the keyboard order?",
+  "expected": {
+    "type": "number",
+    "value": 257.64
+  },
+  "distractors": [
+    "238.00"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1141",
+  "customer_id": "CUS-96735",
+  "status": "delivered",
+  "placed_at": "2026-08-27T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "PB-20K",
+      "name": "20000mAh power bank",
+      "qty": 1,
+      "unit_price": 42.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 42.99,
+    "tax": 3.55,
+    "shipping": 5.99,
+    "total": 52.53
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0929",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1163 Copper Mill Rd",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27613"
+  },
+  "flags": {
+    "fraud_score": 0.129,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_cae5a9afce069cb20262",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 521,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 181,
+      "reset_s": 12
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-23T05:44:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_82899572de4a6c6f",
+      "latency_ms": 49
+    },
+    {
+      "at": "2026-08-25T17:00:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_79cf5f2f9e3f1933",
+      "latency_ms": 178
+    },
+    {
+      "at": "2026-08-23T02:25:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_4f9afbf4a3a5c5c5",
+      "latency_ms": 559
+    },
+    {
+      "at": "2026-08-25T14:30:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_931bdbdb817a8438",
+      "latency_ms": 290
+    },
+    {
+      "at": "2026-08-24T17:53:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_085dedfcc4f05564",
+      "latency_ms": 741
+    },
+    {
+      "at": "2026-08-25T02:27:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_910242fa555c2c95",
+      "latency_ms": 285
+    }
+  ]
+}

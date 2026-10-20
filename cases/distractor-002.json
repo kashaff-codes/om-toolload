@@ -1,0 +1,137 @@
+{
+  "id": "distractor-002",
+  "category": "distractor",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-05T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you check ORD-4507? That's my smartwatch."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4507"
+          },
+          "fixture": "distractor-002-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4507"
+          },
+          "fixture": "distractor-002-02"
+        },
+        {
+          "role": "assistant",
+          "text": "ORD-4507 is in transit with FedEx."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my coffee grinder order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5861"
+          },
+          "fixture": "distractor-002-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5861"
+          },
+          "fixture": "distractor-002-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Monday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you check ORD-4570? That's my router."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4570"
+          },
+          "fixture": "distractor-002-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4570"
+          },
+          "fixture": "distractor-002-06"
+        },
+        {
+          "role": "assistant",
+          "text": "ORD-4570 is in transit with FedEx."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-20T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my laptop stand order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9441"
+          },
+          "fixture": "distractor-002-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9441"
+          },
+          "fixture": "distractor-002-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Tuesday."
+        }
+      ]
+    }
+  ],
+  "question": "What's the tracking number for ORD-4507?",
+  "expected": {
+    "type": "exact",
+    "value": "145750781868"
+  },
+  "distractors": [
+    "963407166755",
+    "145750781886"
+  ],
+  "abstainIsCorrect": false
+}

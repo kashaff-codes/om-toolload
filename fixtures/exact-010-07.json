@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1416",
+  "customer_id": "CUS-83574",
+  "status": "delivered",
+  "placed_at": "2026-06-23T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "TP-ALU",
+      "name": "aluminum tripod",
+      "qty": 1,
+      "unit_price": 45,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 45,
+    "tax": 3.71,
+    "shipping": 5.99,
+    "total": 54.7
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "9014",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1105 Foxglove Ter",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "flags": {
+    "fraud_score": 0.065,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c0b91abbe97c86784e11",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 156,
+      "shard": 63
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 797,
+      "reset_s": 43
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-06-18T17:12:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_138fef395a3fb0c4",
+      "latency_ms": 768
+    },
+    {
+      "at": "2026-06-20T19:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_b7bc83f27158b080",
+      "latency_ms": 393
+    },
+    {
+      "at": "2026-06-20T12:47:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_bfcdbbaafa70b57f",
+      "latency_ms": 668
+    },
+    {
+      "at": "2026-06-20T01:13:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_acfb6d5bb1a87691",
+      "latency_ms": 169
+    },
+    {
+      "at": "2026-06-22T01:40:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_d6ecacd07a26f111",
+      "latency_ms": 836
+    },
+    {
+      "at": "2026-06-23T09:25:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_0712dfcef554cd94",
+      "latency_ms": 353
+    }
+  ]
+}

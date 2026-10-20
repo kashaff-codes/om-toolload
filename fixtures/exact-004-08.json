@@ -1,0 +1,89 @@
+{
+  "query": "open tickets",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-584611",
+      "order_id": "-",
+      "type": "newsletter",
+      "status": "open",
+      "refund_amount": null,
+      "created_at": "2026-09-09T15:00:00.000Z",
+      "summary": "Customer reported a minor account issue.",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_45f9bf39ccde4dd70c09",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 171,
+      "shard": 32
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 369,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T09:17:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_b1453539104b043a",
+      "latency_ms": 864
+    },
+    {
+      "at": "2026-09-15T00:33:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_a527b7648a04b950",
+      "latency_ms": 158
+    },
+    {
+      "at": "2026-09-10T21:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_19b5ed19bf71ebb7",
+      "latency_ms": 548
+    },
+    {
+      "at": "2026-09-12T22:20:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_183aac6d877905ff",
+      "latency_ms": 572
+    },
+    {
+      "at": "2026-09-13T20:15:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_4a9006b47bcc7f0a",
+      "latency_ms": 25
+    },
+    {
+      "at": "2026-09-14T09:27:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_a5d7df45c1a76aed",
+      "latency_ms": 897
+    },
+    {
+      "at": "2026-09-11T15:51:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_29b31d974d2da6d9",
+      "latency_ms": 637
+    },
+    {
+      "at": "2026-09-12T18:16:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_553bf964cdd62635",
+      "latency_ms": 651
+    }
+  ]
+}

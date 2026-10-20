@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4802",
+  "customer_id": "CUS-80717",
+  "status": "processing",
+  "placed_at": "2026-08-31T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "KB-87T",
+      "name": "mechanical keyboard",
+      "qty": 2,
+      "unit_price": 119,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 238,
+    "tax": 19.64,
+    "shipping": 0,
+    "total": 257.64
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "9521",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9091 Orchard Way",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83764"
+  },
+  "flags": {
+    "fraud_score": 0.198,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6196a78f07e077946987",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 467,
+      "shard": 56
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 353,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-30T07:22:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_c076ce9b84b9ffa7",
+      "latency_ms": 26
+    },
+    {
+      "at": "2026-08-29T03:37:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_d5f97d0aff16bed7",
+      "latency_ms": 41
+    },
+    {
+      "at": "2026-08-27T12:06:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_5e42ce366070ab50",
+      "latency_ms": 316
+    },
+    {
+      "at": "2026-08-26T23:39:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_a4e52ea6d04a3be9",
+      "latency_ms": 851
+    },
+    {
+      "at": "2026-08-27T11:29:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_0a8409647864b2a9",
+      "latency_ms": 128
+    },
+    {
+      "at": "2026-08-31T10:58:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_c097ba3d59ffe661",
+      "latency_ms": 342
+    }
+  ]
+}

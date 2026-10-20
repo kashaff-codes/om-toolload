@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-72897",
+  "name": "Lucas Moreau",
+  "email": "lucas.moreau49@fastmail.com",
+  "phone": "+1-555-700-4183",
+  "default_address": {
+    "line1": "3496 Beacon St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97246"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c04dc1a6cc76d9c1d63f",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 563,
+      "shard": 2
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 543,
+      "reset_s": 25
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T11:51:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_d55a76448a9933c0",
+      "latency_ms": 486
+    },
+    {
+      "at": "2026-09-07T16:15:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_624ac8e980338837",
+      "latency_ms": 519
+    },
+    {
+      "at": "2026-09-05T06:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_8e3885d7b696fc7d",
+      "latency_ms": 597
+    },
+    {
+      "at": "2026-09-06T21:52:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_a2af823625e3c8cc",
+      "latency_ms": 511
+    },
+    {
+      "at": "2026-09-04T08:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_8966916ac5715432",
+      "latency_ms": 206
+    },
+    {
+      "at": "2026-09-03T21:18:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_bb977405da1957b3",
+      "latency_ms": 492
+    },
+    {
+      "at": "2026-09-05T17:38:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_b1195948b4f2838c",
+      "latency_ms": 780
+    }
+  ]
+}

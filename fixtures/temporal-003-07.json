@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-3593",
+  "customer_id": "CUS-96735",
+  "status": "delivered",
+  "placed_at": "2026-08-18T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "DM-90",
+      "name": "felt desk mat",
+      "qty": 1,
+      "unit_price": 29,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 29,
+    "tax": 2.39,
+    "shipping": 5.99,
+    "total": 37.38
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0171",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1163 Copper Mill Rd",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27613"
+  },
+  "flags": {
+    "fraud_score": 0.085,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_466aaf6dfae79385e173",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 48,
+      "shard": 41
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 196,
+      "reset_s": 14
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-15T17:24:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_2a381fe417977fd7",
+      "latency_ms": 811
+    },
+    {
+      "at": "2026-08-17T03:49:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_f0c12c164134b8fb",
+      "latency_ms": 58
+    },
+    {
+      "at": "2026-08-17T18:29:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_33434b8c24a80327",
+      "latency_ms": 827
+    },
+    {
+      "at": "2026-08-17T20:26:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_675b14ce29a882a8",
+      "latency_ms": 297
+    },
+    {
+      "at": "2026-08-14T04:09:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_c9ad5c23d204d860",
+      "latency_ms": 251
+    },
+    {
+      "at": "2026-08-16T01:51:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_4bc0964ff45465da",
+      "latency_ms": 394
+    }
+  ]
+}

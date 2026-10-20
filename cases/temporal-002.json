@@ -1,0 +1,167 @@
+{
+  "id": "temporal-002",
+  "category": "temporal",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my mouse get delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5377"
+          },
+          "fixture": "temporal-002-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5377"
+          },
+          "fixture": "temporal-002-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, the carrier shows it as delivered to your front door."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my desk mat order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5865"
+          },
+          "fixture": "temporal-002-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5865"
+          },
+          "fixture": "temporal-002-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Friday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my desk lamp get delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5927"
+          },
+          "fixture": "temporal-002-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5927"
+          },
+          "fixture": "temporal-002-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, the carrier shows it as delivered to your front door."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my USB-C hub order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5410"
+          },
+          "fixture": "temporal-002-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5410"
+          },
+          "fixture": "temporal-002-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Tuesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-18T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my laptop stand order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1808"
+          },
+          "fixture": "temporal-002-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-1808"
+          },
+          "fixture": "temporal-002-10"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Wednesday."
+        }
+      ]
+    }
+  ],
+  "question": "Which arrived first, the mouse or the desk lamp?",
+  "expected": {
+    "type": "choice",
+    "value": "mouse",
+    "options": [
+      "mouse",
+      "desk lamp"
+    ]
+  },
+  "distractors": [],
+  "abstainIsCorrect": false
+}

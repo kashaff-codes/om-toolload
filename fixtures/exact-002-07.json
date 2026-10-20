@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1127",
+  "customer_id": "CUS-80717",
+  "status": "delivered",
+  "placed_at": "2026-08-13T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CO-KIT",
+      "name": "cable organizer kit",
+      "qty": 1,
+      "unit_price": 18,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 18,
+    "tax": 1.49,
+    "shipping": 5.99,
+    "total": 25.48
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "8073",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9091 Orchard Way",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83764"
+  },
+  "flags": {
+    "fraud_score": 0.072,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_940ad9af731b635ea109",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 201,
+      "shard": 8
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 962,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-10T08:16:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_52d3f8e94e3f49f3",
+      "latency_ms": 13
+    },
+    {
+      "at": "2026-08-13T04:05:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_61a12846a1ae52fe",
+      "latency_ms": 7
+    },
+    {
+      "at": "2026-08-10T05:46:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_f712ed564d784141",
+      "latency_ms": 25
+    },
+    {
+      "at": "2026-08-11T09:50:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_cf0f48f68f9443ed",
+      "latency_ms": 187
+    },
+    {
+      "at": "2026-08-08T09:09:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_8c463bb500fabec8",
+      "latency_ms": 534
+    },
+    {
+      "at": "2026-08-12T04:24:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_e537db27f72003d9",
+      "latency_ms": 226
+    }
+  ]
+}

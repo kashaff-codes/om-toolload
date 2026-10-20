@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-9441",
+  "carrier": "DHL",
+  "tracking_number": "JD014684489148",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-20T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "package": {
+    "weight_kg": 2.74,
+    "dims_cm": [
+      46,
+      10,
+      11
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-17T07:58:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-17T15:17:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-17T11:41:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-18T09:31:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-17T18:19:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-17T07:29:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_dcd152a835e56c4dc75b",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 279,
+      "shard": 5
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 253,
+      "reset_s": 12
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-15T17:26:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_4691fe31c941ad18",
+      "latency_ms": 705
+    },
+    {
+      "at": "2026-09-13T03:40:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_8eaab6f3b9140f84",
+      "latency_ms": 429
+    },
+    {
+      "at": "2026-09-15T02:44:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_6159cc4491b2cc2b",
+      "latency_ms": 552
+    }
+  ]
+}

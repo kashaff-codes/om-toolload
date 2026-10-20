@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7386",
+  "customer_id": "CUS-72897",
+  "status": "shipped",
+  "placed_at": "2026-09-07T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "RT-AX6",
+      "name": "wifi router",
+      "qty": 1,
+      "unit_price": 179,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 179,
+    "tax": 14.77,
+    "shipping": 0,
+    "total": 193.77
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0935",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "8279 Cedar Ridge Rd",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53746"
+  },
+  "flags": {
+    "fraud_score": 0.018,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_3202606c0666c9a370a7",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 128,
+      "shard": 42
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 822,
+      "reset_s": 19
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T22:21:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_62bba56dbcfcb4ad",
+      "latency_ms": 788
+    },
+    {
+      "at": "2026-09-04T03:54:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_41f9070baf60eace",
+      "latency_ms": 220
+    },
+    {
+      "at": "2026-09-03T08:13:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_91e85a0e3954c490",
+      "latency_ms": 427
+    },
+    {
+      "at": "2026-09-02T15:51:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_c68ce288a4cba9d5",
+      "latency_ms": 62
+    },
+    {
+      "at": "2026-09-02T21:33:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_1244f14454064441",
+      "latency_ms": 375
+    },
+    {
+      "at": "2026-09-05T19:00:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_a3f720f4fced3ef1",
+      "latency_ms": 738
+    }
+  ]
+}

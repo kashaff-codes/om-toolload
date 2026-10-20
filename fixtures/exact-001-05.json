@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-31472",
+  "name": "Aisha Rahman",
+  "email": "aisha.rahman86@proton.me",
+  "phone": "+1-555-498-6052",
+  "default_address": {
+    "line1": "2624 Maple Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97292"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_58b011105cee6ebff936",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 88,
+      "shard": 1
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 979,
+      "reset_s": 56
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T19:37:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_87e507192a88573e",
+      "latency_ms": 482
+    },
+    {
+      "at": "2026-09-03T19:18:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_f08d53b0d0378ecc",
+      "latency_ms": 59
+    },
+    {
+      "at": "2026-09-04T18:55:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_4a6d8c8f544353bc",
+      "latency_ms": 412
+    },
+    {
+      "at": "2026-09-04T18:26:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_8a67844c88ab311f",
+      "latency_ms": 100
+    },
+    {
+      "at": "2026-09-05T20:10:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_31630d84e6615425",
+      "latency_ms": 501
+    },
+    {
+      "at": "2026-09-07T11:05:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_bb5ac423aedb846f",
+      "latency_ms": 11
+    },
+    {
+      "at": "2026-09-05T19:41:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_20cebbb70338c916",
+      "latency_ms": 144
+    }
+  ]
+}

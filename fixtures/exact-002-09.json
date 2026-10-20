@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-80717",
+  "name": "Tomas Garcia",
+  "email": "tomas.garcia96@fastmail.com",
+  "phone": "+1-555-668-8518",
+  "default_address": {
+    "line1": "9091 Orchard Way",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83764"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c8256afbeb4c6adb3155",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 479,
+      "shard": 49
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 694,
+      "reset_s": 42
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T06:39:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_71a886fc1f3a0a29",
+      "latency_ms": 889
+    },
+    {
+      "at": "2026-09-11T12:33:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_1f73742e81f0f286",
+      "latency_ms": 536
+    },
+    {
+      "at": "2026-09-14T03:13:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_2593e27c8ee3d052",
+      "latency_ms": 626
+    },
+    {
+      "at": "2026-09-14T10:05:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_1594103cc0fd87df",
+      "latency_ms": 239
+    },
+    {
+      "at": "2026-09-15T12:09:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_910aace5e7d9c997",
+      "latency_ms": 809
+    },
+    {
+      "at": "2026-09-15T00:57:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_652267b5ed81d86f",
+      "latency_ms": 467
+    },
+    {
+      "at": "2026-09-14T03:33:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_8e6fa048a3883a4b",
+      "latency_ms": 97
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-5721",
+  "carrier": "DHL",
+  "tracking_number": "JD014698149034",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-06T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "4888 Orchard Way",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "package": {
+    "weight_kg": 1.47,
+    "dims_cm": [
+      29,
+      21,
+      20
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-08-31T08:38:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-01T16:42:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-30T18:17:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7d5bdc5545041e26e264",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 127,
+      "shard": 50
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 154,
+      "reset_s": 5
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T13:44:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_8104a386231a341b",
+      "latency_ms": 401
+    },
+    {
+      "at": "2026-09-01T19:42:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_e9fdc5e1d9148fc9",
+      "latency_ms": 802
+    },
+    {
+      "at": "2026-09-01T01:26:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_8dc743959d9be40f",
+      "latency_ms": 58
+    },
+    {
+      "at": "2026-09-04T00:17:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_3984f340646d2082",
+      "latency_ms": 437
+    },
+    {
+      "at": "2026-09-01T18:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_8902089bd4f21f45",
+      "latency_ms": 219
+    }
+  ]
+}

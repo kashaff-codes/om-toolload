@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-30209",
+  "name": "Catherine Leigh",
+  "email": "catherine.leigh45@outlook.com",
+  "phone": "+1-555-514-5637",
+  "default_address": {
+    "line1": "7447 Lakeview Dr",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43274"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e681e72f2b8102ca0776",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 561,
+      "shard": 61
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 262,
+      "reset_s": 40
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T02:07:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_0c41539ec0cf8956",
+      "latency_ms": 739
+    },
+    {
+      "at": "2026-09-16T21:49:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_00c20915a8d69d50",
+      "latency_ms": 835
+    },
+    {
+      "at": "2026-09-13T02:03:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_9be9fef3db305bb5",
+      "latency_ms": 419
+    },
+    {
+      "at": "2026-09-17T04:50:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_8aed56604795dc5d",
+      "latency_ms": 319
+    },
+    {
+      "at": "2026-09-12T05:18:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_f02389ffa3aca05e",
+      "latency_ms": 503
+    },
+    {
+      "at": "2026-09-14T07:07:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_9337bb7741141c6d",
+      "latency_ms": 78
+    },
+    {
+      "at": "2026-09-16T04:13:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_8467c1bdcd9f8f82",
+      "latency_ms": 750
+    }
+  ]
+}

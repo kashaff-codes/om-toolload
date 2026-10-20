@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5861",
+  "customer_id": "CUS-97170",
+  "status": "shipped",
+  "placed_at": "2026-09-04T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CG-BR1",
+      "name": "burr coffee grinder",
+      "qty": 1,
+      "unit_price": 89,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 89,
+    "tax": 7.34,
+    "shipping": 0,
+    "total": 96.34
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "2688",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "flags": {
+    "fraud_score": 0.135,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_47fcd81bf2975272ef90",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 179,
+      "shard": 25
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 635,
+      "reset_s": 35
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T03:39:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_4c5bcd4521ec2348",
+      "latency_ms": 43
+    },
+    {
+      "at": "2026-08-30T05:20:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_0929be55c5ffa035",
+      "latency_ms": 482
+    },
+    {
+      "at": "2026-09-03T17:54:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_2b7a106c6bfbbc2d",
+      "latency_ms": 73
+    },
+    {
+      "at": "2026-09-04T02:40:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_07e7e6811dc04bfe",
+      "latency_ms": 651
+    },
+    {
+      "at": "2026-09-01T01:34:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_8cabc6e1735d2ffe",
+      "latency_ms": 114
+    },
+    {
+      "at": "2026-09-01T18:59:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_c88a2cca1af946ac",
+      "latency_ms": 358
+    }
+  ]
+}

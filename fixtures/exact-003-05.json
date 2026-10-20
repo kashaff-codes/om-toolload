@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-26845",
+  "name": "Priya Nair",
+  "email": "priya.nair51@outlook.com",
+  "phone": "+1-555-114-4988",
+  "default_address": {
+    "line1": "8991 Cedar Ridge Rd",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53741"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c70941dbb4ded2e6d1ca",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 266,
+      "shard": 50
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 331,
+      "reset_s": 16
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T18:11:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_67d323ae10e73e8a",
+      "latency_ms": 346
+    },
+    {
+      "at": "2026-09-12T06:37:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_37788eb6b9742ca3",
+      "latency_ms": 852
+    },
+    {
+      "at": "2026-09-09T07:40:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_945ea94e735ca299",
+      "latency_ms": 844
+    },
+    {
+      "at": "2026-09-10T06:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_54b99ee09007c1cf",
+      "latency_ms": 658
+    },
+    {
+      "at": "2026-09-13T09:04:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_4cd2ae25183d6027",
+      "latency_ms": 844
+    },
+    {
+      "at": "2026-09-11T13:17:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_b7608bb25e2f16dc",
+      "latency_ms": 236
+    },
+    {
+      "at": "2026-09-09T10:22:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_b07814c12048bae0",
+      "latency_ms": 802
+    }
+  ]
+}

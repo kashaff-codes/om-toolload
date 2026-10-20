@@ -1,0 +1,89 @@
+{
+  "query": "speaker refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-620160",
+      "order_id": "ORD-7024",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 59.95,
+      "created_at": "2026-09-14T15:00:00.000Z",
+      "summary": "Refund for returned bluetooth speaker.",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b71c7c1961c37c037f02",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 432,
+      "shard": 30
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 999,
+      "reset_s": 19
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T05:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_23856f708dba2f54",
+      "latency_ms": 74
+    },
+    {
+      "at": "2026-09-11T19:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_f910edff232e8cf0",
+      "latency_ms": 468
+    },
+    {
+      "at": "2026-09-12T21:52:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_20b0aa593a6e99bf",
+      "latency_ms": 481
+    },
+    {
+      "at": "2026-09-10T20:43:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_75c403659114b5b2",
+      "latency_ms": 128
+    },
+    {
+      "at": "2026-09-11T12:51:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_818ad4610cb73762",
+      "latency_ms": 589
+    },
+    {
+      "at": "2026-09-15T07:00:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_61f68efabcfb10b8",
+      "latency_ms": 34
+    },
+    {
+      "at": "2026-09-13T04:11:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_f46af61227192ddc",
+      "latency_ms": 340
+    },
+    {
+      "at": "2026-09-11T18:59:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_260144107b2a5d2b",
+      "latency_ms": 894
+    }
+  ]
+}

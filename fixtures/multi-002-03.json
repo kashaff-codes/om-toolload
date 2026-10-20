@@ -1,0 +1,89 @@
+{
+  "order_id": "ORD-7307",
+  "customer_id": "CUS-37577",
+  "status": "shipped",
+  "placed_at": "2026-09-02T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "UH-7P",
+      "name": "7-port USB-C hub",
+      "qty": 1,
+      "unit_price": 54.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 54.99,
+    "tax": 4.54,
+    "shipping": 0,
+    "total": 59.53
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "8727",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "2214 Lakeview Dr",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85725"
+  },
+  "flags": {
+    "fraud_score": 0.148,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_8e5fe7eb431c9ee8f77d",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 66,
+      "shard": 53
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 902,
+      "reset_s": 8
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-01T02:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_eb2f821f87f4ba47",
+      "latency_ms": 338
+    },
+    {
+      "at": "2026-08-28T03:39:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_8c24dd6614fcb7ae",
+      "latency_ms": 751
+    },
+    {
+      "at": "2026-08-30T13:37:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_83d57a45d481cf55",
+      "latency_ms": 713
+    },
+    {
+      "at": "2026-08-29T22:27:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_83fe4f05e3d5c785",
+      "latency_ms": 14
+    },
+    {
+      "at": "2026-09-01T08:36:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_f29fb9f9d3458766",
+      "latency_ms": 335
+    }
+  ]
+}

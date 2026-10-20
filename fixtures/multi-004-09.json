@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4508",
+  "customer_id": "CUS-41597",
+  "status": "shipped",
+  "placed_at": "2026-09-14T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CG-BR1",
+      "name": "burr coffee grinder",
+      "qty": 1,
+      "unit_price": 89,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 89,
+    "tax": 7.34,
+    "shipping": 0,
+    "total": 96.34
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "9499",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9596 Granite Blvd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97274"
+  },
+  "flags": {
+    "fraud_score": 0.027,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_a70bb1b2d5b05f762cbb",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 89,
+      "shard": 32
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 524,
+      "reset_s": 34
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T06:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_ff562884a067581b",
+      "latency_ms": 888
+    },
+    {
+      "at": "2026-09-09T01:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_7c6e784d023caca3",
+      "latency_ms": 186
+    },
+    {
+      "at": "2026-09-13T22:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_3bea95aaec61a9cd",
+      "latency_ms": 231
+    },
+    {
+      "at": "2026-09-11T01:26:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_bbd5b2ab57c868cd",
+      "latency_ms": 860
+    },
+    {
+      "at": "2026-09-10T20:04:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_6ef688d9f8852f9d",
+      "latency_ms": 165
+    },
+    {
+      "at": "2026-09-11T12:17:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_02f93ba5bebe3b07",
+      "latency_ms": 425
+    }
+  ]
+}

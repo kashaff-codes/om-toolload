@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5309",
+  "customer_id": "CUS-73231",
+  "status": "delivered",
+  "placed_at": "2026-08-11T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CG-BR1",
+      "name": "burr coffee grinder",
+      "qty": 1,
+      "unit_price": 89,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 89,
+    "tax": 7.34,
+    "shipping": 0,
+    "total": 96.34
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7958",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "2687 Sparrow Pl",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97270"
+  },
+  "flags": {
+    "fraud_score": 0.159,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_d6da8eb49b4714fd8dee",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 444,
+      "shard": 58
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 727,
+      "reset_s": 24
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-10T14:15:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_f00f396cd8577a69",
+      "latency_ms": 463
+    },
+    {
+      "at": "2026-08-05T20:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_73faec01a0e37155",
+      "latency_ms": 725
+    },
+    {
+      "at": "2026-08-10T20:46:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_83d869354d98fbf6",
+      "latency_ms": 242
+    },
+    {
+      "at": "2026-08-07T19:28:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_2c1ed0cd6272390f",
+      "latency_ms": 872
+    },
+    {
+      "at": "2026-08-09T14:25:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_7879a416646258bc",
+      "latency_ms": 850
+    },
+    {
+      "at": "2026-08-06T14:44:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_74b2d556974a6c55",
+      "latency_ms": 704
+    }
+  ]
+}

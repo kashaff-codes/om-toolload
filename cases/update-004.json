@@ -1,0 +1,166 @@
+{
+  "id": "update-004",
+  "category": "knowledge_update",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false,
+    "updateSource": "tool"
+  },
+  "sessions": [
+    {
+      "at": "2026-09-04T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "My mouse arrived broken. Can you set up a replacement?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8836"
+          },
+          "fixture": "update-004-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-8836"
+          },
+          "fixture": "update-004-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Done, the replacement is created and a shipping label is ready. It'll go out in a couple of days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my desk mat order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9504"
+          },
+          "fixture": "update-004-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9504"
+          },
+          "fixture": "update-004-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Thursday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Any update on my replacement mouse?"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-8836"
+          },
+          "fixture": "update-004-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "mouse replacement"
+          },
+          "fixture": "update-004-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It's moving and should arrive Friday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my screen protector order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6716"
+          },
+          "fixture": "update-004-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-6716"
+          },
+          "fixture": "update-004-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Friday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-16776"
+          },
+          "fixture": "update-004-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "update-004-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "Where is my replacement mouse shipping to? Just the street address.",
+  "expected": {
+    "type": "exact",
+    "value": "9353 Copper Mill Rd"
+  },
+  "distractors": [
+    "525 Beacon St"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-5927",
+  "carrier": "FedEx",
+  "tracking_number": "414545334838",
+  "service_level": "2day",
+  "status": "delivered",
+  "estimated_delivery": "2026-09-10T15:00:00.000Z",
+  "delivered_at": "2026-09-10T15:00:00.000Z",
+  "destination": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "package": {
+    "weight_kg": 3.81,
+    "dims_cm": [
+      53,
+      34,
+      8
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-12T09:47:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-09T12:02:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-11T20:06:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-10T06:13:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-10T11:27:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-12T12:40:00.000Z",
+      "facility": "RNO-2-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_ac289f5561ed7ff2f360",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 122,
+      "shard": 43
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 104,
+      "reset_s": 25
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T06:22:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_5d2886f62aa82ea8",
+      "latency_ms": 20
+    },
+    {
+      "at": "2026-09-11T09:28:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_73f7cf5e748d58c9",
+      "latency_ms": 128
+    },
+    {
+      "at": "2026-09-08T05:46:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_910d03e8f2af6f91",
+      "latency_ms": 863
+    }
+  ]
+}

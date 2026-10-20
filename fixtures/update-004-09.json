@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-16776",
+  "name": "Omar Haddad",
+  "email": "omar.haddad71@fastmail.com",
+  "phone": "+1-555-324-4188",
+  "default_address": {
+    "line1": "525 Beacon St",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53733"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_f61bc3730087ac2d8c73",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 498,
+      "shard": 41
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 736,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T09:14:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_91009971acf65ac9",
+      "latency_ms": 272
+    },
+    {
+      "at": "2026-09-09T20:35:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_15e222704f172784",
+      "latency_ms": 253
+    },
+    {
+      "at": "2026-09-12T13:48:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_2749fb04cd9f47aa",
+      "latency_ms": 97
+    },
+    {
+      "at": "2026-09-11T14:23:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_5d9d46a192fa1d1d",
+      "latency_ms": 78
+    },
+    {
+      "at": "2026-09-10T16:51:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_ca6561ce9dccaa37",
+      "latency_ms": 197
+    },
+    {
+      "at": "2026-09-13T19:06:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_499d7a66131cd331",
+      "latency_ms": 206
+    },
+    {
+      "at": "2026-09-11T14:37:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_6082e1eff35e1411",
+      "latency_ms": 790
+    }
+  ]
+}

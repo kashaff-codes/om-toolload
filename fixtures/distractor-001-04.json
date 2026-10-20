@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-1256",
+  "carrier": "FedEx",
+  "tracking_number": "753704485948",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-09T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "6727 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "package": {
+    "weight_kg": 0.8,
+    "dims_cm": [
+      41,
+      12,
+      3
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-07T09:29:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-03T04:27:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-04T03:13:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-04T23:47:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-03T02:51:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_310ff05ff7e10d9b3608",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 431,
+      "shard": 9
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 375,
+      "reset_s": 36
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T00:25:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_661406659195e537",
+      "latency_ms": 494
+    },
+    {
+      "at": "2026-09-04T00:19:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_7a982a5e03c285fb",
+      "latency_ms": 779
+    },
+    {
+      "at": "2026-09-06T18:56:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_4d47ea0cf30da239",
+      "latency_ms": 799
+    }
+  ]
+}

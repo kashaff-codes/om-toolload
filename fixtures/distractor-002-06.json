@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-4570",
+  "carrier": "FedEx",
+  "tracking_number": "963407166755",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-15T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "package": {
+    "weight_kg": 4.04,
+    "dims_cm": [
+      29,
+      38,
+      14
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-10T01:38:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-10T08:11:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-10T11:43:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-09T08:57:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-12T01:01:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_9eddbc91dd3d71728166",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 576,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 769,
+      "reset_s": 57
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T00:27:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_8a4f2095bb1a2398",
+      "latency_ms": 678
+    },
+    {
+      "at": "2026-09-09T08:20:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_71ad05e9eb6f6af6",
+      "latency_ms": 697
+    },
+    {
+      "at": "2026-09-10T20:30:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_58830b70cdc4dfa5",
+      "latency_ms": 271
+    }
+  ]
+}

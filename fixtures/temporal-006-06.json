@@ -1,0 +1,89 @@
+{
+  "query": "open tickets",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-999731",
+      "order_id": "-",
+      "type": "address_book",
+      "status": "open",
+      "refund_amount": null,
+      "created_at": "2026-09-03T15:00:00.000Z",
+      "summary": "Customer reported a minor account issue.",
+      "assignee": "tier1-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_1487270ab7905917d3fb",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 367,
+      "shard": 5
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 878,
+      "reset_s": 32
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T02:42:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_326130a77c919afd",
+      "latency_ms": 627
+    },
+    {
+      "at": "2026-09-08T05:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_3579d02c91d36bfc",
+      "latency_ms": 709
+    },
+    {
+      "at": "2026-09-06T20:15:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_8256a48adbe8516e",
+      "latency_ms": 794
+    },
+    {
+      "at": "2026-09-04T06:16:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_1c790c0d9bf9d3f2",
+      "latency_ms": 93
+    },
+    {
+      "at": "2026-09-05T02:10:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_b48c77045af15247",
+      "latency_ms": 171
+    },
+    {
+      "at": "2026-09-09T06:01:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_3e1bdc86e87ac3d1",
+      "latency_ms": 816
+    },
+    {
+      "at": "2026-09-08T06:51:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_a6f0abf7e42bb373",
+      "latency_ms": 144
+    },
+    {
+      "at": "2026-09-06T14:21:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_bd8a6cdae2170a63",
+      "latency_ms": 660
+    }
+  ]
+}

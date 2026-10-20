@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-3537",
+  "customer_id": "CUS-84717",
+  "status": "returned",
+  "placed_at": "2026-08-29T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "PB-20K",
+      "name": "20000mAh power bank",
+      "qty": 1,
+      "unit_price": 42.99,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 42.99,
+    "tax": 3.55,
+    "shipping": 5.99,
+    "total": 52.53
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "8508",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "flags": {
+    "fraud_score": 0.02,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_ed2ba8b9b78e05f0d9e1",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 485,
+      "shard": 10
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 188,
+      "reset_s": 25
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T09:19:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_39821bf82df39d68",
+      "latency_ms": 668
+    },
+    {
+      "at": "2026-08-27T04:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_ed13efc14113e3d0",
+      "latency_ms": 566
+    },
+    {
+      "at": "2026-08-25T00:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_2ef2645888e3559e",
+      "latency_ms": 127
+    },
+    {
+      "at": "2026-08-25T09:03:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_5e1e750cbc796ddb",
+      "latency_ms": 657
+    },
+    {
+      "at": "2026-08-27T01:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_3ccc6c1b8e065ad8",
+      "latency_ms": 122
+    },
+    {
+      "at": "2026-08-28T18:03:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_ab6258e8b550a614",
+      "latency_ms": 751
+    }
+  ]
+}

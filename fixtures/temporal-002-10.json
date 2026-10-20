@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-1808",
+  "carrier": "FedEx",
+  "tracking_number": "364241644089",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-20T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "package": {
+    "weight_kg": 0.72,
+    "dims_cm": [
+      25,
+      21,
+      3
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-14T03:11:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-18T13:37:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-16T15:42:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-13T21:40:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-14T14:21:00.000Z",
+      "facility": "ATL-3-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_cb190e940bf203f814cf",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 259,
+      "shard": 19
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 494,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-17T11:11:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_ba00d336d016f851",
+      "latency_ms": 176
+    },
+    {
+      "at": "2026-09-14T14:42:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_d6b284b438227221",
+      "latency_ms": 768
+    },
+    {
+      "at": "2026-09-15T04:09:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_d2194d87e19475e5",
+      "latency_ms": 210
+    }
+  ]
+}

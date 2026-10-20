@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5634",
+  "customer_id": "CUS-15908",
+  "status": "shipped",
+  "placed_at": "2026-09-07T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "EB-ANC",
+      "name": "noise-cancelling earbuds",
+      "qty": 1,
+      "unit_price": 199,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 199,
+    "tax": 16.42,
+    "shipping": 0,
+    "total": 215.42
+  },
+  "payment": {
+    "method": "card",
+    "last4": "7097",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "6727 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "flags": {
+    "fraud_score": 0.132,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_32e4a3c6531656fecf93",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 594,
+      "shard": 48
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 477,
+      "reset_s": 45
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-01T17:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_0ab5426412504a12",
+      "latency_ms": 849
+    },
+    {
+      "at": "2026-09-02T20:10:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_d4cdb208e16c921e",
+      "latency_ms": 776
+    },
+    {
+      "at": "2026-09-03T22:26:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_a722ca3828a1810c",
+      "latency_ms": 864
+    },
+    {
+      "at": "2026-09-05T06:07:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_968a3f415ebc784e",
+      "latency_ms": 404
+    },
+    {
+      "at": "2026-09-03T16:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_340a549af6fcb43b",
+      "latency_ms": 450
+    },
+    {
+      "at": "2026-09-07T00:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_eee9df7bc0ff575b",
+      "latency_ms": 188
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-4701",
+  "carrier": "FedEx",
+  "tracking_number": "838691252229",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-24T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "7447 Lakeview Dr",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43274"
+  },
+  "package": {
+    "weight_kg": 0.88,
+    "dims_cm": [
+      27,
+      11,
+      30
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-22T05:01:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-19T16:33:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-22T01:51:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-21T04:29:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-18T23:25:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-21T17:25:00.000Z",
+      "facility": "RNO-2-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7f6e21d1518f49ed402a",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 520,
+      "shard": 10
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 366,
+      "reset_s": 20
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-16T22:10:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_807beb685fdce565",
+      "latency_ms": 238
+    },
+    {
+      "at": "2026-09-22T12:00:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_8b5032d6733e19b9",
+      "latency_ms": 437
+    },
+    {
+      "at": "2026-09-22T12:06:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_51987bdf14736e3e",
+      "latency_ms": 295
+    }
+  ]
+}

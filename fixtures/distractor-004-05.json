@@ -1,0 +1,89 @@
+{
+  "query": "refund ORD-5702",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-787757",
+      "order_id": "ORD-5702",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 59.5,
+      "created_at": "2026-09-11T15:00:00.000Z",
+      "summary": "Partial refund for mechanical keyboard (cosmetic damage).",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_ad378d5d97fabd81fa23",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 487,
+      "shard": 31
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 648,
+      "reset_s": 38
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T03:12:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_1745753d303b382d",
+      "latency_ms": 797
+    },
+    {
+      "at": "2026-09-08T09:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_6bdc3e62a46100a2",
+      "latency_ms": 716
+    },
+    {
+      "at": "2026-09-12T19:01:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_32021fd7e624a67f",
+      "latency_ms": 572
+    },
+    {
+      "at": "2026-09-09T13:27:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_c680ea5a33de2a93",
+      "latency_ms": 387
+    },
+    {
+      "at": "2026-09-08T16:34:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_f8fed6f8e62b421a",
+      "latency_ms": 54
+    },
+    {
+      "at": "2026-09-09T20:47:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_cb6937bc3da7d718",
+      "latency_ms": 227
+    },
+    {
+      "at": "2026-09-10T21:02:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_9cfab2b3a80f9cf5",
+      "latency_ms": 186
+    },
+    {
+      "at": "2026-09-11T16:13:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_258f7c5f915de38b",
+      "latency_ms": 694
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "multi-001",
+  "category": "multi_session",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-02T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the charger. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "charger refund"
+          },
+          "fixture": "multi-001-01"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8952"
+          },
+          "fixture": "multi-001-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another desk mat. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6784"
+          },
+          "fixture": "multi-001-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "desk mat order history"
+          },
+          "fixture": "multi-001-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last desk mat order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the case. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "case refund"
+          },
+          "fixture": "multi-001-05"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8122"
+          },
+          "fixture": "multi-001-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "And the speaker I returned, what happened with that one?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "speaker refund"
+          },
+          "fixture": "multi-001-07"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6095"
+          },
+          "fixture": "multi-001-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Unfortunately that one arrived outside the return window, so it wasn't approved."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-23517"
+          },
+          "fixture": "multi-001-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "multi-001-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "How much have I been refunded in total so far?",
+  "expected": {
+    "type": "number",
+    "value": 64.98
+  },
+  "distractors": [
+    "124.93"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,165 @@
+{
+  "id": "multi-004",
+  "category": "multi_session",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-05T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the charger. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "charger refund"
+          },
+          "fixture": "multi-004-01"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5512"
+          },
+          "fixture": "multi-004-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7110"
+          },
+          "fixture": "multi-004-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "multi-004-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the backpack. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "backpack refund"
+          },
+          "fixture": "multi-004-05"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3792"
+          },
+          "fixture": "multi-004-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the speaker. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "speaker refund"
+          },
+          "fixture": "multi-004-07"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7024"
+          },
+          "fixture": "multi-004-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-20T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my coffee grinder order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4508"
+          },
+          "fixture": "multi-004-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4508"
+          },
+          "fixture": "multi-004-10"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Monday."
+        }
+      ]
+    }
+  ],
+  "question": "How much have I been refunded in total so far?",
+  "expected": {
+    "type": "number",
+    "value": 189.44
+  },
+  "distractors": [
+    "129.49"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6009",
+  "customer_id": "CUS-83574",
+  "status": "shipped",
+  "placed_at": "2026-09-03T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "DM-90",
+      "name": "felt desk mat",
+      "qty": 1,
+      "unit_price": 29,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 29,
+    "tax": 2.39,
+    "shipping": 5.99,
+    "total": 37.38
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "2409",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1105 Foxglove Ter",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "flags": {
+    "fraud_score": 0.182,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_f707395de35e8a8df883",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 110,
+      "shard": 7
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 246,
+      "reset_s": 35
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T12:19:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_9cea0a35b881f249",
+      "latency_ms": 139
+    },
+    {
+      "at": "2026-08-30T08:00:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_1cbca356623b0973",
+      "latency_ms": 797
+    },
+    {
+      "at": "2026-09-01T05:16:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_3ddc3f2607de6311",
+      "latency_ms": 609
+    },
+    {
+      "at": "2026-08-29T08:22:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_e78721636f3a552e",
+      "latency_ms": 887
+    },
+    {
+      "at": "2026-08-31T23:13:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_507d1811352de661",
+      "latency_ms": 422
+    },
+    {
+      "at": "2026-09-02T10:06:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_85c40d99ef711386",
+      "latency_ms": 636
+    }
+  ]
+}

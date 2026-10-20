@@ -1,0 +1,166 @@
+{
+  "id": "update-001",
+  "category": "knowledge_update",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false,
+    "updateSource": "user"
+  },
+  "sessions": [
+    {
+      "at": "2026-09-01T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "My headphones arrived broken. Can you set up a replacement?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9764"
+          },
+          "fixture": "update-001-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9764"
+          },
+          "fixture": "update-001-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Done, the replacement is created and a shipping label is ready. It'll go out in a couple of days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-04T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my desk mat order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2619"
+          },
+          "fixture": "update-001-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-2619"
+          },
+          "fixture": "update-001-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Monday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my replacement headphones order?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9764"
+          },
+          "fixture": "update-001-05"
+        },
+        {
+          "role": "assistant",
+          "text": "Found it. It hasn't left the warehouse yet."
+        },
+        {
+          "role": "user",
+          "text": "Good. I just moved, so please send it to 4773 Willow Ct, Portland, OR 97274 instead."
+        },
+        {
+          "role": "assistant",
+          "text": "Done, I've updated the shipping address on the replacement."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another USB-C hub. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8749"
+          },
+          "fixture": "update-001-06"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "USB-C hub order history"
+          },
+          "fixture": "update-001-07"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last USB-C hub order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-16T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my laptop stand order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9408"
+          },
+          "fixture": "update-001-08"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9408"
+          },
+          "fixture": "update-001-09"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Thursday."
+        }
+      ]
+    }
+  ],
+  "question": "Where is my replacement headphones shipping to? Just the street address.",
+  "expected": {
+    "type": "exact",
+    "value": "4773 Willow Ct"
+  },
+  "distractors": [
+    "1902 Juniper Ln"
+  ],
+  "abstainIsCorrect": false
+}

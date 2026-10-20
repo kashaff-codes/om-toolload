@@ -1,0 +1,85 @@
+{
+  "query": "smartwatch invoice",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e911eaf1f81e0daea01b",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 397,
+      "shard": 44
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 843,
+      "reset_s": 13
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T10:02:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_80315ca57caf1034",
+      "latency_ms": 604
+    },
+    {
+      "at": "2026-09-04T17:19:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_e2c5eae76ab570ab",
+      "latency_ms": 519
+    },
+    {
+      "at": "2026-09-05T20:27:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_c98799eed642ab61",
+      "latency_ms": 206
+    },
+    {
+      "at": "2026-09-05T07:21:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_1887e3de6dd221a3",
+      "latency_ms": 717
+    },
+    {
+      "at": "2026-09-08T00:15:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_91448ff82077bd31",
+      "latency_ms": 280
+    },
+    {
+      "at": "2026-09-06T22:25:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_b2286944721c3f43",
+      "latency_ms": 865
+    },
+    {
+      "at": "2026-09-07T07:35:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_5940cf729617b006",
+      "latency_ms": 554
+    },
+    {
+      "at": "2026-09-04T09:40:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_6204bdda678fdce3",
+      "latency_ms": 60
+    },
+    {
+      "at": "2026-09-05T09:53:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_9c83fe4efe14e70c",
+      "latency_ms": 199
+    }
+  ]
+}

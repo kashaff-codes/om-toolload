@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-8424",
+  "carrier": "DHL",
+  "tracking_number": "JD014632087303",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-13T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9312 Foxglove Ter",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "package": {
+    "weight_kg": 1.97,
+    "dims_cm": [
+      16,
+      15,
+      3
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-10T02:38:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-06T19:38:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-09T23:44:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-11T06:28:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-08T16:09:00.000Z",
+      "facility": "ATL-3-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b5db8c182589590777a8",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 258,
+      "shard": 5
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 624,
+      "reset_s": 18
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T21:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_2060f3648dfed997",
+      "latency_ms": 326
+    },
+    {
+      "at": "2026-09-09T11:56:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_5649049d82bfdca4",
+      "latency_ms": 442
+    },
+    {
+      "at": "2026-09-07T11:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_3f9305816e6ccb01",
+      "latency_ms": 489
+    }
+  ]
+}

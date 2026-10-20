@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-2002",
+  "carrier": "USPS",
+  "tracking_number": "9400774906945273083939",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-18T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "3480 Foxglove Ter",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97251"
+  },
+  "package": {
+    "weight_kg": 1.19,
+    "dims_cm": [
+      39,
+      22,
+      30
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-11T16:55:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-13T02:15:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-14T21:20:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-12T14:27:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-15T00:18:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_14d27c6630795255b45a",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 90,
+      "shard": 61
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 240,
+      "reset_s": 60
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-16T03:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_0a7a3e5c5ff44350",
+      "latency_ms": 601
+    },
+    {
+      "at": "2026-09-14T20:52:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_7efc4a0b5ed46a5c",
+      "latency_ms": 471
+    },
+    {
+      "at": "2026-09-15T20:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_b1e62a764ab4ddf8",
+      "latency_ms": 661
+    }
+  ]
+}

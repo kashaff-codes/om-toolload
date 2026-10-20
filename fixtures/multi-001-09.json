@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-23517",
+  "name": "Omar Haddad",
+  "email": "omar.haddad18@proton.me",
+  "phone": "+1-555-179-3722",
+  "default_address": {
+    "line1": "704 Willow Ct",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43282"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_966c211e827c31711bce",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 441,
+      "shard": 57
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 551,
+      "reset_s": 28
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T16:26:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_1cd8c550f01b3845",
+      "latency_ms": 675
+    },
+    {
+      "at": "2026-09-15T10:00:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_ebdf5ef307a458d3",
+      "latency_ms": 166
+    },
+    {
+      "at": "2026-09-14T11:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_05038b392f239ee6",
+      "latency_ms": 37
+    },
+    {
+      "at": "2026-09-13T07:34:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_003af966c74357ce",
+      "latency_ms": 561
+    },
+    {
+      "at": "2026-09-14T07:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_d207c928e2cf7bfb",
+      "latency_ms": 342
+    },
+    {
+      "at": "2026-09-15T18:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_8558b6d53d2f033e",
+      "latency_ms": 243
+    },
+    {
+      "at": "2026-09-13T17:09:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_ce2cba96862e2b6b",
+      "latency_ms": 214
+    }
+  ]
+}

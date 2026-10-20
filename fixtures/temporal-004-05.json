@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6954",
+  "customer_id": "CUS-22380",
+  "status": "shipped",
+  "placed_at": "2026-09-03T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-GL2",
+      "name": "tempered glass screen protector",
+      "qty": 1,
+      "unit_price": 12.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 12.99,
+    "tax": 1.07,
+    "shipping": 5.99,
+    "total": 20.05
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "5742",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4888 Orchard Way",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "flags": {
+    "fraud_score": 0.112,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b8af55f9fec32b0eea65",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 507,
+      "shard": 21
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 303,
+      "reset_s": 43
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T05:58:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_183730eb464855a7",
+      "latency_ms": 442
+    },
+    {
+      "at": "2026-08-31T20:40:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_894fd2ff6d511c15",
+      "latency_ms": 897
+    },
+    {
+      "at": "2026-08-31T12:27:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_f7a4f3df386ab993",
+      "latency_ms": 9
+    },
+    {
+      "at": "2026-08-29T11:44:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_c803e0e3acf525ff",
+      "latency_ms": 801
+    },
+    {
+      "at": "2026-09-01T12:05:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_8990f505d0ed0773",
+      "latency_ms": 842
+    },
+    {
+      "at": "2026-08-31T19:44:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_46dd20f322a07df4",
+      "latency_ms": 760
+    }
+  ]
+}

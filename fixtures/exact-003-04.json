@@ -1,0 +1,85 @@
+{
+  "query": "cable organizer order history",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_1150b9debb4390c235a4",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 39,
+      "shard": 6
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 951,
+      "reset_s": 19
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T22:35:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_ee6ac49bc65aa614",
+      "latency_ms": 831
+    },
+    {
+      "at": "2026-09-08T11:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_54318bdd99d37ac6",
+      "latency_ms": 256
+    },
+    {
+      "at": "2026-09-09T13:28:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_43b0cd56ccd9cf3f",
+      "latency_ms": 872
+    },
+    {
+      "at": "2026-09-05T19:02:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_844009a106bdb422",
+      "latency_ms": 475
+    },
+    {
+      "at": "2026-09-05T07:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_56ecbc0fc8afe692",
+      "latency_ms": 27
+    },
+    {
+      "at": "2026-09-07T22:56:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_0dbc840c2678202d",
+      "latency_ms": 123
+    },
+    {
+      "at": "2026-09-08T04:59:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_3a7c413b38a845d1",
+      "latency_ms": 527
+    },
+    {
+      "at": "2026-09-06T18:44:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_d575df2ef851ba73",
+      "latency_ms": 528
+    },
+    {
+      "at": "2026-09-08T23:32:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_0f5268a29e125a7e",
+      "latency_ms": 128
+    }
+  ]
+}

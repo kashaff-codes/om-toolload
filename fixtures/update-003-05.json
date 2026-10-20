@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-4846",
+  "carrier": "USPS",
+  "tracking_number": "9400148345034976046257",
+  "service_level": "ground",
+  "status": "exception",
+  "estimated_delivery": null,
+  "delivered_at": null,
+  "destination": {
+    "line1": "7312 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43290"
+  },
+  "package": {
+    "weight_kg": 1.47,
+    "dims_cm": [
+      40,
+      21,
+      25
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-03T19:56:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-07T15:22:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-08T10:14:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-05T01:20:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-08T11:32:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-03T22:46:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_25ad01057429ea8aeabd",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 216,
+      "shard": 54
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 988,
+      "reset_s": 36
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T03:04:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_2399af8ac90b0c31",
+      "latency_ms": 505
+    },
+    {
+      "at": "2026-09-04T18:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_eb7b19b4f9bed015",
+      "latency_ms": 13
+    },
+    {
+      "at": "2026-09-03T08:09:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_c7e25e9bc34cafa7",
+      "latency_ms": 339
+    }
+  ]
+}

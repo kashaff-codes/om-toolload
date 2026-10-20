@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-8836",
+  "carrier": "USPS",
+  "tracking_number": "9400257479730764467724",
+  "service_level": "2day",
+  "status": "label_created",
+  "estimated_delivery": "2026-09-10T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "525 Beacon St",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53733"
+  },
+  "package": {
+    "weight_kg": 3.28,
+    "dims_cm": [
+      41,
+      31,
+      8
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-02T20:00:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-02T00:03:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-31T23:08:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_401c4ed95d4f46a1b741",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 168,
+      "shard": 60
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 217,
+      "reset_s": 55
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T17:43:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_e3d25587ef7fce25",
+      "latency_ms": 806
+    },
+    {
+      "at": "2026-09-04T02:27:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_9d17c663791f0708",
+      "latency_ms": 640
+    },
+    {
+      "at": "2026-08-30T07:00:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_f5b333a28bcce5c0",
+      "latency_ms": 53
+    },
+    {
+      "at": "2026-09-04T04:54:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_ef65f0a18393142e",
+      "latency_ms": 830
+    },
+    {
+      "at": "2026-08-31T01:19:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_bb6076bcf8d285b4",
+      "latency_ms": 452
+    }
+  ]
+}

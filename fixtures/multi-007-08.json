@@ -1,0 +1,89 @@
+{
+  "query": "open tickets",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-550048",
+      "order_id": "-",
+      "type": "address_book",
+      "status": "open",
+      "refund_amount": null,
+      "created_at": "2026-09-13T15:00:00.000Z",
+      "summary": "Customer reported a minor account issue.",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_359098864b473438f199",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 496,
+      "shard": 31
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 744,
+      "reset_s": 24
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-18T08:17:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_c64eab36a2dece54",
+      "latency_ms": 300
+    },
+    {
+      "at": "2026-09-16T03:19:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_232688019d4388f8",
+      "latency_ms": 738
+    },
+    {
+      "at": "2026-09-13T22:06:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_64e013ef9f4447bf",
+      "latency_ms": 444
+    },
+    {
+      "at": "2026-09-16T17:15:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_e0875ede8dddafba",
+      "latency_ms": 102
+    },
+    {
+      "at": "2026-09-16T00:18:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_50ecda83c718c4ef",
+      "latency_ms": 24
+    },
+    {
+      "at": "2026-09-19T01:26:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_9fb303ea1f8b8a61",
+      "latency_ms": 773
+    },
+    {
+      "at": "2026-09-18T18:45:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_741db3ddf7784187",
+      "latency_ms": 40
+    },
+    {
+      "at": "2026-09-16T11:48:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_5e1c33843ae127ff",
+      "latency_ms": 98
+    }
+  ]
+}

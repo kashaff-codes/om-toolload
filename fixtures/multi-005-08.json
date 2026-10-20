@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9704",
+  "customer_id": "CUS-59165",
+  "status": "delivered",
+  "placed_at": "2026-07-18T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "KB-87T",
+      "name": "mechanical keyboard",
+      "qty": 1,
+      "unit_price": 119,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 119,
+    "tax": 9.82,
+    "shipping": 0,
+    "total": 128.82
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7023",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7258 Maple Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78710"
+  },
+  "flags": {
+    "fraud_score": 0.003,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_43152e1643983c379ee5",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 116,
+      "shard": 49
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 393,
+      "reset_s": 51
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-07-16T19:13:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_5af42fb9b108c0c7",
+      "latency_ms": 778
+    },
+    {
+      "at": "2026-07-15T06:57:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_08e9bd5a59f08f26",
+      "latency_ms": 220
+    },
+    {
+      "at": "2026-07-16T22:24:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_06518b9b9caf13ac",
+      "latency_ms": 668
+    },
+    {
+      "at": "2026-07-13T03:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_492ad4da43eed4e0",
+      "latency_ms": 53
+    },
+    {
+      "at": "2026-07-18T12:15:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_5043f35e44da927c",
+      "latency_ms": 101
+    },
+    {
+      "at": "2026-07-18T10:22:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_4a628ec21f57c616",
+      "latency_ms": 260
+    }
+  ]
+}

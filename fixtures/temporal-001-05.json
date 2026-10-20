@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9260",
+  "customer_id": "CUS-19404",
+  "status": "delivered",
+  "placed_at": "2026-08-25T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "PC-11P",
+      "name": "phone case",
+      "qty": 1,
+      "unit_price": 24.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 24.99,
+    "tax": 2.06,
+    "shipping": 5.99,
+    "total": 33.04
+  },
+  "payment": {
+    "method": "card",
+    "last4": "7566",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4217 Orchard Way",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78765"
+  },
+  "flags": {
+    "fraud_score": 0.183,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_024a90563a99d17d8de1",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 218,
+      "shard": 10
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 218,
+      "reset_s": 58
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-23T17:52:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_893aec5a0d8970ab",
+      "latency_ms": 447
+    },
+    {
+      "at": "2026-08-20T19:49:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_5478db10e9b3f252",
+      "latency_ms": 589
+    },
+    {
+      "at": "2026-08-21T18:53:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_3d081ecdc2ee5668",
+      "latency_ms": 712
+    },
+    {
+      "at": "2026-08-20T04:34:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_59ce0c33cc2c8c0b",
+      "latency_ms": 808
+    },
+    {
+      "at": "2026-08-23T05:34:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_51b5e8f183e628fc",
+      "latency_ms": 849
+    },
+    {
+      "at": "2026-08-21T12:31:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_8be5bc414ee0bff8",
+      "latency_ms": 663
+    }
+  ]
+}

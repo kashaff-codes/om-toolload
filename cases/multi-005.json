@@ -1,0 +1,165 @@
+{
+  "id": "multi-005",
+  "category": "multi_session",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the power bank. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "power bank refund"
+          },
+          "fixture": "multi-005-01"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4997"
+          },
+          "fixture": "multi-005-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another screen protector. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7844"
+          },
+          "fixture": "multi-005-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "screen protector order history"
+          },
+          "fixture": "multi-005-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last screen protector order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I sent back the desk lamp. Has the refund been issued?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "desk lamp refund"
+          },
+          "fixture": "multi-005-05"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2414"
+          },
+          "fixture": "multi-005-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that refund is approved and should reach your card in 3-5 business days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "And the keyboard I returned, what happened with that one?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "keyboard refund"
+          },
+          "fixture": "multi-005-07"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9704"
+          },
+          "fixture": "multi-005-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Unfortunately that one arrived outside the return window, so it wasn't approved."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-21T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-59165"
+          },
+          "fixture": "multi-005-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "multi-005-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "How much have I been refunded in total so far?",
+  "expected": {
+    "type": "number",
+    "value": 77.49
+  },
+  "distractors": [
+    "196.49"
+  ],
+  "abstainIsCorrect": false
+}

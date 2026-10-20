@@ -1,0 +1,444 @@
+{
+  "customer_id": "CUS-96735",
+  "name": "Daniel Okafor",
+  "email": "daniel.okafor9@outlook.com",
+  "phone": "+1-555-683-6476",
+  "default_address": {
+    "line1": "1163 Copper Mill Rd",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27613"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_5dcba15b174030aed339",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 353,
+      "shard": 43
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 750,
+      "reset_s": 13
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T20:22:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_026004bfb880ab69",
+      "latency_ms": 378
+    },
+    {
+      "at": "2026-09-11T21:11:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_cb21b596b333fdcc",
+      "latency_ms": 268
+    },
+    {
+      "at": "2026-09-11T08:50:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_53211e6a4756779a",
+      "latency_ms": 668
+    },
+    {
+      "at": "2026-09-07T04:24:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_7ef8a3e57d8af703",
+      "latency_ms": 432
+    },
+    {
+      "at": "2026-09-07T22:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_32a5aeb373a9c4ea",
+      "latency_ms": 347
+    },
+    {
+      "at": "2026-09-08T22:40:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_5d2b94cc2a00dd81",
+      "latency_ms": 896
+    },
+    {
+      "at": "2026-09-09T03:03:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_c833f853f7cafbec",
+      "latency_ms": 815
+    },
+    {
+      "at": "2026-09-10T17:30:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_30a08064c7e10ccc",
+      "latency_ms": 663
+    },
+    {
+      "at": "2026-09-10T12:22:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_e7b8aab3378e1cd2",
+      "latency_ms": 842
+    },
+    {
+      "at": "2026-09-07T15:35:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_81155fe0c75040a8",
+      "latency_ms": 92
+    },
+    {
+      "at": "2026-09-11T15:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_e467977ac914ffdd",
+      "latency_ms": 319
+    },
+    {
+      "at": "2026-09-08T11:31:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_96e5950fea8cce34",
+      "latency_ms": 654
+    },
+    {
+      "at": "2026-09-12T13:02:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_6058caf019ac2468",
+      "latency_ms": 548
+    },
+    {
+      "at": "2026-09-09T18:04:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_453080588649e0c5",
+      "latency_ms": 356
+    },
+    {
+      "at": "2026-09-08T03:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_8821f81d895184de",
+      "latency_ms": 792
+    },
+    {
+      "at": "2026-09-07T12:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_e9bb86e4a28d7503",
+      "latency_ms": 229
+    },
+    {
+      "at": "2026-09-10T17:18:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_f7d35fafd194d168",
+      "latency_ms": 339
+    },
+    {
+      "at": "2026-09-10T02:29:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_57f5f519b5a66527",
+      "latency_ms": 264
+    },
+    {
+      "at": "2026-09-11T01:29:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_e50d619834d7f263",
+      "latency_ms": 420
+    },
+    {
+      "at": "2026-09-09T12:16:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_6b346c0ee8313bdb",
+      "latency_ms": 651
+    },
+    {
+      "at": "2026-09-11T20:04:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_78d3a4672d38b686",
+      "latency_ms": 79
+    },
+    {
+      "at": "2026-09-10T06:17:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_e01d09a8b3f0e612",
+      "latency_ms": 189
+    },
+    {
+      "at": "2026-09-10T21:30:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_239e26f52b4978b2",
+      "latency_ms": 81
+    },
+    {
+      "at": "2026-09-08T22:01:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_ed3ee31eef9af892",
+      "latency_ms": 365
+    },
+    {
+      "at": "2026-09-08T19:23:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_08964fa560dbaac6",
+      "latency_ms": 638
+    }
+  ],
+  "inventory_snapshot": [
+    {
+      "sku": "MN-27Q",
+      "warehouse": "SEA-1",
+      "on_hand": 1025,
+      "reserved": 94,
+      "bin": "B12-3"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "SEA-1",
+      "on_hand": 3635,
+      "reserved": 207,
+      "bin": "B9-8"
+    },
+    {
+      "sku": "HD-220",
+      "warehouse": "DFW-4",
+      "on_hand": 2983,
+      "reserved": 127,
+      "bin": "B38-5"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "DFW-4",
+      "on_hand": 2781,
+      "reserved": 229,
+      "bin": "C16-5"
+    },
+    {
+      "sku": "CH-65W",
+      "warehouse": "ORD-7",
+      "on_hand": 2653,
+      "reserved": 187,
+      "bin": "A33-2"
+    },
+    {
+      "sku": "MS-ERG",
+      "warehouse": "DFW-4",
+      "on_hand": 2093,
+      "reserved": 154,
+      "bin": "C9-7"
+    },
+    {
+      "sku": "CH-65W",
+      "warehouse": "SEA-1",
+      "on_hand": 3842,
+      "reserved": 31,
+      "bin": "A3-6"
+    },
+    {
+      "sku": "PB-20K",
+      "warehouse": "SEA-1",
+      "on_hand": 1786,
+      "reserved": 43,
+      "bin": "C3-1"
+    },
+    {
+      "sku": "RT-AX6",
+      "warehouse": "RNO-2",
+      "on_hand": 2414,
+      "reserved": 107,
+      "bin": "B23-6"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "EWR-1",
+      "on_hand": 67,
+      "reserved": 97,
+      "bin": "D19-5"
+    },
+    {
+      "sku": "RT-AX6",
+      "warehouse": "SEA-1",
+      "on_hand": 413,
+      "reserved": 68,
+      "bin": "A32-8"
+    },
+    {
+      "sku": "RT-AX6",
+      "warehouse": "EWR-1",
+      "on_hand": 3962,
+      "reserved": 121,
+      "bin": "B14-2"
+    },
+    {
+      "sku": "EB-ANC",
+      "warehouse": "ATL-3",
+      "on_hand": 2040,
+      "reserved": 236,
+      "bin": "D23-1"
+    },
+    {
+      "sku": "PB-20K",
+      "warehouse": "DFW-4",
+      "on_hand": 1725,
+      "reserved": 110,
+      "bin": "D34-8"
+    },
+    {
+      "sku": "MS-ERG",
+      "warehouse": "ORD-7",
+      "on_hand": 1013,
+      "reserved": 171,
+      "bin": "B40-8"
+    },
+    {
+      "sku": "EB-ANC",
+      "warehouse": "RNO-2",
+      "on_hand": 1218,
+      "reserved": 44,
+      "bin": "B21-8"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "ORD-7",
+      "on_hand": 2437,
+      "reserved": 85,
+      "bin": "C17-1"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "SEA-1",
+      "on_hand": 2068,
+      "reserved": 79,
+      "bin": "C39-1"
+    },
+    {
+      "sku": "RT-AX6",
+      "warehouse": "RNO-2",
+      "on_hand": 1855,
+      "reserved": 84,
+      "bin": "A35-1"
+    },
+    {
+      "sku": "CH-65W",
+      "warehouse": "ORD-7",
+      "on_hand": 3072,
+      "reserved": 202,
+      "bin": "A23-7"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "SEA-1",
+      "on_hand": 1715,
+      "reserved": 283,
+      "bin": "C6-7"
+    },
+    {
+      "sku": "HD-220",
+      "warehouse": "EWR-1",
+      "on_hand": 792,
+      "reserved": 218,
+      "bin": "D16-1"
+    },
+    {
+      "sku": "HD-220",
+      "warehouse": "EWR-1",
+      "on_hand": 3186,
+      "reserved": 208,
+      "bin": "D1-8"
+    },
+    {
+      "sku": "PB-20K",
+      "warehouse": "EWR-1",
+      "on_hand": 2565,
+      "reserved": 113,
+      "bin": "B7-4"
+    },
+    {
+      "sku": "SD-1TB",
+      "warehouse": "DFW-4",
+      "on_hand": 1522,
+      "reserved": 200,
+      "bin": "C35-5"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "EWR-1",
+      "on_hand": 1880,
+      "reserved": 39,
+      "bin": "D38-9"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "ORD-7",
+      "on_hand": 2593,
+      "reserved": 160,
+      "bin": "A21-6"
+    },
+    {
+      "sku": "HD-220",
+      "warehouse": "ORD-7",
+      "on_hand": 3311,
+      "reserved": 250,
+      "bin": "A7-3"
+    },
+    {
+      "sku": "PC-11P",
+      "warehouse": "EWR-1",
+      "on_hand": 2065,
+      "reserved": 196,
+      "bin": "B32-7"
+    },
+    {
+      "sku": "SD-1TB",
+      "warehouse": "DFW-4",
+      "on_hand": 2332,
+      "reserved": 170,
+      "bin": "B12-2"
+    },
+    {
+      "sku": "MS-ERG",
+      "warehouse": "DFW-4",
+      "on_hand": 1513,
+      "reserved": 140,
+      "bin": "B31-4"
+    },
+    {
+      "sku": "SD-1TB",
+      "warehouse": "RNO-2",
+      "on_hand": 3080,
+      "reserved": 176,
+      "bin": "B29-5"
+    },
+    {
+      "sku": "HD-220",
+      "warehouse": "SEA-1",
+      "on_hand": 1594,
+      "reserved": 20,
+      "bin": "C36-1"
+    }
+  ]
+}

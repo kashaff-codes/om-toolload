@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4539",
+  "customer_id": "CUS-38535",
+  "status": "delivered",
+  "placed_at": "2026-08-24T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LP-LED",
+      "name": "LED desk lamp",
+      "qty": 1,
+      "unit_price": 34.5,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 34.5,
+    "tax": 2.85,
+    "shipping": 5.99,
+    "total": 43.34
+  },
+  "payment": {
+    "method": "card",
+    "last4": "3678",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "401 Harbor St",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "flags": {
+    "fraud_score": 0.195,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_215aca01f155f8e8516a",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 214,
+      "shard": 60
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 819,
+      "reset_s": 20
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-19T07:18:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_16f676a78c03004c",
+      "latency_ms": 292
+    },
+    {
+      "at": "2026-08-21T01:45:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_c9728e0e1f46af12",
+      "latency_ms": 442
+    },
+    {
+      "at": "2026-08-23T06:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_c53c12631a12f4f9",
+      "latency_ms": 647
+    },
+    {
+      "at": "2026-08-24T11:13:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_623fb69fb8b5f307",
+      "latency_ms": 32
+    },
+    {
+      "at": "2026-08-19T13:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_9f16529a2641df0a",
+      "latency_ms": 329
+    },
+    {
+      "at": "2026-08-20T06:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_297761579445a915",
+      "latency_ms": 45
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-5547",
+  "carrier": "UPS",
+  "tracking_number": "1Z1208EC5709284510",
+  "service_level": "express",
+  "status": "delivered",
+  "estimated_delivery": "2026-08-27T15:00:00.000Z",
+  "delivered_at": "2026-08-27T15:00:00.000Z",
+  "destination": {
+    "line1": "8652 Maple Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78725"
+  },
+  "package": {
+    "weight_kg": 2.56,
+    "dims_cm": [
+      12,
+      37,
+      11
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-08-31T08:45:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-08-30T07:17:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-30T17:01:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_be3a0c4e65fe8e0aaf88",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 411,
+      "shard": 24
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 729,
+      "reset_s": 2
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-31T12:37:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_f08da288878430f4",
+      "latency_ms": 857
+    },
+    {
+      "at": "2026-08-30T01:34:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_5463c18d8e56324b",
+      "latency_ms": 66
+    },
+    {
+      "at": "2026-08-29T00:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_77f786e560bc67bd",
+      "latency_ms": 234
+    },
+    {
+      "at": "2026-08-27T23:31:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_dc595a5b5694bc2f",
+      "latency_ms": 509
+    },
+    {
+      "at": "2026-08-30T13:48:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_cb5fc9d392373584",
+      "latency_ms": 509
+    }
+  ]
+}

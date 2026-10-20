@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7024",
+  "customer_id": "CUS-41597",
+  "status": "returned",
+  "placed_at": "2026-08-31T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-BT5",
+      "name": "bluetooth speaker",
+      "qty": 1,
+      "unit_price": 59.95,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 59.95,
+    "tax": 4.95,
+    "shipping": 0,
+    "total": 64.9
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0855",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9596 Granite Blvd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97274"
+  },
+  "flags": {
+    "fraud_score": 0.192,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4bff3015e10cd38fb189",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 361,
+      "shard": 49
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 901,
+      "reset_s": 48
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-30T05:51:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_ab35519fef61ff6d",
+      "latency_ms": 205
+    },
+    {
+      "at": "2026-08-30T03:48:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_1c0c1a560b02e550",
+      "latency_ms": 695
+    },
+    {
+      "at": "2026-08-31T05:52:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_7ce9b64304cfb454",
+      "latency_ms": 155
+    },
+    {
+      "at": "2026-08-30T09:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_91a21c27b094ef5b",
+      "latency_ms": 286
+    },
+    {
+      "at": "2026-08-28T05:00:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_10d6a788485df6ba",
+      "latency_ms": 80
+    },
+    {
+      "at": "2026-08-30T05:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_e2915e5ad228c0ec",
+      "latency_ms": 771
+    }
+  ]
+}

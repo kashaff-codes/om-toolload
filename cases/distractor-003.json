@@ -1,0 +1,136 @@
+{
+  "id": "distractor-003",
+  "category": "distractor",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "What's the status of the refund on ORD-6839?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "refund ORD-6839"
+          },
+          "fixture": "distractor-003-01"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6839"
+          },
+          "fixture": "distractor-003-02"
+        },
+        {
+          "role": "assistant",
+          "text": "That refund is approved and on its way back to your card."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another laptop stand. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2375"
+          },
+          "fixture": "distractor-003-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "laptop stand order history"
+          },
+          "fixture": "distractor-003-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last laptop stand order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "What's the status of the refund on ORD-6893?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "refund ORD-6893"
+          },
+          "fixture": "distractor-003-05"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6893"
+          },
+          "fixture": "distractor-003-06"
+        },
+        {
+          "role": "assistant",
+          "text": "That refund is approved and on its way back to your card."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another water bottle. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7542"
+          },
+          "fixture": "distractor-003-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "water bottle order history"
+          },
+          "fixture": "distractor-003-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last water bottle order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "How much was refunded on ORD-6893?",
+  "expected": {
+    "type": "number",
+    "value": 44.75
+  },
+  "distractors": [
+    "329.00"
+  ],
+  "abstainIsCorrect": false
+}

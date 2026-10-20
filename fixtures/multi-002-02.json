@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9084",
+  "customer_id": "CUS-37577",
+  "status": "returned",
+  "placed_at": "2026-08-19T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "WC-1080",
+      "name": "1080p webcam",
+      "qty": 1,
+      "unit_price": 69.99,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 69.99,
+    "tax": 5.77,
+    "shipping": 0,
+    "total": 75.76
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7446",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "2214 Lakeview Dr",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85725"
+  },
+  "flags": {
+    "fraud_score": 0.175,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7ed654d246dd49b24315",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 244,
+      "shard": 28
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 346,
+      "reset_s": 36
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-14T11:19:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_64ae6678dcfa2ae0",
+      "latency_ms": 83
+    },
+    {
+      "at": "2026-08-16T07:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_c0da8b70d82c27be",
+      "latency_ms": 174
+    },
+    {
+      "at": "2026-08-18T19:14:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_0a60affdcbf8e06b",
+      "latency_ms": 708
+    },
+    {
+      "at": "2026-08-15T04:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_6d9d7ea608c82fa1",
+      "latency_ms": 245
+    },
+    {
+      "at": "2026-08-17T21:30:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_3255bf859373fc67",
+      "latency_ms": 544
+    },
+    {
+      "at": "2026-08-13T18:51:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_2fef32a265d19fe8",
+      "latency_ms": 416
+    }
+  ]
+}

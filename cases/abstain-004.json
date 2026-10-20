@@ -1,0 +1,162 @@
+{
+  "id": "abstain-004",
+  "category": "abstention",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-04T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you look at my case order?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4394"
+          },
+          "fixture": "abstain-004-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4394"
+          },
+          "fixture": "abstain-004-02"
+        },
+        {
+          "role": "assistant",
+          "text": "It was delivered last week. Let me know if anything is wrong with it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-41234"
+          },
+          "fixture": "abstain-004-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "abstain-004-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my USB-C hub order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7296"
+          },
+          "fixture": "abstain-004-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-7296"
+          },
+          "fixture": "abstain-004-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Wednesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my cable organizer order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3282"
+          },
+          "fixture": "abstain-004-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-3282"
+          },
+          "fixture": "abstain-004-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Tuesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-19T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my coffee grinder order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5674"
+          },
+          "fixture": "abstain-004-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5674"
+          },
+          "fixture": "abstain-004-10"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Monday."
+        }
+      ]
+    }
+  ],
+  "question": "What is the warranty registration number for my case?",
+  "expected": {
+    "type": "abstain"
+  },
+  "distractors": [],
+  "abstainIsCorrect": true
+}

@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-9853",
+  "carrier": "USPS",
+  "tracking_number": "9400254053157688769519",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-13T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "7775 Orchard Way",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27630"
+  },
+  "package": {
+    "weight_kg": 0.44,
+    "dims_cm": [
+      48,
+      32,
+      21
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-10T21:20:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-09T12:37:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-09T01:29:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-09T11:37:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_fe30d074973724987d7a",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 221,
+      "shard": 34
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 246,
+      "reset_s": 48
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T10:34:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_068dfae4497b0978",
+      "latency_ms": 403
+    },
+    {
+      "at": "2026-09-09T00:54:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_f2d4ca6c94b9ba9f",
+      "latency_ms": 729
+    },
+    {
+      "at": "2026-09-05T19:24:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_3e8b9a6d4fdff74b",
+      "latency_ms": 855
+    },
+    {
+      "at": "2026-09-08T10:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_d5334fcd4b863d02",
+      "latency_ms": 167
+    }
+  ]
+}

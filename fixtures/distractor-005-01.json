@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-87584",
+  "name": "Jon Smyth",
+  "email": "jon.smyth58@fastmail.com",
+  "phone": "+1-555-564-6432",
+  "default_address": {
+    "line1": "6633 Willow Ct",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27623"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b53c0401bf3a2b20ba55",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 121,
+      "shard": 9
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 688,
+      "reset_s": 39
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T10:06:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_59bde38227b5d71b",
+      "latency_ms": 368
+    },
+    {
+      "at": "2026-09-04T22:27:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_c0b72c7684f865cb",
+      "latency_ms": 45
+    },
+    {
+      "at": "2026-09-03T17:35:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_0f338164a2d565ef",
+      "latency_ms": 823
+    },
+    {
+      "at": "2026-09-05T00:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_dcd2ab2ff6ddb1c6",
+      "latency_ms": 349
+    },
+    {
+      "at": "2026-09-06T18:38:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_b9e7ad278b078f87",
+      "latency_ms": 252
+    },
+    {
+      "at": "2026-09-03T03:28:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_637930dbf08f694b",
+      "latency_ms": 456
+    },
+    {
+      "at": "2026-09-04T05:14:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_db649b676c87573c",
+      "latency_ms": 491
+    }
+  ]
+}

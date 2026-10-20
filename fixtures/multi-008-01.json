@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4149",
+  "customer_id": "CUS-14723",
+  "status": "delivered",
+  "placed_at": "2026-09-04T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SW-44A",
+      "name": "smartwatch",
+      "qty": 1,
+      "unit_price": 249,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 249,
+    "tax": 20.54,
+    "shipping": 0,
+    "total": 269.54
+  },
+  "payment": {
+    "method": "card",
+    "last4": "1577",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "332 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85749"
+  },
+  "flags": {
+    "fraud_score": 0.102,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_498eafd730280d913682",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 152,
+      "shard": 27
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 849,
+      "reset_s": 24
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T03:35:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_6c367b92995383a5",
+      "latency_ms": 457
+    },
+    {
+      "at": "2026-08-30T19:59:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_23203148828d2da0",
+      "latency_ms": 821
+    },
+    {
+      "at": "2026-08-31T00:26:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_a0f9195e6a90316c",
+      "latency_ms": 345
+    },
+    {
+      "at": "2026-08-31T06:41:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_01f569cee1ccbb46",
+      "latency_ms": 73
+    },
+    {
+      "at": "2026-09-01T05:53:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_64ee74f0a332d753",
+      "latency_ms": 22
+    },
+    {
+      "at": "2026-08-30T15:03:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_82d073a25c4dd8f3",
+      "latency_ms": 770
+    }
+  ]
+}

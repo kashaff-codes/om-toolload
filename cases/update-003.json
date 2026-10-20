@@ -1,0 +1,158 @@
+{
+  "id": "update-003",
+  "category": "knowledge_update",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false,
+    "updateSource": "user"
+  },
+  "sessions": [
+    {
+      "at": "2026-09-03T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Where's my smartwatch?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4846"
+          },
+          "fixture": "update-003-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4846"
+          },
+          "fixture": "update-003-02"
+        },
+        {
+          "role": "assistant",
+          "text": "It's with USPS and on its way."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-05T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another screen protector. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8228"
+          },
+          "fixture": "update-003-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "screen protector order history"
+          },
+          "fixture": "update-003-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last screen protector order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "The carrier emailed me that my smartwatch was relabeled. The new tracking number is 9400376749557552396104."
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4846"
+          },
+          "fixture": "update-003-05"
+        },
+        {
+          "role": "assistant",
+          "text": "Thanks, I've noted the new label. Our system still shows the exception on the old one, which is expected."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my desk mat order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3119"
+          },
+          "fixture": "update-003-06"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-3119"
+          },
+          "fixture": "update-003-07"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Thursday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my coffee grinder order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3653"
+          },
+          "fixture": "update-003-08"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-3653"
+          },
+          "fixture": "update-003-09"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Wednesday."
+        }
+      ]
+    }
+  ],
+  "question": "What's the current tracking number for my smartwatch?",
+  "expected": {
+    "type": "exact",
+    "value": "9400376749557552396104"
+  },
+  "distractors": [
+    "9400148345034976046257"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-8423",
+  "carrier": "FedEx",
+  "tracking_number": "591005676146",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-22T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "package": {
+    "weight_kg": 3.78,
+    "dims_cm": [
+      10,
+      36,
+      18
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-19T14:36:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-19T14:15:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-17T05:41:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_efd51da53b540736dd7d",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 138,
+      "shard": 32
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 695,
+      "reset_s": 13
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-18T04:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_7ce8a055b478f821",
+      "latency_ms": 222
+    },
+    {
+      "at": "2026-09-19T11:15:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_3a8932b26ac871cf",
+      "latency_ms": 556
+    },
+    {
+      "at": "2026-09-16T09:33:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_a769897fc91cc54c",
+      "latency_ms": 101
+    },
+    {
+      "at": "2026-09-20T11:09:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_7a0b97338d50cdd2",
+      "latency_ms": 379
+    },
+    {
+      "at": "2026-09-14T19:46:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_6c776c30dc13d3dc",
+      "latency_ms": 756
+    }
+  ]
+}

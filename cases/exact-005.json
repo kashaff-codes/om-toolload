@@ -1,0 +1,165 @@
+{
+  "id": "exact-005",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-05T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I bought a smartwatch a while back. Can you find that order and tell me if it's under warranty?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9335"
+          },
+          "fixture": "exact-005-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "smartwatch warranty"
+          },
+          "fixture": "exact-005-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Found it. It was delivered about two months ago, so it's still inside the one-year warranty."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-42404"
+          },
+          "fixture": "exact-005-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-005-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-42404"
+          },
+          "fixture": "exact-005-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-005-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-20T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another laptop stand. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2187"
+          },
+          "fixture": "exact-005-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "laptop stand order history"
+          },
+          "fixture": "exact-005-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last laptop stand order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-24T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another coffee grinder. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9810"
+          },
+          "fixture": "exact-005-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "coffee grinder order history"
+          },
+          "fixture": "exact-005-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last coffee grinder order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "What was the order number for my smartwatch?",
+  "expected": {
+    "type": "exact",
+    "value": "ORD-9335"
+  },
+  "distractors": [
+    "ORD-9353"
+  ],
+  "abstainIsCorrect": false
+}

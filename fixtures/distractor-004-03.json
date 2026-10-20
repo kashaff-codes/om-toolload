@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-37990",
+  "name": "Sofia Rossi",
+  "email": "sofia.rossi30@gmail.com",
+  "phone": "+1-555-278-6760",
+  "default_address": {
+    "line1": "6993 Harbor St",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85763"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_443b00f57cfbc6323c22",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 299,
+      "shard": 24
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 550,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T05:33:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_738cc361595b1f42",
+      "latency_ms": 459
+    },
+    {
+      "at": "2026-09-04T17:15:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_2ee928ef0cc67c19",
+      "latency_ms": 7
+    },
+    {
+      "at": "2026-09-07T10:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_7aeba5ee3770789e",
+      "latency_ms": 865
+    },
+    {
+      "at": "2026-09-10T05:09:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_ed526d5ef4b030a0",
+      "latency_ms": 333
+    },
+    {
+      "at": "2026-09-06T06:03:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_325212733b79036c",
+      "latency_ms": 831
+    },
+    {
+      "at": "2026-09-05T14:17:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_0eaedf16dc6b3ad1",
+      "latency_ms": 397
+    },
+    {
+      "at": "2026-09-04T19:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_3baa4ad13d201255",
+      "latency_ms": 10
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-98521",
+  "name": "Priya Nair",
+  "email": "priya.nair8@proton.me",
+  "phone": "+1-555-265-6344",
+  "default_address": {
+    "line1": "7775 Orchard Way",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27630"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_18bb9d8d17537fddcc3b",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 65,
+      "shard": 18
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 783,
+      "reset_s": 7
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T08:24:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_783fd7cf91110243",
+      "latency_ms": 295
+    },
+    {
+      "at": "2026-09-15T10:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_b8414055f71f2bdd",
+      "latency_ms": 92
+    },
+    {
+      "at": "2026-09-10T12:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_b4fef7e8b85f55aa",
+      "latency_ms": 446
+    },
+    {
+      "at": "2026-09-11T13:54:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_a4da1197ebcbd7d8",
+      "latency_ms": 688
+    },
+    {
+      "at": "2026-09-09T20:20:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_93106abff665dea3",
+      "latency_ms": 583
+    },
+    {
+      "at": "2026-09-10T07:23:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_664eeec9442dc61c",
+      "latency_ms": 553
+    },
+    {
+      "at": "2026-09-10T19:04:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_ec533ba89b73d96a",
+      "latency_ms": 145
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-44514",
+  "name": "Liam Chen",
+  "email": "liam.chen10@proton.me",
+  "phone": "+1-555-425-9684",
+  "default_address": {
+    "line1": "1990 Harbor St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97232"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b8fa7a1ce56a3750c8d6",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 383,
+      "shard": 61
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 199,
+      "reset_s": 8
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T20:39:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_06b9cc1d2eec4145",
+      "latency_ms": 791
+    },
+    {
+      "at": "2026-09-09T18:58:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_f77e53892c04db09",
+      "latency_ms": 756
+    },
+    {
+      "at": "2026-09-11T14:56:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_a9dcad92e1b08bea",
+      "latency_ms": 332
+    },
+    {
+      "at": "2026-09-09T18:14:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_c2f025f7c24f42ea",
+      "latency_ms": 329
+    },
+    {
+      "at": "2026-09-11T23:58:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_e5b623e48cd2dd1e",
+      "latency_ms": 634
+    },
+    {
+      "at": "2026-09-13T21:46:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_1b3d4b27455cbffb",
+      "latency_ms": 276
+    },
+    {
+      "at": "2026-09-11T18:07:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_c65bf289f731886f",
+      "latency_ms": 475
+    }
+  ]
+}

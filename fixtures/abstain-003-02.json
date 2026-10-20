@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-4539",
+  "carrier": "UPS",
+  "tracking_number": "1ZF7E3973638864884",
+  "service_level": "express",
+  "status": "delivered",
+  "estimated_delivery": "2026-08-28T15:00:00.000Z",
+  "delivered_at": "2026-08-28T15:00:00.000Z",
+  "destination": {
+    "line1": "401 Harbor St",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "package": {
+    "weight_kg": 3.2,
+    "dims_cm": [
+      10,
+      23,
+      23
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-01T15:21:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-08-30T12:47:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-02T02:45:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-03T01:24:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7aa3cef591c491cd9d9a",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 498,
+      "shard": 64
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 973,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-30T11:06:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_95aa5ae2207887f5",
+      "latency_ms": 116
+    },
+    {
+      "at": "2026-08-29T06:46:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_b8ada2065fa14ad5",
+      "latency_ms": 248
+    },
+    {
+      "at": "2026-09-03T08:25:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_99959c7b05c26fc7",
+      "latency_ms": 226
+    },
+    {
+      "at": "2026-08-29T19:53:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_c2347e608a6baceb",
+      "latency_ms": 844
+    }
+  ]
+}

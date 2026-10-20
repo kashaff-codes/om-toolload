@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9129",
+  "customer_id": "CUS-31472",
+  "status": "shipped",
+  "placed_at": "2026-09-09T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "WB-1L",
+      "name": "insulated water bottle",
+      "qty": 1,
+      "unit_price": 27.5,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 27.5,
+    "tax": 2.27,
+    "shipping": 5.99,
+    "total": 35.76
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7028",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "2624 Maple Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97292"
+  },
+  "flags": {
+    "fraud_score": 0.122,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_a7086518b2500360d5a2",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 146,
+      "shard": 50
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 670,
+      "reset_s": 12
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T18:41:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_e1b8f2039d707ae5",
+      "latency_ms": 138
+    },
+    {
+      "at": "2026-09-09T00:06:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_57419040aba64176",
+      "latency_ms": 712
+    },
+    {
+      "at": "2026-09-07T02:59:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_f7574da863bb75b2",
+      "latency_ms": 590
+    },
+    {
+      "at": "2026-09-05T14:27:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_3cf9aaa281febe0a",
+      "latency_ms": 464
+    },
+    {
+      "at": "2026-09-09T04:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_b8b97af7240657de",
+      "latency_ms": 59
+    },
+    {
+      "at": "2026-09-04T15:07:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_f5f8f854f556bab2",
+      "latency_ms": 549
+    }
+  ]
+}

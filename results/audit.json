@@ -1,0 +1,309 @@
+{
+  "bySet": {
+    "correct_verbatim": {
+      "exactAgreement": 1,
+      "judgeAgreement": 1
+    },
+    "correct_paraphrased": {
+      "exactAgreement": 0,
+      "judgeAgreement": 0.8
+    },
+    "near_miss": {
+      "exactAgreement": 1,
+      "judgeAgreement": 1
+    },
+    "hedged": {
+      "exactAgreement": 1,
+      "judgeAgreement": 1
+    }
+  },
+  "exactFalseFailRate": 0.5,
+  "judgeFalseFailRate": 0.1,
+  "exactFalsePassRate": 0,
+  "judgeFalsePassRate": 0,
+  "primaryScorer": "judge",
+  "judgeModel": "claude-haiku-5-5",
+  "judgeUsd": 0.00075,
+  "rows": [
+    {
+      "id": "exact-001-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-001-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "abstained"
+    },
+    {
+      "id": "exact-001-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "exact-001-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "exact-002-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-002-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-002-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "exact-002-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "exact-003-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-003-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-003-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "exact-003-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "exact-004-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-004-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-004-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "exact-004-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "exact-005-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-005-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "exact-005-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "exact-005-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "temporal-004-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "temporal-004-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "abstained"
+    },
+    {
+      "id": "temporal-004-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "temporal-004-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "multi-001-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "multi-001-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "multi-001-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "multi-001-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "update-001-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "update-001-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "update-001-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "update-001-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "distractor-001-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "distractor-001-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "distractor-001-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "distractor-001-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    },
+    {
+      "id": "distractor-005-verbatim",
+      "set": "correct_verbatim",
+      "truth": "correct",
+      "exact": "correct",
+      "judge": "correct"
+    },
+    {
+      "id": "distractor-005-paraphrased",
+      "set": "correct_paraphrased",
+      "truth": "correct",
+      "exact": "silent_failure",
+      "judge": "correct"
+    },
+    {
+      "id": "distractor-005-nearmiss",
+      "set": "near_miss",
+      "truth": "silent_failure",
+      "exact": "silent_failure",
+      "judge": "silent_failure"
+    },
+    {
+      "id": "distractor-005-hedged",
+      "set": "hedged",
+      "truth": "abstained",
+      "exact": "abstained",
+      "judge": "abstained"
+    }
+  ]
+}

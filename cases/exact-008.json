@@ -1,0 +1,136 @@
+{
+  "id": "exact-008",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "small",
+    "position": "post_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-90077"
+          },
+          "fixture": "exact-008-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-008-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-90077"
+          },
+          "fixture": "exact-008-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-008-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-16T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-90077"
+          },
+          "fixture": "exact-008-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-008-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-19T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my refund request for the earbuds go through?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "earbuds refund"
+          },
+          "fixture": "exact-008-07"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5792"
+          },
+          "fixture": "exact-008-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, it was approved and is being processed back to your card."
+        }
+      ]
+    }
+  ],
+  "question": "What's the ticket number for my earbuds refund?",
+  "expected": {
+    "type": "exact",
+    "value": "TKT-659762"
+  },
+  "distractors": [
+    "TKT-659726"
+  ],
+  "abstainIsCorrect": false
+}

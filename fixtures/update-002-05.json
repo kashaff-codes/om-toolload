@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1607",
+  "customer_id": "CUS-44514",
+  "status": "processing",
+  "placed_at": "2026-09-02T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "MN-27Q",
+      "name": "27-inch monitor",
+      "qty": 1,
+      "unit_price": 329,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 329,
+    "tax": 27.14,
+    "shipping": 0,
+    "total": 356.14
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0172",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1990 Harbor St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97232"
+  },
+  "flags": {
+    "fraud_score": 0.194,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_9c2afca816e729239247",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 293,
+      "shard": 45
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 287,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T16:57:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_0cdd2025c461f361",
+      "latency_ms": 766
+    },
+    {
+      "at": "2026-08-28T10:13:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_55974e4f2c1c4c65",
+      "latency_ms": 861
+    },
+    {
+      "at": "2026-08-29T19:37:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_25bf75cf7c8f624b",
+      "latency_ms": 172
+    },
+    {
+      "at": "2026-08-30T11:25:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_f0b4386bdc6c98b7",
+      "latency_ms": 461
+    },
+    {
+      "at": "2026-08-31T23:25:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_6bac6b2d405490a9",
+      "latency_ms": 242
+    },
+    {
+      "at": "2026-08-28T10:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_b081f24c72fb4a33",
+      "latency_ms": 216
+    }
+  ]
+}

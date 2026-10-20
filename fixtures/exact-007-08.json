@@ -1,0 +1,85 @@
+{
+  "query": "SSD billing",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_93ecd2a31ae1a2c1082c",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 157,
+      "shard": 29
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 700,
+      "reset_s": 18
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T00:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_00f4b0b46bfde7e4",
+      "latency_ms": 573
+    },
+    {
+      "at": "2026-09-15T05:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_0158d9b96b46d745",
+      "latency_ms": 891
+    },
+    {
+      "at": "2026-09-12T20:29:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_ce76ff63b31930d6",
+      "latency_ms": 366
+    },
+    {
+      "at": "2026-09-15T01:36:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_cc0335260d65c0b6",
+      "latency_ms": 558
+    },
+    {
+      "at": "2026-09-15T03:25:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_c878230c257d0b14",
+      "latency_ms": 70
+    },
+    {
+      "at": "2026-09-16T23:38:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_db736e9326fc0cfc",
+      "latency_ms": 608
+    },
+    {
+      "at": "2026-09-14T10:11:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_15ba6440892484de",
+      "latency_ms": 314
+    },
+    {
+      "at": "2026-09-12T09:48:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_a034e820bbd10577",
+      "latency_ms": 587
+    },
+    {
+      "at": "2026-09-13T07:50:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_5d56e1dbdbb00187",
+      "latency_ms": 664
+    }
+  ]
+}

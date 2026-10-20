@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6193",
+  "customer_id": "CUS-39207",
+  "status": "delivered",
+  "placed_at": "2026-08-22T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "BP-30L",
+      "name": "travel backpack",
+      "qty": 1,
+      "unit_price": 89.5,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 89.5,
+    "tax": 7.38,
+    "shipping": 0,
+    "total": 96.88
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "1917",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "8886 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85753"
+  },
+  "flags": {
+    "fraud_score": 0.069,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e9018612ee7bd7c4ff1d",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 380,
+      "shard": 12
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 118,
+      "reset_s": 50
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-19T23:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_b47ebbc9ee50111d",
+      "latency_ms": 330
+    },
+    {
+      "at": "2026-08-22T07:50:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_4fbf92a4dfc21145",
+      "latency_ms": 899
+    },
+    {
+      "at": "2026-08-18T11:49:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_8a62794b5c102f69",
+      "latency_ms": 6
+    },
+    {
+      "at": "2026-08-20T17:35:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_9a2ca0e0def873b8",
+      "latency_ms": 438
+    },
+    {
+      "at": "2026-08-18T20:43:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_b2dfb64be213d9b9",
+      "latency_ms": 586
+    },
+    {
+      "at": "2026-08-21T10:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_8a49ba240d398bb5",
+      "latency_ms": 151
+    }
+  ]
+}

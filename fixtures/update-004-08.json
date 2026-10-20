@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-6716",
+  "carrier": "FedEx",
+  "tracking_number": "056205908341",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-15T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "525 Beacon St",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53733"
+  },
+  "package": {
+    "weight_kg": 0.73,
+    "dims_cm": [
+      12,
+      11,
+      21
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-13T02:01:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-11T06:55:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-12T22:36:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_0d6bb2e5fb896272374b",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 230,
+      "shard": 25
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 862,
+      "reset_s": 1
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T11:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_a3ea3cdd9d9ea87b",
+      "latency_ms": 666
+    },
+    {
+      "at": "2026-09-09T19:40:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_c713ed21cb47df10",
+      "latency_ms": 463
+    },
+    {
+      "at": "2026-09-09T23:24:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_aa10002e55100bec",
+      "latency_ms": 140
+    },
+    {
+      "at": "2026-09-09T10:59:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_678ffb6d427a32e7",
+      "latency_ms": 867
+    },
+    {
+      "at": "2026-09-08T13:08:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_771f8cb89b894c12",
+      "latency_ms": 378
+    }
+  ]
+}

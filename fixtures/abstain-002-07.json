@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-91919",
+  "name": "Grace Mensah",
+  "email": "grace.mensah7@proton.me",
+  "phone": "+1-555-977-9094",
+  "default_address": {
+    "line1": "8652 Maple Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78725"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_cd5404e89e6b6bbd5dcf",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 395,
+      "shard": 58
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 916,
+      "reset_s": 31
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T08:52:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_8c292dd3d46e226e",
+      "latency_ms": 407
+    },
+    {
+      "at": "2026-09-10T16:59:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_7f5688c3fd802642",
+      "latency_ms": 590
+    },
+    {
+      "at": "2026-09-13T12:50:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_759bc8f992d796af",
+      "latency_ms": 732
+    },
+    {
+      "at": "2026-09-10T20:48:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_199089f41a6b57dd",
+      "latency_ms": 372
+    },
+    {
+      "at": "2026-09-11T10:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_dec55919d688ead0",
+      "latency_ms": 64
+    },
+    {
+      "at": "2026-09-10T19:30:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_cf42e05cd257f4c8",
+      "latency_ms": 753
+    },
+    {
+      "at": "2026-09-09T23:35:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_8cbd9b239fd26f0a",
+      "latency_ms": 725
+    }
+  ]
+}

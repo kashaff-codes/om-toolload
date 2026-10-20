@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2619",
+  "customer_id": "CUS-93358",
+  "status": "shipped",
+  "placed_at": "2026-08-31T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "DM-90",
+      "name": "felt desk mat",
+      "qty": 1,
+      "unit_price": 29,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 29,
+    "tax": 2.39,
+    "shipping": 5.99,
+    "total": 37.38
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "2651",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1902 Juniper Ln",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27660"
+  },
+  "flags": {
+    "fraud_score": 0.172,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_2c0efe3a93f514fda0d3",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 208,
+      "shard": 47
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 435,
+      "reset_s": 33
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T21:42:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_d25ca6fd5dcff27b",
+      "latency_ms": 837
+    },
+    {
+      "at": "2026-08-31T01:30:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_1529db4d5d3a7101",
+      "latency_ms": 327
+    },
+    {
+      "at": "2026-08-29T21:59:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_306cf4526c01eba6",
+      "latency_ms": 572
+    },
+    {
+      "at": "2026-08-26T17:33:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_1bf92500e2859871",
+      "latency_ms": 560
+    },
+    {
+      "at": "2026-08-29T03:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_834d90050c740d22",
+      "latency_ms": 322
+    },
+    {
+      "at": "2026-08-28T14:37:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_eedd10218aeff046",
+      "latency_ms": 544
+    }
+  ]
+}

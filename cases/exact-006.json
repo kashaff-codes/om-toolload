@@ -1,0 +1,149 @@
+{
+  "id": "exact-006",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": true
+  },
+  "sessions": [
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you check on my mouse order?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2510"
+          },
+          "fixture": "exact-006-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-2510"
+          },
+          "fixture": "exact-006-02"
+        },
+        {
+          "role": "assistant",
+          "text": "It's in transit with FedEx, arriving Friday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Quick check before I file this away: the reference is 167374719284, right?"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that matches what I have."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my laptop stand order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8424"
+          },
+          "fixture": "exact-006-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-8424"
+          },
+          "fixture": "exact-006-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Tuesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5929"
+          },
+          "fixture": "exact-006-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "exact-006-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-18T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-86626"
+          },
+          "fixture": "exact-006-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-006-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "What's the tracking number for my mouse?",
+  "expected": {
+    "type": "exact",
+    "value": "167374719284"
+  },
+  "distractors": [
+    "167374719248"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,167 @@
+{
+  "id": "temporal-003",
+  "category": "temporal",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my webcam get delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7490"
+          },
+          "fixture": "temporal-003-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-7490"
+          },
+          "fixture": "temporal-003-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, the carrier shows it as delivered to your front door."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-96735"
+          },
+          "fixture": "temporal-003-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "temporal-003-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my power bank get delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1141"
+          },
+          "fixture": "temporal-003-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-1141"
+          },
+          "fixture": "temporal-003-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, the carrier shows it as delivered to your front door."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-16T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another desk mat. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3593"
+          },
+          "fixture": "temporal-003-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "desk mat order history"
+          },
+          "fixture": "temporal-003-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last desk mat order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-18T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my USB-C hub order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5980"
+          },
+          "fixture": "temporal-003-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5980"
+          },
+          "fixture": "temporal-003-10"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Tuesday."
+        }
+      ]
+    }
+  ],
+  "question": "Which arrived first, the webcam or the power bank?",
+  "expected": {
+    "type": "choice",
+    "value": "power bank",
+    "options": [
+      "webcam",
+      "power bank"
+    ]
+  },
+  "distractors": [],
+  "abstainIsCorrect": false
+}

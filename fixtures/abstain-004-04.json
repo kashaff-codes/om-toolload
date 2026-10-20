@@ -1,0 +1,89 @@
+{
+  "query": "open tickets",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-580590",
+      "order_id": "-",
+      "type": "newsletter",
+      "status": "open",
+      "refund_amount": null,
+      "created_at": "2026-09-01T15:00:00.000Z",
+      "summary": "Customer reported a minor account issue.",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_bf653c50203bd8fee6cc",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 154,
+      "shard": 5
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 760,
+      "reset_s": 47
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-02T18:37:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_42afda859a018013",
+      "latency_ms": 75
+    },
+    {
+      "at": "2026-09-06T04:36:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_ea2f6785bb02bb09",
+      "latency_ms": 799
+    },
+    {
+      "at": "2026-09-06T22:27:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_4d7ddb2422adb331",
+      "latency_ms": 700
+    },
+    {
+      "at": "2026-09-03T18:29:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_034d90a4b3a5b1b4",
+      "latency_ms": 464
+    },
+    {
+      "at": "2026-09-06T00:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_e7baafb9682a0bc4",
+      "latency_ms": 687
+    },
+    {
+      "at": "2026-09-05T06:12:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_11584b5e5fdbfcda",
+      "latency_ms": 358
+    },
+    {
+      "at": "2026-09-03T01:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_deaab0ff5112d8e7",
+      "latency_ms": 365
+    },
+    {
+      "at": "2026-09-02T21:00:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_7039e004af38e8a4",
+      "latency_ms": 533
+    }
+  ]
+}

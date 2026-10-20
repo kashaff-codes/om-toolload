@@ -1,0 +1,282 @@
+[
+  {
+    "id": "exact-001-verbatim",
+    "caseId": "exact-001",
+    "set": "correct_verbatim",
+    "answer": "It's 631340277630.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-001-paraphrased",
+    "caseId": "exact-001",
+    "set": "correct_paraphrased",
+    "answer": "It's the one ending in 7630.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-001-nearmiss",
+    "caseId": "exact-001",
+    "set": "near_miss",
+    "answer": "It's 631340277603.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "exact-001-hedged",
+    "caseId": "exact-001",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "exact-002-verbatim",
+    "caseId": "exact-002",
+    "set": "correct_verbatim",
+    "answer": "It was $257.64.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-002-paraphrased",
+    "caseId": "exact-002",
+    "set": "correct_paraphrased",
+    "answer": "That came to two hundred fifty-seven dollars and sixty-four cents.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-002-nearmiss",
+    "caseId": "exact-002",
+    "set": "near_miss",
+    "answer": "It was $257.46.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "exact-002-hedged",
+    "caseId": "exact-002",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "exact-003-verbatim",
+    "caseId": "exact-003",
+    "set": "correct_verbatim",
+    "answer": "It's TKT-486349.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-003-paraphrased",
+    "caseId": "exact-003",
+    "set": "correct_paraphrased",
+    "answer": "Your refund is ticket 486349.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-003-nearmiss",
+    "caseId": "exact-003",
+    "set": "near_miss",
+    "answer": "It's TKT-486394.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "exact-003-hedged",
+    "caseId": "exact-003",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "exact-004-verbatim",
+    "caseId": "exact-004",
+    "set": "correct_verbatim",
+    "answer": "It's 9602 Willow Ct.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-004-paraphrased",
+    "caseId": "exact-004",
+    "set": "correct_paraphrased",
+    "answer": "It's going to number 9602 on Willow Ct.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-004-nearmiss",
+    "caseId": "exact-004",
+    "set": "near_miss",
+    "answer": "It's 9620 Willow Ct.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "exact-004-hedged",
+    "caseId": "exact-004",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "exact-005-verbatim",
+    "caseId": "exact-005",
+    "set": "correct_verbatim",
+    "answer": "It's ORD-9335.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-005-paraphrased",
+    "caseId": "exact-005",
+    "set": "correct_paraphrased",
+    "answer": "It was order number 9335.",
+    "label": "correct"
+  },
+  {
+    "id": "exact-005-nearmiss",
+    "caseId": "exact-005",
+    "set": "near_miss",
+    "answer": "It's ORD-9353.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "exact-005-hedged",
+    "caseId": "exact-005",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "temporal-004-verbatim",
+    "caseId": "temporal-004",
+    "set": "correct_verbatim",
+    "answer": "It was delivered on 2026-08-29.",
+    "label": "correct"
+  },
+  {
+    "id": "temporal-004-paraphrased",
+    "caseId": "temporal-004",
+    "set": "correct_paraphrased",
+    "answer": "It was delivered on the twenty-ninth of August.",
+    "label": "correct"
+  },
+  {
+    "id": "temporal-004-nearmiss",
+    "caseId": "temporal-004",
+    "set": "near_miss",
+    "answer": "It was delivered on 2026-08-30.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "temporal-004-hedged",
+    "caseId": "temporal-004",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "multi-001-verbatim",
+    "caseId": "multi-001",
+    "set": "correct_verbatim",
+    "answer": "It was $64.98.",
+    "label": "correct"
+  },
+  {
+    "id": "multi-001-paraphrased",
+    "caseId": "multi-001",
+    "set": "correct_paraphrased",
+    "answer": "That came to sixty-four dollars and ninety-eight cents.",
+    "label": "correct"
+  },
+  {
+    "id": "multi-001-nearmiss",
+    "caseId": "multi-001",
+    "set": "near_miss",
+    "answer": "It was $64.89.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "multi-001-hedged",
+    "caseId": "multi-001",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "update-001-verbatim",
+    "caseId": "update-001",
+    "set": "correct_verbatim",
+    "answer": "It's 4773 Willow Ct.",
+    "label": "correct"
+  },
+  {
+    "id": "update-001-paraphrased",
+    "caseId": "update-001",
+    "set": "correct_paraphrased",
+    "answer": "It's going to number 4773 on Willow Ct.",
+    "label": "correct"
+  },
+  {
+    "id": "update-001-nearmiss",
+    "caseId": "update-001",
+    "set": "near_miss",
+    "answer": "It's 4737 Willow Ct.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "update-001-hedged",
+    "caseId": "update-001",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "distractor-001-verbatim",
+    "caseId": "distractor-001",
+    "set": "correct_verbatim",
+    "answer": "It's 075250669204.",
+    "label": "correct"
+  },
+  {
+    "id": "distractor-001-paraphrased",
+    "caseId": "distractor-001",
+    "set": "correct_paraphrased",
+    "answer": "It's the one ending in 9204.",
+    "label": "correct"
+  },
+  {
+    "id": "distractor-001-nearmiss",
+    "caseId": "distractor-001",
+    "set": "near_miss",
+    "answer": "It's 075250669240.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "distractor-001-hedged",
+    "caseId": "distractor-001",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  },
+  {
+    "id": "distractor-005-verbatim",
+    "caseId": "distractor-005",
+    "set": "correct_verbatim",
+    "answer": "It's jon.smyth58@fastmail.com.",
+    "label": "correct"
+  },
+  {
+    "id": "distractor-005-paraphrased",
+    "caseId": "distractor-005",
+    "set": "correct_paraphrased",
+    "answer": "We have jon dot smyth58 at fastmail dot com on file.",
+    "label": "correct"
+  },
+  {
+    "id": "distractor-005-nearmiss",
+    "caseId": "distractor-005",
+    "set": "near_miss",
+    "answer": "It's jon.smyth85@fastmail.com.",
+    "label": "silent_failure"
+  },
+  {
+    "id": "distractor-005-hedged",
+    "caseId": "distractor-005",
+    "set": "hedged",
+    "answer": "I'm not sure, possibly the one from the earlier lookup, but I can't confirm it.",
+    "label": "abstained"
+  }
+]

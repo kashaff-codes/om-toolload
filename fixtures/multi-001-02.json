@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8952",
+  "customer_id": "CUS-23517",
+  "status": "returned",
+  "placed_at": "2026-08-18T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CH-65W",
+      "name": "65W charger",
+      "qty": 1,
+      "unit_price": 39.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39.99,
+    "tax": 3.3,
+    "shipping": 5.99,
+    "total": 49.28
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "8617",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "704 Willow Ct",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43282"
+  },
+  "flags": {
+    "fraud_score": 0.062,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_1d4a46d420b6eca8f034",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 420,
+      "shard": 54
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 956,
+      "reset_s": 11
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-14T02:56:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_fdfdf376e1126a25",
+      "latency_ms": 485
+    },
+    {
+      "at": "2026-08-18T08:13:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_700b7d8a7d56a542",
+      "latency_ms": 700
+    },
+    {
+      "at": "2026-08-14T11:39:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_f018167650f2a4bd",
+      "latency_ms": 417
+    },
+    {
+      "at": "2026-08-17T13:28:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_71ee4c21b2b2b2b1",
+      "latency_ms": 603
+    },
+    {
+      "at": "2026-08-15T21:59:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_e9d293457f0cc809",
+      "latency_ms": 663
+    },
+    {
+      "at": "2026-08-16T10:03:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_046e93df12136796",
+      "latency_ms": 823
+    }
+  ]
+}

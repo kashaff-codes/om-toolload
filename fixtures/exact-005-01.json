@@ -1,0 +1,462 @@
+{
+  "order_id": "ORD-9335",
+  "customer_id": "CUS-42404",
+  "status": "delivered",
+  "placed_at": "2026-06-27T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SW-44A",
+      "name": "smartwatch",
+      "qty": 1,
+      "unit_price": 249,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 249,
+    "tax": 20.54,
+    "shipping": 0,
+    "total": 269.54
+  },
+  "payment": {
+    "method": "card",
+    "last4": "9073",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7465 Sparrow Pl",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53763"
+  },
+  "flags": {
+    "fraud_score": 0.096,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4c395098bb1e15675cc9",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 157,
+      "shard": 27
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 983,
+      "reset_s": 2
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-06-25T06:01:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_7705e2885c72a0d3",
+      "latency_ms": 339
+    },
+    {
+      "at": "2026-06-26T16:56:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_99df2f4d1e5f52cd",
+      "latency_ms": 832
+    },
+    {
+      "at": "2026-06-22T17:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_c025fa65c504cfd0",
+      "latency_ms": 574
+    },
+    {
+      "at": "2026-06-23T08:11:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_580b7c05c2ead74a",
+      "latency_ms": 864
+    },
+    {
+      "at": "2026-06-26T11:35:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_5fb52e5ec306ee44",
+      "latency_ms": 209
+    },
+    {
+      "at": "2026-06-24T19:36:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_995fc1c83429fde7",
+      "latency_ms": 36
+    },
+    {
+      "at": "2026-06-25T03:56:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_d25c6ba4dbba5ae0",
+      "latency_ms": 798
+    },
+    {
+      "at": "2026-06-25T06:35:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_a285b0b5aa417412",
+      "latency_ms": 638
+    },
+    {
+      "at": "2026-06-23T21:38:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_dd2837efcd73826f",
+      "latency_ms": 61
+    },
+    {
+      "at": "2026-06-25T20:44:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_9705f17fd0d7e8be",
+      "latency_ms": 591
+    },
+    {
+      "at": "2026-06-24T03:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_2de1a13ff0be29f5",
+      "latency_ms": 474
+    },
+    {
+      "at": "2026-06-25T10:03:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_10d1af89af1b664b",
+      "latency_ms": 58
+    },
+    {
+      "at": "2026-06-27T13:01:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_bbe0dee8b2acb0bf",
+      "latency_ms": 389
+    },
+    {
+      "at": "2026-06-21T15:30:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_9ce67b2370d37312",
+      "latency_ms": 255
+    },
+    {
+      "at": "2026-06-24T11:39:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_41e67893a57812ab",
+      "latency_ms": 505
+    },
+    {
+      "at": "2026-06-23T07:44:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_fc3d31683a1858e7",
+      "latency_ms": 255
+    },
+    {
+      "at": "2026-06-27T00:29:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_32980c0ffbac00d2",
+      "latency_ms": 251
+    },
+    {
+      "at": "2026-06-21T18:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_8fd6b1f0681d8113",
+      "latency_ms": 192
+    },
+    {
+      "at": "2026-06-23T01:17:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_9ab957c03968373d",
+      "latency_ms": 173
+    },
+    {
+      "at": "2026-06-22T22:59:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_16097782e980367c",
+      "latency_ms": 236
+    },
+    {
+      "at": "2026-06-27T12:32:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_af621175ac2bd111",
+      "latency_ms": 508
+    },
+    {
+      "at": "2026-06-24T18:43:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_609a87eac7f9aa0e",
+      "latency_ms": 739
+    }
+  ],
+  "inventory_snapshot": [
+    {
+      "sku": "KB-87T",
+      "warehouse": "SEA-1",
+      "on_hand": 3649,
+      "reserved": 137,
+      "bin": "C38-2"
+    },
+    {
+      "sku": "EB-ANC",
+      "warehouse": "RNO-2",
+      "on_hand": 2657,
+      "reserved": 6,
+      "bin": "D7-4"
+    },
+    {
+      "sku": "MN-27Q",
+      "warehouse": "ATL-3",
+      "on_hand": 595,
+      "reserved": 25,
+      "bin": "D39-4"
+    },
+    {
+      "sku": "SD-1TB",
+      "warehouse": "RNO-2",
+      "on_hand": 2843,
+      "reserved": 142,
+      "bin": "C23-7"
+    },
+    {
+      "sku": "TP-ALU",
+      "warehouse": "ATL-3",
+      "on_hand": 3375,
+      "reserved": 136,
+      "bin": "C39-7"
+    },
+    {
+      "sku": "SW-44A",
+      "warehouse": "DFW-4",
+      "on_hand": 591,
+      "reserved": 281,
+      "bin": "C29-2"
+    },
+    {
+      "sku": "MS-ERG",
+      "warehouse": "EWR-1",
+      "on_hand": 997,
+      "reserved": 115,
+      "bin": "B19-1"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "ATL-3",
+      "on_hand": 3728,
+      "reserved": 150,
+      "bin": "C12-6"
+    },
+    {
+      "sku": "SD-1TB",
+      "warehouse": "EWR-1",
+      "on_hand": 2044,
+      "reserved": 259,
+      "bin": "B33-9"
+    },
+    {
+      "sku": "SD-1TB",
+      "warehouse": "DFW-4",
+      "on_hand": 3056,
+      "reserved": 199,
+      "bin": "C8-1"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "EWR-1",
+      "on_hand": 673,
+      "reserved": 256,
+      "bin": "D3-5"
+    },
+    {
+      "sku": "HD-220",
+      "warehouse": "RNO-2",
+      "on_hand": 693,
+      "reserved": 173,
+      "bin": "B31-2"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "ORD-7",
+      "on_hand": 99,
+      "reserved": 102,
+      "bin": "C31-4"
+    },
+    {
+      "sku": "LP-LED",
+      "warehouse": "ATL-3",
+      "on_hand": 2923,
+      "reserved": 290,
+      "bin": "C4-7"
+    },
+    {
+      "sku": "TP-ALU",
+      "warehouse": "EWR-1",
+      "on_hand": 1686,
+      "reserved": 298,
+      "bin": "C7-9"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "ATL-3",
+      "on_hand": 1107,
+      "reserved": 1,
+      "bin": "C2-7"
+    },
+    {
+      "sku": "RT-AX6",
+      "warehouse": "SEA-1",
+      "on_hand": 1065,
+      "reserved": 124,
+      "bin": "A11-4"
+    },
+    {
+      "sku": "BP-30L",
+      "warehouse": "ORD-7",
+      "on_hand": 3280,
+      "reserved": 99,
+      "bin": "C1-1"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "RNO-2",
+      "on_hand": 423,
+      "reserved": 202,
+      "bin": "C10-9"
+    },
+    {
+      "sku": "BP-30L",
+      "warehouse": "SEA-1",
+      "on_hand": 2547,
+      "reserved": 160,
+      "bin": "A14-4"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "EWR-1",
+      "on_hand": 581,
+      "reserved": 244,
+      "bin": "B40-1"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "DFW-4",
+      "on_hand": 619,
+      "reserved": 258,
+      "bin": "D27-2"
+    },
+    {
+      "sku": "SP-BT5",
+      "warehouse": "DFW-4",
+      "on_hand": 3765,
+      "reserved": 258,
+      "bin": "B39-3"
+    },
+    {
+      "sku": "MS-ERG",
+      "warehouse": "SEA-1",
+      "on_hand": 2479,
+      "reserved": 99,
+      "bin": "C14-7"
+    },
+    {
+      "sku": "LP-LED",
+      "warehouse": "EWR-1",
+      "on_hand": 210,
+      "reserved": 164,
+      "bin": "C1-9"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "ORD-7",
+      "on_hand": 3478,
+      "reserved": 290,
+      "bin": "B10-5"
+    },
+    {
+      "sku": "PB-20K",
+      "warehouse": "RNO-2",
+      "on_hand": 1130,
+      "reserved": 143,
+      "bin": "C19-4"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "DFW-4",
+      "on_hand": 1662,
+      "reserved": 258,
+      "bin": "D33-9"
+    },
+    {
+      "sku": "PC-11P",
+      "warehouse": "ORD-7",
+      "on_hand": 3843,
+      "reserved": 152,
+      "bin": "B39-6"
+    },
+    {
+      "sku": "CH-65W",
+      "warehouse": "ORD-7",
+      "on_hand": 3289,
+      "reserved": 100,
+      "bin": "D11-8"
+    },
+    {
+      "sku": "CH-65W",
+      "warehouse": "ORD-7",
+      "on_hand": 2442,
+      "reserved": 37,
+      "bin": "D26-7"
+    },
+    {
+      "sku": "SW-44A",
+      "warehouse": "RNO-2",
+      "on_hand": 2817,
+      "reserved": 247,
+      "bin": "D33-7"
+    },
+    {
+      "sku": "KB-87T",
+      "warehouse": "ORD-7",
+      "on_hand": 1243,
+      "reserved": 178,
+      "bin": "C2-9"
+    },
+    {
+      "sku": "CH-65W",
+      "warehouse": "ATL-3",
+      "on_hand": 3777,
+      "reserved": 80,
+      "bin": "D16-9"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "RNO-2",
+      "on_hand": 3507,
+      "reserved": 22,
+      "bin": "B28-3"
+    },
+    {
+      "sku": "WC-1080",
+      "warehouse": "DFW-4",
+      "on_hand": 3448,
+      "reserved": 118,
+      "bin": "B24-8"
+    }
+  ]
+}

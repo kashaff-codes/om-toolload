@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7542",
+  "customer_id": "CUS-88264",
+  "status": "delivered",
+  "placed_at": "2026-08-17T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "WB-1L",
+      "name": "insulated water bottle",
+      "qty": 1,
+      "unit_price": 27.5,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 27.5,
+    "tax": 2.27,
+    "shipping": 5.99,
+    "total": 35.76
+  },
+  "payment": {
+    "method": "card",
+    "last4": "8071",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7197 Cedar Ridge Rd",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53763"
+  },
+  "flags": {
+    "fraud_score": 0.136,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7a5dfd5e0310dc86d296",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 371,
+      "shard": 37
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 114,
+      "reset_s": 26
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-12T00:33:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_266103e44684afc3",
+      "latency_ms": 160
+    },
+    {
+      "at": "2026-08-12T04:53:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_931bfc12c3c9fac0",
+      "latency_ms": 86
+    },
+    {
+      "at": "2026-08-14T21:26:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_0d762049c4a64366",
+      "latency_ms": 815
+    },
+    {
+      "at": "2026-08-15T02:18:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_3509bd32b4ab1fb3",
+      "latency_ms": 416
+    },
+    {
+      "at": "2026-08-16T19:48:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_f922b3f523317704",
+      "latency_ms": 526
+    },
+    {
+      "at": "2026-08-16T01:49:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_c84c9d77cf8e898e",
+      "latency_ms": 714
+    }
+  ]
+}

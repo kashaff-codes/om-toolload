@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-4508",
+  "carrier": "USPS",
+  "tracking_number": "9400748508406740902999",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-20T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9596 Granite Blvd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97274"
+  },
+  "package": {
+    "weight_kg": 1.05,
+    "dims_cm": [
+      15,
+      16,
+      8
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-14T20:41:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-17T04:06:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-15T14:29:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-15T19:08:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-16T15:05:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-16T02:01:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_75f7792695aa82739167",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 219,
+      "shard": 62
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 870,
+      "reset_s": 53
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T11:52:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_288de9622e7e9618",
+      "latency_ms": 275
+    },
+    {
+      "at": "2026-09-12T23:19:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_54e5431c0a6e19fe",
+      "latency_ms": 196
+    },
+    {
+      "at": "2026-09-13T14:51:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_14d2e6654679460a",
+      "latency_ms": 40
+    }
+  ]
+}

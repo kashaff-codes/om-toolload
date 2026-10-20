@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9764",
+  "customer_id": "CUS-93358",
+  "status": "processing",
+  "placed_at": "2026-08-31T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HD-220",
+      "name": "wireless headphones",
+      "qty": 1,
+      "unit_price": 149.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 149.99,
+    "tax": 12.37,
+    "shipping": 0,
+    "total": 162.36
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0670",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1902 Juniper Ln",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27660"
+  },
+  "flags": {
+    "fraud_score": 0.01,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4691f0faa8278e62f1b7",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 367,
+      "shard": 61
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 729,
+      "reset_s": 14
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T03:56:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_200b5c4201c835c7",
+      "latency_ms": 846
+    },
+    {
+      "at": "2026-08-29T14:04:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_a1f3d07ffd16eea6",
+      "latency_ms": 501
+    },
+    {
+      "at": "2026-08-27T18:25:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_cf777d7d2219f96b",
+      "latency_ms": 440
+    },
+    {
+      "at": "2026-08-26T03:57:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_74b1cd571b238f8c",
+      "latency_ms": 282
+    },
+    {
+      "at": "2026-08-29T02:30:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_92aa7b6dbd756258",
+      "latency_ms": 143
+    },
+    {
+      "at": "2026-08-29T01:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_72b7a82e59a7f576",
+      "latency_ms": 52
+    }
+  ]
+}

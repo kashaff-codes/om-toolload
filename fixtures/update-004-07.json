@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6716",
+  "customer_id": "CUS-16776",
+  "status": "shipped",
+  "placed_at": "2026-09-09T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-GL2",
+      "name": "tempered glass screen protector",
+      "qty": 1,
+      "unit_price": 12.99,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 12.99,
+    "tax": 1.07,
+    "shipping": 5.99,
+    "total": 20.05
+  },
+  "payment": {
+    "method": "card",
+    "last4": "5354",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "525 Beacon St",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53733"
+  },
+  "flags": {
+    "fraud_score": 0.187,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_9a26095acafc2f82b995",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 198,
+      "shard": 36
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 574,
+      "reset_s": 5
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T04:53:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_bafdfee998e95ffc",
+      "latency_ms": 824
+    },
+    {
+      "at": "2026-09-05T17:58:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_2ea25e8dabb001a2",
+      "latency_ms": 741
+    },
+    {
+      "at": "2026-09-04T12:03:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_6b8c8f8fc2ea802e",
+      "latency_ms": 96
+    },
+    {
+      "at": "2026-09-08T04:51:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_d4f2c864b28ec124",
+      "latency_ms": 127
+    },
+    {
+      "at": "2026-09-08T20:57:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_5f79c6f1053baa93",
+      "latency_ms": 536
+    },
+    {
+      "at": "2026-09-06T23:45:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_f30098179990db87",
+      "latency_ms": 211
+    }
+  ]
+}

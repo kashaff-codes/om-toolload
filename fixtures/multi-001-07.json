@@ -1,0 +1,82 @@
+{
+  "query": "speaker refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-927938",
+      "order_id": "ORD-6095",
+      "type": "refund",
+      "status": "denied",
+      "refund_amount": 59.95,
+      "created_at": "2026-09-12T15:00:00.000Z",
+      "summary": "Return received outside the 30-day window; refund request denied.",
+      "assignee": "billing-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_24718d1417b2981041a7",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 366,
+      "shard": 55
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 215,
+      "reset_s": 20
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T11:13:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_a70b1031dd69ace8",
+      "latency_ms": 851
+    },
+    {
+      "at": "2026-09-09T05:09:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_e4dfa5129d4dbcf2",
+      "latency_ms": 191
+    },
+    {
+      "at": "2026-09-12T10:44:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_ae2e20bbedfa4f09",
+      "latency_ms": 250
+    },
+    {
+      "at": "2026-09-09T22:29:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_2f091a01ed43235a",
+      "latency_ms": 832
+    },
+    {
+      "at": "2026-09-11T21:14:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_06e18475492a29a3",
+      "latency_ms": 522
+    },
+    {
+      "at": "2026-09-08T21:03:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_1b699900d398a162",
+      "latency_ms": 897
+    },
+    {
+      "at": "2026-09-10T23:27:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_892fd94df1f9fa7a",
+      "latency_ms": 365
+    }
+  ]
+}

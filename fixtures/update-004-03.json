@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9504",
+  "customer_id": "CUS-16776",
+  "status": "shipped",
+  "placed_at": "2026-09-03T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "DM-90",
+      "name": "felt desk mat",
+      "qty": 1,
+      "unit_price": 29,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 29,
+    "tax": 2.39,
+    "shipping": 5.99,
+    "total": 37.38
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0794",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "525 Beacon St",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53733"
+  },
+  "flags": {
+    "fraud_score": 0.069,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_5a956130e599619a175a",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 71,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 551,
+      "reset_s": 31
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T01:01:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_fdb4d3f1cb780dbf",
+      "latency_ms": 678
+    },
+    {
+      "at": "2026-09-01T12:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_1b1d069217ec0776",
+      "latency_ms": 727
+    },
+    {
+      "at": "2026-08-31T00:30:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_da89f90d200703a9",
+      "latency_ms": 525
+    },
+    {
+      "at": "2026-08-29T02:00:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_5febc7291259e0ff",
+      "latency_ms": 513
+    },
+    {
+      "at": "2026-08-30T09:53:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_c0bb15ddb181c645",
+      "latency_ms": 603
+    },
+    {
+      "at": "2026-09-03T06:01:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_e8527fc44a2674ea",
+      "latency_ms": 100
+    }
+  ]
+}

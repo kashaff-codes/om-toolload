@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-9035",
+  "carrier": "DHL",
+  "tracking_number": "JD014664748425",
+  "service_level": "express",
+  "status": "label_created",
+  "estimated_delivery": "2026-09-11T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9319 Granite Blvd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43220"
+  },
+  "package": {
+    "weight_kg": 0.79,
+    "dims_cm": [
+      60,
+      20,
+      26
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-01T00:30:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-04T16:17:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-03T22:27:00.000Z",
+      "facility": "RNO-2-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_1fcc029197dd00e4484a",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 437,
+      "shard": 22
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 545,
+      "reset_s": 38
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-31T10:35:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_d703eefbd1094414",
+      "latency_ms": 661
+    },
+    {
+      "at": "2026-09-03T07:51:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_c72a8db40546ac0f",
+      "latency_ms": 261
+    },
+    {
+      "at": "2026-09-05T10:28:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_99febbf87d5358c4",
+      "latency_ms": 403
+    },
+    {
+      "at": "2026-09-02T22:16:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_dea6af21f6d21844",
+      "latency_ms": 501
+    },
+    {
+      "at": "2026-09-02T04:20:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_ac935ed7cf2e83ca",
+      "latency_ms": 271
+    }
+  ]
+}

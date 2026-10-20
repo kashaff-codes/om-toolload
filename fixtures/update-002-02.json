@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-1607",
+  "carrier": "FedEx",
+  "tracking_number": "422216237437",
+  "service_level": "express",
+  "status": "label_created",
+  "estimated_delivery": "2026-09-08T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "1990 Harbor St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97232"
+  },
+  "package": {
+    "weight_kg": 0.54,
+    "dims_cm": [
+      51,
+      28,
+      3
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-08-28T16:08:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-01T11:30:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-31T06:36:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-08-30T13:49:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-02T13:31:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6509b01ab2ae930c3167",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 78,
+      "shard": 2
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 589,
+      "reset_s": 41
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T22:40:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_dcb5b7ad25c0af24",
+      "latency_ms": 97
+    },
+    {
+      "at": "2026-09-01T00:05:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_399e61229355dd26",
+      "latency_ms": 801
+    },
+    {
+      "at": "2026-09-01T06:28:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_6a2387bf9c2766c8",
+      "latency_ms": 228
+    }
+  ]
+}

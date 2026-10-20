@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2394",
+  "customer_id": "CUS-14723",
+  "status": "delivered",
+  "placed_at": "2026-09-10T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SD-1TB",
+      "name": "1TB portable SSD",
+      "qty": 1,
+      "unit_price": 109.99,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 109.99,
+    "tax": 9.07,
+    "shipping": 0,
+    "total": 119.06
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "3081",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "332 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85749"
+  },
+  "flags": {
+    "fraud_score": 0.109,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6f1443f78a7128336199",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 322,
+      "shard": 7
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 911,
+      "reset_s": 53
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T17:16:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_d6eab904a4597d21",
+      "latency_ms": 228
+    },
+    {
+      "at": "2026-09-06T16:39:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_286049ecae999d36",
+      "latency_ms": 374
+    },
+    {
+      "at": "2026-09-06T04:52:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_f0946689bc6ca696",
+      "latency_ms": 551
+    },
+    {
+      "at": "2026-09-08T04:33:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_fe997f9b9f48c1d6",
+      "latency_ms": 702
+    },
+    {
+      "at": "2026-09-07T04:55:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_fa38e76e6e884081",
+      "latency_ms": 594
+    },
+    {
+      "at": "2026-09-06T06:46:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_d7d6559d22a3bce1",
+      "latency_ms": 77
+    }
+  ]
+}

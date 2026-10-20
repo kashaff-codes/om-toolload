@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-5861",
+  "carrier": "DHL",
+  "tracking_number": "JD014647765492",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-10T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "package": {
+    "weight_kg": 2.01,
+    "dims_cm": [
+      26,
+      11,
+      16
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-04T18:22:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-05T02:17:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-04T05:34:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-08T09:08:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-04T07:33:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-03T19:03:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_94a268aee6830ec04b97",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 370,
+      "shard": 35
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 620,
+      "reset_s": 28
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T10:28:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_969a3406882f5f12",
+      "latency_ms": 333
+    },
+    {
+      "at": "2026-09-04T02:52:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_7f389a6f18e37a05",
+      "latency_ms": 174
+    },
+    {
+      "at": "2026-09-08T13:19:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_e2b2567350d6e637",
+      "latency_ms": 129
+    }
+  ]
+}

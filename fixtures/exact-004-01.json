@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-98521",
+  "name": "Priya Nair",
+  "email": "priya.nair8@proton.me",
+  "phone": "+1-555-265-6344",
+  "default_address": {
+    "line1": "7775 Orchard Way",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27630"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_f56684ee1a88a38c3ddc",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 240,
+      "shard": 26
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 414,
+      "reset_s": 8
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T21:10:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_df5584c5fc16361a",
+      "latency_ms": 494
+    },
+    {
+      "at": "2026-08-30T09:50:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_b3d57710b464269e",
+      "latency_ms": 83
+    },
+    {
+      "at": "2026-09-01T16:02:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_71aa8fe0d100e7e6",
+      "latency_ms": 645
+    },
+    {
+      "at": "2026-09-04T06:10:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_5341557bec07b790",
+      "latency_ms": 512
+    },
+    {
+      "at": "2026-08-31T13:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_becc94e55a85062f",
+      "latency_ms": 355
+    },
+    {
+      "at": "2026-09-01T17:50:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_13c65777598087e4",
+      "latency_ms": 847
+    },
+    {
+      "at": "2026-08-30T09:42:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_694d9c2e91a3484d",
+      "latency_ms": 407
+    }
+  ]
+}

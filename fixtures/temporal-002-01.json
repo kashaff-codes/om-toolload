@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5377",
+  "customer_id": "CUS-89877",
+  "status": "delivered",
+  "placed_at": "2026-08-29T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "MS-ERG",
+      "name": "ergonomic mouse",
+      "qty": 1,
+      "unit_price": 49.99,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 49.99,
+    "tax": 4.12,
+    "shipping": 5.99,
+    "total": 60.1
+  },
+  "payment": {
+    "method": "card",
+    "last4": "3896",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "flags": {
+    "fraud_score": 0.089,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c8ee91b305e92bed6338",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 129,
+      "shard": 14
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 997,
+      "reset_s": 14
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-27T02:00:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_ee7734664f67f474",
+      "latency_ms": 449
+    },
+    {
+      "at": "2026-08-27T15:39:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_fc911942a039cadc",
+      "latency_ms": 91
+    },
+    {
+      "at": "2026-08-23T17:55:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_eb9c4f364f45e62c",
+      "latency_ms": 466
+    },
+    {
+      "at": "2026-08-25T03:45:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_5d279d01cf7e255f",
+      "latency_ms": 900
+    },
+    {
+      "at": "2026-08-24T18:28:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_c11781ffd78d1e09",
+      "latency_ms": 383
+    },
+    {
+      "at": "2026-08-24T03:39:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_ccd7c66f857cfcdd",
+      "latency_ms": 10
+    }
+  ]
+}

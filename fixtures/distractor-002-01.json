@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4507",
+  "customer_id": "CUS-97170",
+  "status": "shipped",
+  "placed_at": "2026-09-02T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SW-44A",
+      "name": "smartwatch",
+      "qty": 1,
+      "unit_price": 249,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 249,
+    "tax": 20.54,
+    "shipping": 0,
+    "total": 269.54
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "1645",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "flags": {
+    "fraud_score": 0.017,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_d2ce49556155fded2a63",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 554,
+      "shard": 27
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 320,
+      "reset_s": 56
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T02:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_e39d256e4df2ce55",
+      "latency_ms": 102
+    },
+    {
+      "at": "2026-08-29T17:29:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_8bbd61226156410f",
+      "latency_ms": 208
+    },
+    {
+      "at": "2026-08-30T21:23:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_095cdc726e21023a",
+      "latency_ms": 751
+    },
+    {
+      "at": "2026-09-02T05:38:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_3db2645290a83511",
+      "latency_ms": 873
+    },
+    {
+      "at": "2026-08-28T09:42:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_43494020409b627e",
+      "latency_ms": 822
+    },
+    {
+      "at": "2026-08-29T21:26:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_9331bd5d614260c2",
+      "latency_ms": 4
+    }
+  ]
+}

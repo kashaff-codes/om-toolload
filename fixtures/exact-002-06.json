@@ -1,0 +1,82 @@
+{
+  "query": "open tickets",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-301881",
+      "order_id": "-",
+      "type": "address_book",
+      "status": "open",
+      "refund_amount": null,
+      "created_at": "2026-09-03T15:00:00.000Z",
+      "summary": "Customer reported a minor account issue.",
+      "assignee": "tier1-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_f06630577094d83c11dc",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 152,
+      "shard": 32
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 781,
+      "reset_s": 14
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T19:45:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_3bad46946c4fa148",
+      "latency_ms": 329
+    },
+    {
+      "at": "2026-09-08T08:30:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_cfabaf64335727dc",
+      "latency_ms": 183
+    },
+    {
+      "at": "2026-09-06T20:25:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_c44efbd63d92a535",
+      "latency_ms": 265
+    },
+    {
+      "at": "2026-09-07T04:34:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_f52164ac8893186a",
+      "latency_ms": 714
+    },
+    {
+      "at": "2026-09-05T08:07:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_b4a87555f0622093",
+      "latency_ms": 446
+    },
+    {
+      "at": "2026-09-06T19:36:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_c190abf0687dbf71",
+      "latency_ms": 536
+    },
+    {
+      "at": "2026-09-08T06:35:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_0ce0f4dd3b776379",
+      "latency_ms": 707
+    }
+  ]
+}

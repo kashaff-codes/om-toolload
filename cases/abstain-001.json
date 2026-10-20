@@ -1,0 +1,162 @@
+{
+  "id": "abstain-001",
+  "category": "abstention",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-01T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you look at my backpack order?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6193"
+          },
+          "fixture": "abstain-001-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-6193"
+          },
+          "fixture": "abstain-001-02"
+        },
+        {
+          "role": "assistant",
+          "text": "It was delivered last week. Let me know if anything is wrong with it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-03T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-39207"
+          },
+          "fixture": "abstain-001-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "abstain-001-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my cable organizer order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8438"
+          },
+          "fixture": "abstain-001-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-8438"
+          },
+          "fixture": "abstain-001-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Tuesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4518"
+          },
+          "fixture": "abstain-001-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "abstain-001-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-39207"
+          },
+          "fixture": "abstain-001-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "abstain-001-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "What discount code did I use on my backpack order?",
+  "expected": {
+    "type": "abstain"
+  },
+  "distractors": [],
+  "abstainIsCorrect": true
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-82168",
+  "name": "Maya Patel",
+  "email": "maya.patel30@proton.me",
+  "phone": "+1-555-575-4264",
+  "default_address": {
+    "line1": "1215 Foxglove Ter",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80260"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_427a64f4fb9cdff184da",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 34,
+      "shard": 14
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 479,
+      "reset_s": 57
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-15T01:30:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_5397a37090f0d459",
+      "latency_ms": 316
+    },
+    {
+      "at": "2026-09-13T22:08:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_bd99ec03dcfeff1a",
+      "latency_ms": 812
+    },
+    {
+      "at": "2026-09-19T11:39:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_ff4de9d4084186f1",
+      "latency_ms": 510
+    },
+    {
+      "at": "2026-09-14T07:01:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_e35d8e893a91c9f6",
+      "latency_ms": 351
+    },
+    {
+      "at": "2026-09-14T14:31:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_a37ae9ed892a069d",
+      "latency_ms": 19
+    },
+    {
+      "at": "2026-09-14T05:10:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_160a5c5d8b8f831f",
+      "latency_ms": 260
+    },
+    {
+      "at": "2026-09-14T07:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_9c187bce815df347",
+      "latency_ms": 337
+    }
+  ]
+}

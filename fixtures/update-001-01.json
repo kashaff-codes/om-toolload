@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9764",
+  "customer_id": "CUS-93358",
+  "status": "processing",
+  "placed_at": "2026-09-01T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HD-220",
+      "name": "wireless headphones",
+      "qty": 1,
+      "unit_price": 149.99,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 149.99,
+    "tax": 12.37,
+    "shipping": 0,
+    "total": 162.36
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "4476",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1902 Juniper Ln",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27660"
+  },
+  "flags": {
+    "fraud_score": 0.027,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_5b49db9a716f69fa9733",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 450,
+      "shard": 48
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 251,
+      "reset_s": 55
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T14:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_b4269934c5a24876",
+      "latency_ms": 496
+    },
+    {
+      "at": "2026-08-27T18:33:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_b6df818ab06ed3b0",
+      "latency_ms": 115
+    },
+    {
+      "at": "2026-08-27T20:02:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_e543335a384dba3d",
+      "latency_ms": 82
+    },
+    {
+      "at": "2026-08-27T14:44:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_fe6414ab91c8319a",
+      "latency_ms": 26
+    },
+    {
+      "at": "2026-08-27T21:17:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_49f7cfd53b65a917",
+      "latency_ms": 799
+    },
+    {
+      "at": "2026-08-30T13:28:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_8a46e12900653b78",
+      "latency_ms": 108
+    }
+  ]
+}

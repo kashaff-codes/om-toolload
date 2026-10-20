@@ -1,0 +1,89 @@
+{
+  "query": "refund ORD-6839",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-329566",
+      "order_id": "ORD-6839",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 329,
+      "created_at": "2026-09-04T15:00:00.000Z",
+      "summary": "Full refund for 27-inch monitor.",
+      "assignee": "billing-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_8ede3cb774a046e4b5cf",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 518,
+      "shard": 18
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 647,
+      "reset_s": 36
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T03:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_59e4cf5ffbbce0b0",
+      "latency_ms": 680
+    },
+    {
+      "at": "2026-09-02T00:18:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_0c7b375b8e6c71fa",
+      "latency_ms": 170
+    },
+    {
+      "at": "2026-09-04T17:22:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_f646612f932459f3",
+      "latency_ms": 17
+    },
+    {
+      "at": "2026-09-02T04:07:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_d7a69371cfe4d3cf",
+      "latency_ms": 36
+    },
+    {
+      "at": "2026-09-06T08:03:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_a70fbdbd68ee1d46",
+      "latency_ms": 336
+    },
+    {
+      "at": "2026-09-06T09:01:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_29844ed32ca863a1",
+      "latency_ms": 45
+    },
+    {
+      "at": "2026-09-03T13:54:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_4bcd1e9970722540",
+      "latency_ms": 387
+    },
+    {
+      "at": "2026-09-06T13:11:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_54f3fc00aed98477",
+      "latency_ms": 109
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "query": "power bank refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-813242",
+      "order_id": "ORD-3537",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 42.99,
+      "created_at": "2026-09-12T15:00:00.000Z",
+      "summary": "Refund for returned 20000mAh power bank.",
+      "assignee": "billing-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7ef648f9cc5b3eaed6c7",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 150,
+      "shard": 31
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 443,
+      "reset_s": 22
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T04:21:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_7cd1e835aca996d0",
+      "latency_ms": 183
+    },
+    {
+      "at": "2026-09-08T02:03:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_f70210f8c2744fe1",
+      "latency_ms": 69
+    },
+    {
+      "at": "2026-09-07T21:59:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_a1211aedf5bdf2b4",
+      "latency_ms": 439
+    },
+    {
+      "at": "2026-09-13T12:17:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_1106ca2403a97c60",
+      "latency_ms": 830
+    },
+    {
+      "at": "2026-09-13T06:07:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_d8e6c964d82e53d4",
+      "latency_ms": 166
+    },
+    {
+      "at": "2026-09-09T15:50:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_536a3e4055d686c7",
+      "latency_ms": 463
+    },
+    {
+      "at": "2026-09-13T01:00:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_29ccc67af197fffc",
+      "latency_ms": 422
+    },
+    {
+      "at": "2026-09-09T17:16:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_269c29268180cfde",
+      "latency_ms": 699
+    }
+  ]
+}

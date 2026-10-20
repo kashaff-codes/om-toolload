@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1256",
+  "customer_id": "CUS-15908",
+  "status": "shipped",
+  "placed_at": "2026-09-03T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HC-2M",
+      "name": "braided HDMI cable",
+      "qty": 1,
+      "unit_price": 14.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 14.99,
+    "tax": 1.24,
+    "shipping": 5.99,
+    "total": 22.22
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "3342",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "6727 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "flags": {
+    "fraud_score": 0.025,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_404e712f8ac818ffbc48",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 382,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 660,
+      "reset_s": 51
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T19:54:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_d73f9b9bcf3859e7",
+      "latency_ms": 630
+    },
+    {
+      "at": "2026-08-29T17:06:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_e26908cf5786c68f",
+      "latency_ms": 531
+    },
+    {
+      "at": "2026-08-31T15:43:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_68008b97fc90a3ad",
+      "latency_ms": 548
+    },
+    {
+      "at": "2026-08-30T14:45:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_fd17bec1e00983d2",
+      "latency_ms": 422
+    },
+    {
+      "at": "2026-08-30T21:14:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_6e4bafae1955456b",
+      "latency_ms": 467
+    },
+    {
+      "at": "2026-08-29T13:09:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_bfdc00f7c394c15f",
+      "latency_ms": 172
+    }
+  ]
+}

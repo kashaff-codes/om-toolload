@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-4943",
+  "carrier": "FedEx",
+  "tracking_number": "670445889147",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-14T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "2214 Lakeview Dr",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85725"
+  },
+  "package": {
+    "weight_kg": 1.33,
+    "dims_cm": [
+      15,
+      17,
+      15
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-08T23:40:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-09T03:07:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-10T09:55:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e3c9d183f86a498f1a3e",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 441,
+      "shard": 19
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 946,
+      "reset_s": 56
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T23:05:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_9ed245ea0469343a",
+      "latency_ms": 391
+    },
+    {
+      "at": "2026-09-08T01:14:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_52522f1aa13d0f91",
+      "latency_ms": 335
+    },
+    {
+      "at": "2026-09-11T03:03:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_b7600c1228e15b96",
+      "latency_ms": 733
+    },
+    {
+      "at": "2026-09-08T21:11:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_718cc5711af6c98d",
+      "latency_ms": 653
+    },
+    {
+      "at": "2026-09-06T23:45:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_d864acd40ed7c426",
+      "latency_ms": 590
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8281",
+  "customer_id": "CUS-31472",
+  "status": "shipped",
+  "placed_at": "2026-08-29T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HD-220",
+      "name": "wireless headphones",
+      "qty": 1,
+      "unit_price": 149.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 149.99,
+    "tax": 12.37,
+    "shipping": 0,
+    "total": 162.36
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "9899",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "2624 Maple Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97292"
+  },
+  "flags": {
+    "fraud_score": 0.045,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_df06545882123b981738",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 423,
+      "shard": 46
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 295,
+      "reset_s": 16
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T11:09:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_d1b2afdda2c2b80e",
+      "latency_ms": 409
+    },
+    {
+      "at": "2026-08-29T06:06:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_eddcee5794130c5b",
+      "latency_ms": 21
+    },
+    {
+      "at": "2026-08-28T14:13:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_a7b3f2c9558713b1",
+      "latency_ms": 22
+    },
+    {
+      "at": "2026-08-29T11:45:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_52e51ca929e2d384",
+      "latency_ms": 563
+    },
+    {
+      "at": "2026-08-24T18:21:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_5c3f95f3dbb5b8e5",
+      "latency_ms": 125
+    },
+    {
+      "at": "2026-08-26T21:49:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_96500b52f5986d7b",
+      "latency_ms": 545
+    }
+  ]
+}

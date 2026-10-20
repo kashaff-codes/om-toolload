@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2414",
+  "customer_id": "CUS-59165",
+  "status": "returned",
+  "placed_at": "2026-08-27T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LP-LED",
+      "name": "LED desk lamp",
+      "qty": 1,
+      "unit_price": 34.5,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 34.5,
+    "tax": 2.85,
+    "shipping": 5.99,
+    "total": 43.34
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7178",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7258 Maple Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78710"
+  },
+  "flags": {
+    "fraud_score": 0.166,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_01d3e1d9f5c79e1f494e",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 109,
+      "shard": 29
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 732,
+      "reset_s": 28
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-26T21:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_997cc206263bafaf",
+      "latency_ms": 336
+    },
+    {
+      "at": "2026-08-23T18:05:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_cb50a629beccecb3",
+      "latency_ms": 284
+    },
+    {
+      "at": "2026-08-22T11:21:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_2ec557df762a0b65",
+      "latency_ms": 678
+    },
+    {
+      "at": "2026-08-26T18:20:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_b811d6aad368756f",
+      "latency_ms": 79
+    },
+    {
+      "at": "2026-08-24T07:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_26510a387304c0ae",
+      "latency_ms": 110
+    },
+    {
+      "at": "2026-08-26T05:08:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_2d0df17686f071d1",
+      "latency_ms": 872
+    }
+  ]
+}

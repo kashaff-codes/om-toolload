@@ -1,0 +1,85 @@
+{
+  "query": "mouse replacement",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_9669d2fe1875a6600d27",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 55,
+      "shard": 24
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 460,
+      "reset_s": 32
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-04T19:04:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_3f290295b576e97c",
+      "latency_ms": 147
+    },
+    {
+      "at": "2026-09-07T02:01:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_da2132cf0ca9f6ae",
+      "latency_ms": 99
+    },
+    {
+      "at": "2026-09-07T08:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_f07657251d4e9f40",
+      "latency_ms": 627
+    },
+    {
+      "at": "2026-09-03T22:38:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_d01831284d0b5c5c",
+      "latency_ms": 409
+    },
+    {
+      "at": "2026-09-05T03:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_71fab4c097e63232",
+      "latency_ms": 76
+    },
+    {
+      "at": "2026-09-04T17:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_d24739dd9bed5bd4",
+      "latency_ms": 735
+    },
+    {
+      "at": "2026-09-07T16:19:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_731365da496206cc",
+      "latency_ms": 229
+    },
+    {
+      "at": "2026-09-05T14:48:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_97cb07c4d3241b74",
+      "latency_ms": 175
+    },
+    {
+      "at": "2026-09-04T10:25:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_ba0d7afb313ae926",
+      "latency_ms": 623
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-1141",
+  "carrier": "FedEx",
+  "tracking_number": "216622905265",
+  "service_level": "express",
+  "status": "delivered",
+  "estimated_delivery": "2026-08-31T15:00:00.000Z",
+  "delivered_at": "2026-08-31T15:00:00.000Z",
+  "destination": {
+    "line1": "1163 Copper Mill Rd",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27613"
+  },
+  "package": {
+    "weight_kg": 4,
+    "dims_cm": [
+      47,
+      29,
+      21
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-11T03:01:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-12T04:39:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-14T06:08:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_25e6d50bac146946ae11",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 221,
+      "shard": 7
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 266,
+      "reset_s": 41
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T11:15:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_962ff5be50ac689a",
+      "latency_ms": 654
+    },
+    {
+      "at": "2026-09-13T02:56:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_a70d4728ef1c1e7e",
+      "latency_ms": 477
+    },
+    {
+      "at": "2026-09-11T11:53:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_3b8b60f10f5acd16",
+      "latency_ms": 643
+    },
+    {
+      "at": "2026-09-13T09:16:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_e9a83faed8ebd014",
+      "latency_ms": 29
+    },
+    {
+      "at": "2026-09-09T06:32:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_135c5eb68bba8670",
+      "latency_ms": 749
+    }
+  ]
+}

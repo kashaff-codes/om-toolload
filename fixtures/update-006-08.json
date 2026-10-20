@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-47606",
+  "name": "Liam Chen",
+  "email": "liam.chen40@fastmail.com",
+  "phone": "+1-555-567-7217",
+  "default_address": {
+    "line1": "7256 Cedar Ridge Rd",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78768"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_61f4bf1c87a6f16cc5f9",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 304,
+      "shard": 26
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 164,
+      "reset_s": 49
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-18T19:26:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_7f61a42d57e517ec",
+      "latency_ms": 757
+    },
+    {
+      "at": "2026-09-18T19:53:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_98db429810008598",
+      "latency_ms": 235
+    },
+    {
+      "at": "2026-09-17T06:36:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_95455235bfc83156",
+      "latency_ms": 588
+    },
+    {
+      "at": "2026-09-16T14:34:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_64459f59c59585e6",
+      "latency_ms": 297
+    },
+    {
+      "at": "2026-09-15T09:37:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_f73132cc91de7f6e",
+      "latency_ms": 28
+    },
+    {
+      "at": "2026-09-20T05:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_76e497541f91a4fe",
+      "latency_ms": 391
+    },
+    {
+      "at": "2026-09-15T12:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_7b07b4b2827baaa5",
+      "latency_ms": 313
+    }
+  ]
+}

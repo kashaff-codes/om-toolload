@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-7232",
+  "carrier": "UPS",
+  "tracking_number": "1Z9BB5F11649012242",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-14T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "401 Harbor St",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "package": {
+    "weight_kg": 3.18,
+    "dims_cm": [
+      23,
+      21,
+      29
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-12T07:57:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-12T01:18:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-09T13:23:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-10T09:29:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-08T15:20:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-12T09:45:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_aefdda6dbc88fd18a5a8",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 473,
+      "shard": 11
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 592,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T13:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_0978dede69962b91",
+      "latency_ms": 807
+    },
+    {
+      "at": "2026-09-07T16:33:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_36cf13745d34a8f3",
+      "latency_ms": 109
+    },
+    {
+      "at": "2026-09-12T06:01:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_f5a0c4c955fc0213",
+      "latency_ms": 838
+    }
+  ]
+}

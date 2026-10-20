@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-7781",
+  "carrier": "DHL",
+  "tracking_number": "JD014601852457",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-07T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "1990 Harbor St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97232"
+  },
+  "package": {
+    "weight_kg": 2.45,
+    "dims_cm": [
+      30,
+      30,
+      14
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-01T15:36:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-01T01:08:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-03T23:40:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-01T22:26:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-02T03:37:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-02T12:11:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_5484926c31f338129c46",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 127,
+      "shard": 21
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 890,
+      "reset_s": 51
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-02T01:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_6f2d448f8980c9b4",
+      "latency_ms": 719
+    },
+    {
+      "at": "2026-09-03T21:31:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_65c807e028eb57c9",
+      "latency_ms": 391
+    },
+    {
+      "at": "2026-09-05T13:25:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_85d7cf30b46babc1",
+      "latency_ms": 778
+    }
+  ]
+}

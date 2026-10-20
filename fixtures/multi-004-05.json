@@ -1,0 +1,89 @@
+{
+  "query": "backpack refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-521937",
+      "order_id": "ORD-3792",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 89.5,
+      "created_at": "2026-09-09T15:00:00.000Z",
+      "summary": "Refund for returned travel backpack.",
+      "assignee": "tier1-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_a9c445ec0618d93d4ee5",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 344,
+      "shard": 7
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 566,
+      "reset_s": 37
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T14:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_c1149eefa0843df5",
+      "latency_ms": 305
+    },
+    {
+      "at": "2026-09-08T04:21:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_8a18d7d1efcb21ab",
+      "latency_ms": 38
+    },
+    {
+      "at": "2026-09-07T07:53:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_b70f9d69a3919be6",
+      "latency_ms": 438
+    },
+    {
+      "at": "2026-09-10T06:28:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_78a2936830c9fa58",
+      "latency_ms": 241
+    },
+    {
+      "at": "2026-09-07T05:18:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_d638f46e96645a79",
+      "latency_ms": 766
+    },
+    {
+      "at": "2026-09-09T15:55:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_53a74a54597414d7",
+      "latency_ms": 681
+    },
+    {
+      "at": "2026-09-05T02:57:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_d163fa4d86b4f168",
+      "latency_ms": 340
+    },
+    {
+      "at": "2026-09-06T20:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_50ea8a4373d472c1",
+      "latency_ms": 482
+    }
+  ]
+}

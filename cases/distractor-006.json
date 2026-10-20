@@ -1,0 +1,165 @@
+{
+  "id": "distractor-006",
+  "category": "distractor",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I help manage my relative's account. Can you pull up Katherine Lee, customer ID CUS-36328?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-36328"
+          },
+          "fixture": "distractor-006-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "CUS-36328 open tickets"
+          },
+          "fixture": "distractor-006-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Got it, Katherine Lee's profile is active and there are no open tickets."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3028"
+          },
+          "fixture": "distractor-006-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "distractor-006-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-19T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "And can you check my own profile too? I'm Catherine Leigh, CUS-30209."
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-30209"
+          },
+          "fixture": "distractor-006-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "CUS-30209 open tickets"
+          },
+          "fixture": "distractor-006-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile is active as well, nothing open."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-21T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my desk mat order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4701"
+          },
+          "fixture": "distractor-006-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4701"
+          },
+          "fixture": "distractor-006-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Monday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-26T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another cable organizer. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9334"
+          },
+          "fixture": "distractor-006-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "cable organizer order history"
+          },
+          "fixture": "distractor-006-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last cable organizer order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "What email address do you have on file for Katherine Lee?",
+  "expected": {
+    "type": "exact",
+    "value": "katherine.lee27@fastmail.com"
+  },
+  "distractors": [
+    "catherine.leigh45@outlook.com"
+  ],
+  "abstainIsCorrect": false
+}

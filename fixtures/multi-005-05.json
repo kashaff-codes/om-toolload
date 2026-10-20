@@ -1,0 +1,89 @@
+{
+  "query": "desk lamp refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-748384",
+      "order_id": "ORD-2414",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 34.5,
+      "created_at": "2026-09-10T15:00:00.000Z",
+      "summary": "Refund for returned LED desk lamp.",
+      "assignee": "billing-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_8f2f9a4a10a343f24bf1",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 116,
+      "shard": 11
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 630,
+      "reset_s": 49
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T14:08:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_1bd904febb22c608",
+      "latency_ms": 350
+    },
+    {
+      "at": "2026-09-06T22:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_045bd5d24beec62d",
+      "latency_ms": 549
+    },
+    {
+      "at": "2026-09-10T14:56:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_24037a3abf1c511f",
+      "latency_ms": 768
+    },
+    {
+      "at": "2026-09-05T16:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_d07833de0216e42b",
+      "latency_ms": 412
+    },
+    {
+      "at": "2026-09-09T22:33:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_935766ad4147dfc8",
+      "latency_ms": 801
+    },
+    {
+      "at": "2026-09-11T04:31:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_e79768665a9ab3d7",
+      "latency_ms": 533
+    },
+    {
+      "at": "2026-09-07T03:04:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_7351908d4dc16e40",
+      "latency_ms": 693
+    },
+    {
+      "at": "2026-09-11T01:39:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_2b5e1284c8eca795",
+      "latency_ms": 567
+    }
+  ]
+}

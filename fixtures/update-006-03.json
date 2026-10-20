@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-3241",
+  "customer_id": "CUS-47606",
+  "status": "delivered",
+  "placed_at": "2026-08-10T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CO-KIT",
+      "name": "cable organizer kit",
+      "qty": 1,
+      "unit_price": 18,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 18,
+    "tax": 1.49,
+    "shipping": 5.99,
+    "total": 25.48
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "9263",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7256 Cedar Ridge Rd",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78768"
+  },
+  "flags": {
+    "fraud_score": 0.071,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e06e13a1ab365ce80543",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 588,
+      "shard": 37
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 170,
+      "reset_s": 5
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-07T21:11:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_592b43487f8d44e4",
+      "latency_ms": 330
+    },
+    {
+      "at": "2026-08-08T07:49:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_66f159d586c6a664",
+      "latency_ms": 682
+    },
+    {
+      "at": "2026-08-07T01:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_3e38804197bdfc53",
+      "latency_ms": 355
+    },
+    {
+      "at": "2026-08-08T22:38:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_d52ab5c4f17b5f15",
+      "latency_ms": 569
+    },
+    {
+      "at": "2026-08-08T17:33:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_f586e117930856a8",
+      "latency_ms": 777
+    },
+    {
+      "at": "2026-08-08T22:01:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_97a0cd60f54a0646",
+      "latency_ms": 86
+    }
+  ]
+}

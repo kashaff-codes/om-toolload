@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-83574",
+  "name": "Lucas Moreau",
+  "email": "lucas.moreau22@proton.me",
+  "phone": "+1-555-695-6861",
+  "default_address": {
+    "line1": "1105 Foxglove Ter",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_62aaabadfee88bf27a9e",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 531,
+      "shard": 35
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 742,
+      "reset_s": 9
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-03T03:28:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_4cc29d117c89a7e0",
+      "latency_ms": 250
+    },
+    {
+      "at": "2026-08-30T04:51:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_be99a496ea2dd416",
+      "latency_ms": 184
+    },
+    {
+      "at": "2026-08-31T23:25:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_32fef44bb8265122",
+      "latency_ms": 838
+    },
+    {
+      "at": "2026-09-02T07:32:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_137a62473dcb84fb",
+      "latency_ms": 574
+    },
+    {
+      "at": "2026-08-29T17:54:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_b5c87ee193c968f4",
+      "latency_ms": 202
+    },
+    {
+      "at": "2026-08-31T12:46:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_1306ca650dabdf3a",
+      "latency_ms": 382
+    },
+    {
+      "at": "2026-08-29T23:03:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_9c2c17adb51b067c",
+      "latency_ms": 257
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-9764",
+  "carrier": "USPS",
+  "tracking_number": "9400324591447273560423",
+  "service_level": "2day",
+  "status": "label_created",
+  "estimated_delivery": "2026-09-07T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "1902 Juniper Ln",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27660"
+  },
+  "package": {
+    "weight_kg": 4.13,
+    "dims_cm": [
+      50,
+      10,
+      15
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-08-30T06:52:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-08-31T06:31:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-30T19:52:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-08-30T01:03:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-08-28T16:14:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_46b98611a896be3d3852",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 232,
+      "shard": 16
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 554,
+      "reset_s": 37
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T00:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_45970536449d74f3",
+      "latency_ms": 836
+    },
+    {
+      "at": "2026-08-31T12:34:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_9b138e9337d3ac3a",
+      "latency_ms": 528
+    },
+    {
+      "at": "2026-08-29T00:20:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_afb553f51ca46220",
+      "latency_ms": 758
+    }
+  ]
+}

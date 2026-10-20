@@ -1,0 +1,136 @@
+{
+  "id": "multi-006",
+  "category": "multi_session",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my monitor order? I'm doing my expense report."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-3936"
+          },
+          "fixture": "multi-006-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "monitor invoice"
+          },
+          "fixture": "multi-006-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Here it is. It's delivered and the invoice is attached to your account."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another laptop stand. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1708"
+          },
+          "fixture": "multi-006-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "laptop stand order history"
+          },
+          "fixture": "multi-006-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last laptop stand order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my webcam order? I'm doing my expense report."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1246"
+          },
+          "fixture": "multi-006-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "webcam invoice"
+          },
+          "fixture": "multi-006-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Here it is. It's delivered and the invoice is attached to your account."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my cable organizer order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2002"
+          },
+          "fixture": "multi-006-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-2002"
+          },
+          "fixture": "multi-006-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Monday."
+        }
+      ]
+    }
+  ],
+  "question": "How much did I spend in total on the monitor and webcam orders combined?",
+  "expected": {
+    "type": "number",
+    "value": 431.9
+  },
+  "distractors": [
+    "398.99"
+  ],
+  "abstainIsCorrect": false
+}

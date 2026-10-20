@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5792",
+  "customer_id": "CUS-90077",
+  "status": "returned",
+  "placed_at": "2026-08-19T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "EB-ANC",
+      "name": "noise-cancelling earbuds",
+      "qty": 1,
+      "unit_price": 199,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 199,
+    "tax": 16.42,
+    "shipping": 0,
+    "total": 215.42
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "5842",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "6718 Juniper Ln",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78739"
+  },
+  "flags": {
+    "fraud_score": 0.054,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_01775c856cc76f9090c8",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 352,
+      "shard": 55
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 897,
+      "reset_s": 32
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-18T10:23:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_7b165faaf83393d5",
+      "latency_ms": 895
+    },
+    {
+      "at": "2026-08-14T01:14:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_aef73511304b7795",
+      "latency_ms": 184
+    },
+    {
+      "at": "2026-08-15T18:04:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_e05b52b64c102f5d",
+      "latency_ms": 737
+    },
+    {
+      "at": "2026-08-14T04:52:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_7e20c801483673d9",
+      "latency_ms": 805
+    },
+    {
+      "at": "2026-08-19T14:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_45e4ced654e384c3",
+      "latency_ms": 301
+    },
+    {
+      "at": "2026-08-15T10:29:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_ac74584732603972",
+      "latency_ms": 551
+    }
+  ]
+}

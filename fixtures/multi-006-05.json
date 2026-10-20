@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1246",
+  "customer_id": "CUS-84672",
+  "status": "delivered",
+  "placed_at": "2026-09-09T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "WC-1080",
+      "name": "1080p webcam",
+      "qty": 1,
+      "unit_price": 69.99,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 69.99,
+    "tax": 5.77,
+    "shipping": 0,
+    "total": 75.76
+  },
+  "payment": {
+    "method": "card",
+    "last4": "3525",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "3480 Foxglove Ter",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97251"
+  },
+  "flags": {
+    "fraud_score": 0.075,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_61615e6e1cd7d2c34c3b",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 186,
+      "shard": 6
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 828,
+      "reset_s": 2
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T10:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_83dd6032ad8a21d0",
+      "latency_ms": 355
+    },
+    {
+      "at": "2026-09-05T13:50:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_7b759f10be9be443",
+      "latency_ms": 233
+    },
+    {
+      "at": "2026-09-05T04:51:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_095f199a5eea0424",
+      "latency_ms": 856
+    },
+    {
+      "at": "2026-09-06T11:08:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_bce9dd8340d44f1d",
+      "latency_ms": 531
+    },
+    {
+      "at": "2026-09-09T01:38:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_b47deae858127fcc",
+      "latency_ms": 262
+    },
+    {
+      "at": "2026-09-06T15:32:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_abf646bda4969836",
+      "latency_ms": 174
+    }
+  ]
+}

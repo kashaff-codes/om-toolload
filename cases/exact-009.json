@@ -1,0 +1,178 @@
+{
+  "id": "exact-009",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "large",
+    "position": "post_reflection",
+    "userRepeated": true
+  },
+  "sessions": [
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you confirm my profile and any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-72897"
+          },
+          "fixture": "exact-009-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-009-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks good and nothing is open."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-72897"
+          },
+          "fixture": "exact-009-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-009-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my cable organizer order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9650"
+          },
+          "fixture": "exact-009-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9650"
+          },
+          "fixture": "exact-009-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Wednesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-20T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another laptop stand. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7300"
+          },
+          "fixture": "exact-009-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "laptop stand order history"
+          },
+          "fixture": "exact-009-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last laptop stand order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-25T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Is my router shipment on the way?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7386"
+          },
+          "fixture": "exact-009-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-7386"
+          },
+          "fixture": "exact-009-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, it's on its way with FedEx and should arrive Tuesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-28T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Quick check before I file this away: the reference is 8279 Cedar Ridge Rd, right?"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that matches what I have."
+        }
+      ]
+    }
+  ],
+  "question": "What street address is my router being shipped to?",
+  "expected": {
+    "type": "exact",
+    "value": "8279 Cedar Ridge Rd"
+  },
+  "distractors": [
+    "3496 Beacon St"
+  ],
+  "abstainIsCorrect": false
+}

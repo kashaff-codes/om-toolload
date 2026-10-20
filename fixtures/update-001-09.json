@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-9408",
+  "carrier": "UPS",
+  "tracking_number": "1Z0228EB1455228783",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-16T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "1902 Juniper Ln",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27660"
+  },
+  "package": {
+    "weight_kg": 2.39,
+    "dims_cm": [
+      42,
+      15,
+      28
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-14T05:42:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-10T16:10:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-11T16:11:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_8dbe66ed8d92e98338df",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 574,
+      "shard": 6
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 509,
+      "reset_s": 58
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T09:34:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_5c7bc34b6f678ac6",
+      "latency_ms": 458
+    },
+    {
+      "at": "2026-09-11T18:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_5a57f07e73027f33",
+      "latency_ms": 506
+    },
+    {
+      "at": "2026-09-14T09:38:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_7aafd1ef1d7aaae1",
+      "latency_ms": 493
+    },
+    {
+      "at": "2026-09-14T04:52:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_dc081e861b7c8188",
+      "latency_ms": 304
+    },
+    {
+      "at": "2026-09-13T00:26:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_642a18ef29f016e2",
+      "latency_ms": 882
+    }
+  ]
+}

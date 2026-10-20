@@ -1,0 +1,136 @@
+{
+  "id": "exact-010",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "small",
+    "position": "post_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-01T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my screen protector order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5024"
+          },
+          "fixture": "exact-010-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5024"
+          },
+          "fixture": "exact-010-02"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Monday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-04T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-83574"
+          },
+          "fixture": "exact-010-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-010-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my desk mat order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6009"
+          },
+          "fixture": "exact-010-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-6009"
+          },
+          "fixture": "exact-010-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Thursday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I bought a tripod a while back. Can you find that order and tell me if it's under warranty?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1416"
+          },
+          "fixture": "exact-010-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "tripod warranty"
+          },
+          "fixture": "exact-010-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Found it. It was delivered about two months ago, so it's still inside the one-year warranty."
+        }
+      ]
+    }
+  ],
+  "question": "What was the order number for my tripod?",
+  "expected": {
+    "type": "exact",
+    "value": "ORD-1416"
+  },
+  "distractors": [
+    "ORD-1461"
+  ],
+  "abstainIsCorrect": false
+}

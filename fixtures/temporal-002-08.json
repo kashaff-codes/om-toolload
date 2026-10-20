@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-5410",
+  "carrier": "USPS",
+  "tracking_number": "9400268988797602832091",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-18T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "package": {
+    "weight_kg": 1.75,
+    "dims_cm": [
+      42,
+      10,
+      19
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-16T07:10:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-12T07:41:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-14T05:43:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_31bd3846c040d0204a4e",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 141,
+      "shard": 22
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 315,
+      "reset_s": 40
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-15T15:39:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_3e91312500ba7422",
+      "latency_ms": 710
+    },
+    {
+      "at": "2026-09-10T16:50:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_4ad0269189c0b91e",
+      "latency_ms": 848
+    },
+    {
+      "at": "2026-09-13T05:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_168299f4a2261fd8",
+      "latency_ms": 648
+    },
+    {
+      "at": "2026-09-14T00:48:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_31c4b29c6378eaac",
+      "latency_ms": 802
+    },
+    {
+      "at": "2026-09-16T04:29:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_5cc60c80a3fa472a",
+      "latency_ms": 436
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-14174",
+  "name": "Noah Fischer",
+  "email": "noah.fischer82@fastmail.com",
+  "phone": "+1-555-146-6725",
+  "default_address": {
+    "line1": "9319 Granite Blvd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43220"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_01f8148957312c924832",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 115,
+      "shard": 8
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 602,
+      "reset_s": 55
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-14T06:51:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_efdba93f9f464904",
+      "latency_ms": 163
+    },
+    {
+      "at": "2026-09-13T01:39:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_6ab7e63cf7db34b9",
+      "latency_ms": 531
+    },
+    {
+      "at": "2026-09-10T21:57:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_c096be7871aff631",
+      "latency_ms": 758
+    },
+    {
+      "at": "2026-09-13T14:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_ecefb366cf996a32",
+      "latency_ms": 383
+    },
+    {
+      "at": "2026-09-12T01:57:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_45beab065fa1bb77",
+      "latency_ms": 16
+    },
+    {
+      "at": "2026-09-14T10:38:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_d6491e7367d207d0",
+      "latency_ms": 342
+    },
+    {
+      "at": "2026-09-10T17:13:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_dc6f3364ed651043",
+      "latency_ms": 808
+    }
+  ]
+}

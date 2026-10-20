@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-2510",
+  "carrier": "FedEx",
+  "tracking_number": "167374719284",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-09T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9312 Foxglove Ter",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "package": {
+    "weight_kg": 2.73,
+    "dims_cm": [
+      21,
+      22,
+      10
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-02T13:14:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-06T13:37:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-05T10:19:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-02T14:16:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_25e624f94bf28d5771b3",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 290,
+      "shard": 17
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 851,
+      "reset_s": 23
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-01T17:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_e2626f3fbcf5db3a",
+      "latency_ms": 814
+    },
+    {
+      "at": "2026-09-06T03:28:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_0855eb4a319be91c",
+      "latency_ms": 154
+    },
+    {
+      "at": "2026-09-01T19:57:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_30e25997ed7f4bba",
+      "latency_ms": 529
+    },
+    {
+      "at": "2026-09-05T17:08:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_5bd8684d712c58f7",
+      "latency_ms": 886
+    }
+  ]
+}

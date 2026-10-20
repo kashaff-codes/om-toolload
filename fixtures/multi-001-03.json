@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6784",
+  "customer_id": "CUS-23517",
+  "status": "delivered",
+  "placed_at": "2026-08-06T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "DM-90",
+      "name": "felt desk mat",
+      "qty": 1,
+      "unit_price": 29,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 29,
+    "tax": 2.39,
+    "shipping": 5.99,
+    "total": 37.38
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "6916",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "704 Willow Ct",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43282"
+  },
+  "flags": {
+    "fraud_score": 0.096,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6a1f0e22345bd650c1a5",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 228,
+      "shard": 53
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 963,
+      "reset_s": 37
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-02T22:17:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_d6898581ab570c8a",
+      "latency_ms": 671
+    },
+    {
+      "at": "2026-08-05T22:32:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_f09a5216033a5b5f",
+      "latency_ms": 699
+    },
+    {
+      "at": "2026-08-01T00:57:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_a3fe99fc77378e72",
+      "latency_ms": 679
+    },
+    {
+      "at": "2026-08-05T01:17:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_25804719fa0787c0",
+      "latency_ms": 435
+    },
+    {
+      "at": "2026-08-06T10:01:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_0ccede833aff26eb",
+      "latency_ms": 728
+    },
+    {
+      "at": "2026-08-02T18:10:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_4db490e4ef62fb56",
+      "latency_ms": 761
+    }
+  ]
+}

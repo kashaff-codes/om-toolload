@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-38535",
+  "name": "Daniel Okafor",
+  "email": "daniel.okafor35@outlook.com",
+  "phone": "+1-555-764-7229",
+  "default_address": {
+    "line1": "401 Harbor St",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_d39c7c6a90f4b1e4c7a2",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 492,
+      "shard": 20
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 565,
+      "reset_s": 21
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T03:22:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_8a2efd51d1056c45",
+      "latency_ms": 823
+    },
+    {
+      "at": "2026-09-09T03:22:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_ff1fa15073a1ea9f",
+      "latency_ms": 824
+    },
+    {
+      "at": "2026-09-10T04:30:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_789172587a6b035e",
+      "latency_ms": 660
+    },
+    {
+      "at": "2026-09-07T08:29:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_4aedd5073a56a0ac",
+      "latency_ms": 870
+    },
+    {
+      "at": "2026-09-04T19:53:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_0165834f2ad93c2e",
+      "latency_ms": 521
+    },
+    {
+      "at": "2026-09-04T22:47:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_0bcb490cb2e7ae3b",
+      "latency_ms": 148
+    },
+    {
+      "at": "2026-09-09T03:47:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_bf93ac7223a6ea03",
+      "latency_ms": 452
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-5804",
+  "carrier": "FedEx",
+  "tracking_number": "629267839443",
+  "service_level": "ground",
+  "status": "delivered",
+  "estimated_delivery": "2026-09-06T15:00:00.000Z",
+  "delivered_at": "2026-09-06T15:00:00.000Z",
+  "destination": {
+    "line1": "4217 Orchard Way",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78765"
+  },
+  "package": {
+    "weight_kg": 0.31,
+    "dims_cm": [
+      47,
+      10,
+      7
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-04T15:34:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-06T18:16:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-06T07:44:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-03T23:33:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-04T02:10:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_ebc87c86928459b60383",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 139,
+      "shard": 25
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 516,
+      "reset_s": 47
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T01:13:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_57efce3b1d89f5d3",
+      "latency_ms": 142
+    },
+    {
+      "at": "2026-09-05T09:13:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_9dff4c77d8ab509c",
+      "latency_ms": 660
+    },
+    {
+      "at": "2026-09-04T17:14:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_092b581bd818529d",
+      "latency_ms": 732
+    }
+  ]
+}

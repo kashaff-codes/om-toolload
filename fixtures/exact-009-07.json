@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7300",
+  "customer_id": "CUS-72897",
+  "status": "delivered",
+  "placed_at": "2026-08-19T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LS-ADJ",
+      "name": "aluminum laptop stand",
+      "qty": 1,
+      "unit_price": 39,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39,
+    "tax": 3.22,
+    "shipping": 5.99,
+    "total": 48.21
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0377",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "3496 Beacon St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97246"
+  },
+  "flags": {
+    "fraud_score": 0.041,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_59ba9f692ccec1bea817",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 361,
+      "shard": 3
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 190,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-16T19:43:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_93e34fdcb5021427",
+      "latency_ms": 29
+    },
+    {
+      "at": "2026-08-18T22:16:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_611690527efa7a4d",
+      "latency_ms": 599
+    },
+    {
+      "at": "2026-08-17T22:26:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_d710c370a9943891",
+      "latency_ms": 763
+    },
+    {
+      "at": "2026-08-19T00:26:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_7bbb09e11c8b0f04",
+      "latency_ms": 713
+    },
+    {
+      "at": "2026-08-17T23:37:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_d0ca23c71706e21a",
+      "latency_ms": 91
+    },
+    {
+      "at": "2026-08-14T18:01:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_20091f1ba385ce26",
+      "latency_ms": 676
+    }
+  ]
+}

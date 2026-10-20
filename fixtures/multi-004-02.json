@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5512",
+  "customer_id": "CUS-41597",
+  "status": "returned",
+  "placed_at": "2026-08-21T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CH-65W",
+      "name": "65W charger",
+      "qty": 1,
+      "unit_price": 39.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39.99,
+    "tax": 3.3,
+    "shipping": 5.99,
+    "total": 49.28
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0701",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9596 Granite Blvd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97274"
+  },
+  "flags": {
+    "fraud_score": 0.099,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_fcbc000542bd99ddfbb0",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 432,
+      "shard": 4
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 226,
+      "reset_s": 58
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-16T13:25:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_e622a6aca92564c9",
+      "latency_ms": 638
+    },
+    {
+      "at": "2026-08-15T15:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_a09bb5ab84e4561f",
+      "latency_ms": 611
+    },
+    {
+      "at": "2026-08-20T09:42:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_38fdf2b4ce5018ca",
+      "latency_ms": 762
+    },
+    {
+      "at": "2026-08-18T10:54:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_6eb10bf9590e2467",
+      "latency_ms": 755
+    },
+    {
+      "at": "2026-08-19T10:22:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_c8ba59c94a23f71c",
+      "latency_ms": 764
+    },
+    {
+      "at": "2026-08-16T10:18:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_b27beb577ac3d436",
+      "latency_ms": 739
+    }
+  ]
+}

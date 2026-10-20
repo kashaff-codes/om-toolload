@@ -1,0 +1,165 @@
+{
+  "id": "distractor-005",
+  "category": "distractor",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I help manage my relative's account. Can you pull up Jon Smyth, customer ID CUS-87584?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-87584"
+          },
+          "fixture": "distractor-005-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "CUS-87584 open tickets"
+          },
+          "fixture": "distractor-005-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Got it, Jon Smyth's profile is active and there are no open tickets."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-13T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my screen protector order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7375"
+          },
+          "fixture": "distractor-005-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-7375"
+          },
+          "fixture": "distractor-005-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Friday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "And can you check my own profile too? I'm John Smith, CUS-22131."
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-22131"
+          },
+          "fixture": "distractor-005-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "CUS-22131 open tickets"
+          },
+          "fixture": "distractor-005-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile is active as well, nothing open."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-19T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6351"
+          },
+          "fixture": "distractor-005-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "distractor-005-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-23T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-22131"
+          },
+          "fixture": "distractor-005-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "distractor-005-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "What email address do you have on file for Jon Smyth?",
+  "expected": {
+    "type": "exact",
+    "value": "jon.smyth58@fastmail.com"
+  },
+  "distractors": [
+    "john.smith44@outlook.com"
+  ],
+  "abstainIsCorrect": false
+}

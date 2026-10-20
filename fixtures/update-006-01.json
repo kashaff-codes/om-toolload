@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6294",
+  "customer_id": "CUS-47606",
+  "status": "shipped",
+  "placed_at": "2026-09-04T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SD-1TB",
+      "name": "1TB portable SSD",
+      "qty": 1,
+      "unit_price": 109.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 109.99,
+    "tax": 9.07,
+    "shipping": 0,
+    "total": 119.06
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "9393",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7256 Cedar Ridge Rd",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78768"
+  },
+  "flags": {
+    "fraud_score": 0.054,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_fe86275c6d33f7db3da8",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 47,
+      "shard": 27
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 891,
+      "reset_s": 60
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-31T13:49:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_ff51775bc9a62adb",
+      "latency_ms": 223
+    },
+    {
+      "at": "2026-09-03T10:39:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_4e4a86bc306d80ef",
+      "latency_ms": 181
+    },
+    {
+      "at": "2026-09-03T10:31:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_eb4ca809473e019d",
+      "latency_ms": 79
+    },
+    {
+      "at": "2026-09-01T04:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_dadf454276b8b975",
+      "latency_ms": 735
+    },
+    {
+      "at": "2026-08-30T16:48:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_b82e06f8689ce171",
+      "latency_ms": 491
+    },
+    {
+      "at": "2026-09-04T11:01:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_ffb1de4519ca8f72",
+      "latency_ms": 358
+    }
+  ]
+}

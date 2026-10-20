@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5410",
+  "customer_id": "CUS-89877",
+  "status": "shipped",
+  "placed_at": "2026-09-12T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "UH-7P",
+      "name": "7-port USB-C hub",
+      "qty": 1,
+      "unit_price": 54.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 54.99,
+    "tax": 4.54,
+    "shipping": 0,
+    "total": 59.53
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "2842",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "flags": {
+    "fraud_score": 0.039,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_37de51632929d42e8428",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 68,
+      "shard": 23
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 970,
+      "reset_s": 58
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T12:42:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_ce3d4d68ba97e043",
+      "latency_ms": 446
+    },
+    {
+      "at": "2026-09-11T22:53:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_86996f1e313fdce8",
+      "latency_ms": 107
+    },
+    {
+      "at": "2026-09-08T08:49:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_e40686556c9c6d77",
+      "latency_ms": 608
+    },
+    {
+      "at": "2026-09-08T22:19:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_b074fc49a60c1ca8",
+      "latency_ms": 215
+    },
+    {
+      "at": "2026-09-10T11:07:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_ddaf86c918850e50",
+      "latency_ms": 790
+    },
+    {
+      "at": "2026-09-10T18:16:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_e17e20ad2d9b8ccd",
+      "latency_ms": 759
+    }
+  ]
+}

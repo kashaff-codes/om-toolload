@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5683",
+  "customer_id": "CUS-10583",
+  "status": "delivered",
+  "placed_at": "2026-08-22T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-BT5",
+      "name": "bluetooth speaker",
+      "qty": 1,
+      "unit_price": 59.95,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 59.95,
+    "tax": 4.95,
+    "shipping": 0,
+    "total": 64.9
+  },
+  "payment": {
+    "method": "card",
+    "last4": "9238",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7384 Willow Ct",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78774"
+  },
+  "flags": {
+    "fraud_score": 0.198,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_eac4440951317bd726f2",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 327,
+      "shard": 8
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 750,
+      "reset_s": 18
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-20T04:27:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_295cdb10c4994a50",
+      "latency_ms": 688
+    },
+    {
+      "at": "2026-08-18T16:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_92154863952bf599",
+      "latency_ms": 363
+    },
+    {
+      "at": "2026-08-16T17:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_735536599aadb4b5",
+      "latency_ms": 897
+    },
+    {
+      "at": "2026-08-21T21:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_0e0b7651e3e9942a",
+      "latency_ms": 174
+    },
+    {
+      "at": "2026-08-19T15:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_6762f137ddc3ed3b",
+      "latency_ms": 865
+    },
+    {
+      "at": "2026-08-17T03:52:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_05e623efd369194e",
+      "latency_ms": 705
+    }
+  ]
+}

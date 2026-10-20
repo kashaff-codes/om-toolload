@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5145",
+  "customer_id": "CUS-38535",
+  "status": "delivered",
+  "placed_at": "2026-08-16T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-GL2",
+      "name": "tempered glass screen protector",
+      "qty": 1,
+      "unit_price": 12.99,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 12.99,
+    "tax": 1.07,
+    "shipping": 5.99,
+    "total": 20.05
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "9227",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "401 Harbor St",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "flags": {
+    "fraud_score": 0.009,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_361a487c541fb60dc6c1",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 311,
+      "shard": 8
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 261,
+      "reset_s": 1
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-13T19:30:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_a6c0d08a40b55ef5",
+      "latency_ms": 486
+    },
+    {
+      "at": "2026-08-14T19:06:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_82d7c2966ab68000",
+      "latency_ms": 551
+    },
+    {
+      "at": "2026-08-16T07:01:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_2e2fac6320d11837",
+      "latency_ms": 803
+    },
+    {
+      "at": "2026-08-14T16:55:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_a7eef29f01da25bc",
+      "latency_ms": 66
+    },
+    {
+      "at": "2026-08-11T18:22:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_2ab91fd14b729782",
+      "latency_ms": 389
+    },
+    {
+      "at": "2026-08-10T21:49:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_1717ae498a6cb5b0",
+      "latency_ms": 664
+    }
+  ]
+}

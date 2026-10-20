@@ -1,0 +1,82 @@
+{
+  "query": "earbuds refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-659762",
+      "order_id": "ORD-5792",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 199,
+      "created_at": "2026-09-07T15:00:00.000Z",
+      "summary": "Refund requested for noise-cancelling earbuds, item returned unopened.",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_289dfa4a83eccc5e1fb8",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 498,
+      "shard": 26
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 901,
+      "reset_s": 2
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-14T13:07:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_18028a66885ac4b6",
+      "latency_ms": 199
+    },
+    {
+      "at": "2026-09-17T10:16:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_e4cf5d7d142bc7e9",
+      "latency_ms": 618
+    },
+    {
+      "at": "2026-09-18T16:51:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_0d249a6752dafcf1",
+      "latency_ms": 850
+    },
+    {
+      "at": "2026-09-18T14:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_5e3c6316102f87c6",
+      "latency_ms": 871
+    },
+    {
+      "at": "2026-09-17T00:22:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_b708e490f1f44fbd",
+      "latency_ms": 649
+    },
+    {
+      "at": "2026-09-16T22:53:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_bac0f1b64e3a2cb7",
+      "latency_ms": 844
+    },
+    {
+      "at": "2026-09-18T16:29:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_aece58554a84d93f",
+      "latency_ms": 522
+    }
+  ]
+}

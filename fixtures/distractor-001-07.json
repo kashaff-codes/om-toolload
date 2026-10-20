@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-15908",
+  "name": "Marcus Reed",
+  "email": "marcus.reed65@fastmail.com",
+  "phone": "+1-555-715-9453",
+  "default_address": {
+    "line1": "6727 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_efda815bab7bdc8b04c3",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 103,
+      "shard": 60
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 110,
+      "reset_s": 50
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T16:45:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_43f986124db2fabe",
+      "latency_ms": 550
+    },
+    {
+      "at": "2026-09-07T05:23:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_9ddd7de5724c55b5",
+      "latency_ms": 826
+    },
+    {
+      "at": "2026-09-07T16:44:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_3ad649d5c7b70984",
+      "latency_ms": 456
+    },
+    {
+      "at": "2026-09-08T17:24:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_f4b881e7aff1f96e",
+      "latency_ms": 369
+    },
+    {
+      "at": "2026-09-08T20:20:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_c8cef53ccf521a16",
+      "latency_ms": 94
+    },
+    {
+      "at": "2026-09-09T07:53:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_c7a0515932ca5e85",
+      "latency_ms": 436
+    },
+    {
+      "at": "2026-09-08T19:43:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_9b8f58f48dcfb833",
+      "latency_ms": 221
+    }
+  ]
+}

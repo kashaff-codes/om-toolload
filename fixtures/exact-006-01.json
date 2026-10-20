@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2510",
+  "customer_id": "CUS-86626",
+  "status": "shipped",
+  "placed_at": "2026-09-03T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "MS-ERG",
+      "name": "ergonomic mouse",
+      "qty": 1,
+      "unit_price": 49.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 49.99,
+    "tax": 4.12,
+    "shipping": 5.99,
+    "total": 60.1
+  },
+  "payment": {
+    "method": "card",
+    "last4": "2955",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9312 Foxglove Ter",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "flags": {
+    "fraud_score": 0.104,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_67557f8357b10da81495",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 565,
+      "shard": 2
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 646,
+      "reset_s": 10
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T17:32:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_d5660d786bffbe76",
+      "latency_ms": 707
+    },
+    {
+      "at": "2026-09-01T16:23:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_cdd4c84ca3932341",
+      "latency_ms": 223
+    },
+    {
+      "at": "2026-09-02T20:41:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_636878983c589a36",
+      "latency_ms": 308
+    },
+    {
+      "at": "2026-08-31T20:19:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_cc64bbb50d966cf8",
+      "latency_ms": 352
+    },
+    {
+      "at": "2026-08-31T11:24:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_1ad6a06221c5bf80",
+      "latency_ms": 139
+    },
+    {
+      "at": "2026-09-03T04:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_959e1954c13f80ce",
+      "latency_ms": 378
+    }
+  ]
+}

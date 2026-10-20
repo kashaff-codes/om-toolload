@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-7307",
+  "carrier": "UPS",
+  "tracking_number": "1ZEFED177178360202",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-08T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "2214 Lakeview Dr",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85725"
+  },
+  "package": {
+    "weight_kg": 0.57,
+    "dims_cm": [
+      10,
+      16,
+      26
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-03T01:16:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-02T20:06:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-06T14:40:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-04T13:25:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_eb448668798d1b092e93",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 388,
+      "shard": 52
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 507,
+      "reset_s": 33
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T10:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_c5edeb38f67ebb78",
+      "latency_ms": 240
+    },
+    {
+      "at": "2026-09-04T18:34:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_90811eb1ea048209",
+      "latency_ms": 836
+    },
+    {
+      "at": "2026-09-03T16:41:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_769819ac7eeb4987",
+      "latency_ms": 25
+    },
+    {
+      "at": "2026-09-01T06:30:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_5a3a7ba042c3f6f9",
+      "latency_ms": 467
+    }
+  ]
+}

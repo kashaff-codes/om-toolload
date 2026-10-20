@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-9441",
+  "customer_id": "CUS-97170",
+  "status": "shipped",
+  "placed_at": "2026-09-14T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LS-ADJ",
+      "name": "aluminum laptop stand",
+      "qty": 1,
+      "unit_price": 39,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39,
+    "tax": 3.22,
+    "shipping": 5.99,
+    "total": 48.21
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "9555",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "flags": {
+    "fraud_score": 0.14,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_14176f87d3e9cd8788d1",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 151,
+      "shard": 32
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 843,
+      "reset_s": 45
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T10:04:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_b2b84ab3e178a1af",
+      "latency_ms": 686
+    },
+    {
+      "at": "2026-09-12T08:56:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_14562439f247acfd",
+      "latency_ms": 184
+    },
+    {
+      "at": "2026-09-13T01:30:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_5c296f7dfa5a9a04",
+      "latency_ms": 845
+    },
+    {
+      "at": "2026-09-12T11:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_072a81c12da4cbbe",
+      "latency_ms": 89
+    },
+    {
+      "at": "2026-09-14T05:16:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_e2056465ed963703",
+      "latency_ms": 534
+    },
+    {
+      "at": "2026-09-11T05:29:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_489eb7c061d10a80",
+      "latency_ms": 581
+    }
+  ]
+}

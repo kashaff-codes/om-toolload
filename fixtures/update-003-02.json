@@ -1,0 +1,92 @@
+{
+  "order_id": "ORD-4846",
+  "carrier": "USPS",
+  "tracking_number": "9400148345034976046257",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-06T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "7312 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43290"
+  },
+  "package": {
+    "weight_kg": 1.17,
+    "dims_cm": [
+      25,
+      21,
+      14
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-02T19:37:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-08-31T04:42:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-31T21:46:00.000Z",
+      "facility": "RNO-2-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e4f3324c6d1b5ed0bf79",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 402,
+      "shard": 16
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 874,
+      "reset_s": 44
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-02T13:38:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_62d1aca5c7a7d0f0",
+      "latency_ms": 849
+    },
+    {
+      "at": "2026-08-30T05:12:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_283f7a1aa9a8a389",
+      "latency_ms": 396
+    },
+    {
+      "at": "2026-08-30T05:23:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_2e45e71ab06f5209",
+      "latency_ms": 783
+    },
+    {
+      "at": "2026-08-31T17:15:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_b988e8d5b6dfe52d",
+      "latency_ms": 359
+    },
+    {
+      "at": "2026-08-30T04:42:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_5b84cfacbd41c1b8",
+      "latency_ms": 163
+    }
+  ]
+}

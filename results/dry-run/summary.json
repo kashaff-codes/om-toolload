@@ -1,0 +1,207 @@
+{
+  "primaryScorer": "judge",
+  "runIds": [
+    "2026-10-20T14-01-51-691Z"
+  ],
+  "versions": {
+    "@mastra/core": "1.78.0",
+    "@mastra/memory": "1.38.0",
+    "@mastra/libsql": "1.26.2",
+    "actor": "llama3.1:8b",
+    "observer": "llama3.1:8b",
+    "judge": "claude-haiku-5-5",
+    "numCtx": "12288",
+    "omMessageTokens": "3000",
+    "omObservationTokens": "1500"
+  },
+  "main": {
+    "C1": {
+      "accuracy": {
+        "point": 0.6,
+        "lo": 0.2,
+        "hi": 1
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.2,
+      "abstentionRate": 0.2,
+      "medianActorInputTokens": 7882,
+      "inputTokensPerCorrect": 12072,
+      "n": 5
+    },
+    "C2": {
+      "accuracy": {
+        "point": 0.6,
+        "lo": 0.2,
+        "hi": 1
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.2,
+      "abstentionRate": 0.2,
+      "medianActorInputTokens": 7882,
+      "inputTokensPerCorrect": 12072,
+      "n": 5
+    },
+    "C3": {
+      "accuracy": {
+        "point": 0.6,
+        "lo": 0.2,
+        "hi": 1
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.2,
+      "abstentionRate": 0.2,
+      "medianActorInputTokens": 7882,
+      "inputTokensPerCorrect": 12072,
+      "n": 5
+    },
+    "C4": {
+      "accuracy": {
+        "point": 0.4,
+        "lo": 0,
+        "hi": 0.8
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.6,
+      "abstentionRate": 0,
+      "medianActorInputTokens": 1798,
+      "inputTokensPerCorrect": 4420.5,
+      "n": 5
+    },
+    "C5": {
+      "accuracy": {
+        "point": 0.8,
+        "lo": 0.4,
+        "hi": 1
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.2,
+      "abstentionRate": 0,
+      "medianActorInputTokens": 2016,
+      "inputTokensPerCorrect": 2936.5,
+      "n": 5
+    },
+    "C6": {
+      "accuracy": {
+        "point": 0.4,
+        "lo": 0,
+        "hi": 0.8
+      },
+      "runSd": 0,
+      "silentFailureRate": 0,
+      "abstentionRate": 0.6,
+      "medianActorInputTokens": 7154,
+      "inputTokensPerCorrect": 17299.5,
+      "n": 5
+    }
+  },
+  "byCategory": {
+    "exact_value": {
+      "C1": "100%",
+      "C2": "100%",
+      "C3": "100%",
+      "C4": "100%",
+      "C5": "100%",
+      "C6": "100%"
+    },
+    "multi_session": {
+      "C1": "0%",
+      "C2": "0%",
+      "C3": "0%",
+      "C4": "100%",
+      "C5": "100%",
+      "C6": "0%"
+    },
+    "knowledge_update": {
+      "C1": "0%",
+      "C2": "0%",
+      "C3": "0%",
+      "C4": "0%",
+      "C5": "0%",
+      "C6": "0%"
+    },
+    "distractor": {
+      "C1": "100%",
+      "C2": "100%",
+      "C3": "100%",
+      "C4": "0%",
+      "C5": "100%",
+      "C6": "0%"
+    },
+    "abstention": {
+      "C1": "100%",
+      "C2": "100%",
+      "C3": "100%",
+      "C4": "0%",
+      "C5": "100%",
+      "C6": "100%"
+    }
+  },
+  "compression": {
+    "C4": {
+      "perCycleMedian": 4.056962025316456,
+      "perCycleMin": 0.6737412508466922,
+      "perCycleMax": 12.67758186397985,
+      "endToEndMedian": 12.351005484460694,
+      "reflectedShare": 0.8
+    },
+    "C5": {
+      "perCycleMedian": 3.275521405049396,
+      "perCycleMin": 1.7154055896387184,
+      "perCycleMax": 3.9351978171896316,
+      "endToEndMedian": 5.492682926829269,
+      "reflectedShare": 0.8
+    },
+    "C6": {
+      "perCycleMedian": 4.056962025316456,
+      "perCycleMin": 0.6737412508466922,
+      "perCycleMax": 12.67758186397985,
+      "endToEndMedian": 12.351005484460694,
+      "reflectedShare": 0.8
+    }
+  },
+  "fixes": {
+    "C5": {
+      "accuracyDelta": {
+        "point": 0.4,
+        "lo": 0,
+        "hi": 0.8
+      },
+      "mcnemar": {
+        "b": 2,
+        "c": 0,
+        "p": 0.5
+      },
+      "silentFailureDelta": -0.39999999999999997
+    },
+    "C6": {
+      "accuracyDelta": {
+        "point": 0,
+        "lo": -0.6,
+        "hi": 0.6
+      },
+      "mcnemar": {
+        "b": 1,
+        "c": 1,
+        "p": 1
+      },
+      "silentFailureDelta": -0.6
+    }
+  },
+  "c4VsC1": {
+    "point": -0.2,
+    "lo": -0.8,
+    "hi": 0.4
+  },
+  "c4Failures": [
+    {
+      "caseId": "abstain-001",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "distractor-001",
+      "run": 1,
+      "label": "silent_failure"
+    }
+  ]
+}

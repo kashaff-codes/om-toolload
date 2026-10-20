@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6330",
+  "customer_id": "CUS-19404",
+  "status": "shipped",
+  "placed_at": "2026-09-13T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "UH-7P",
+      "name": "7-port USB-C hub",
+      "qty": 1,
+      "unit_price": 54.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 54.99,
+    "tax": 4.54,
+    "shipping": 0,
+    "total": 59.53
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "9728",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4217 Orchard Way",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78765"
+  },
+  "flags": {
+    "fraud_score": 0.168,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_2ef6f2cbfc47f1a52eb0",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 567,
+      "shard": 12
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 405,
+      "reset_s": 33
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T10:46:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_ed1c3f5e9eaf1e45",
+      "latency_ms": 725
+    },
+    {
+      "at": "2026-09-12T10:51:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_f90839251df04a5f",
+      "latency_ms": 105
+    },
+    {
+      "at": "2026-09-12T19:30:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_b733e897e1aced90",
+      "latency_ms": 709
+    },
+    {
+      "at": "2026-09-10T19:37:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_13aecf5021dcd753",
+      "latency_ms": 775
+    },
+    {
+      "at": "2026-09-12T19:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_57b90adb8cce2d6e",
+      "latency_ms": 744
+    },
+    {
+      "at": "2026-09-12T05:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_d3601c8bc541e4aa",
+      "latency_ms": 504
+    }
+  ]
+}

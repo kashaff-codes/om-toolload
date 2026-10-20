@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-59165",
+  "name": "Hannah Kim",
+  "email": "hannah.kim43@proton.me",
+  "phone": "+1-555-625-5602",
+  "default_address": {
+    "line1": "7258 Maple Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78710"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_f90ddc705dee06de5646",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 447,
+      "shard": 44
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 648,
+      "reset_s": 27
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-16T11:24:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_b664d013c0ff0dc9",
+      "latency_ms": 239
+    },
+    {
+      "at": "2026-09-19T05:32:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_6a96a5a0db01781e",
+      "latency_ms": 396
+    },
+    {
+      "at": "2026-09-16T14:10:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_fdf5859c3e55076e",
+      "latency_ms": 811
+    },
+    {
+      "at": "2026-09-16T15:56:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_61d34a39eb4eb172",
+      "latency_ms": 362
+    },
+    {
+      "at": "2026-09-18T14:34:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_1f270c26c3056c82",
+      "latency_ms": 410
+    },
+    {
+      "at": "2026-09-19T09:12:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_dd38617de0cfa4a8",
+      "latency_ms": 329
+    },
+    {
+      "at": "2026-09-17T17:39:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_1e933680df943860",
+      "latency_ms": 331
+    }
+  ]
+}

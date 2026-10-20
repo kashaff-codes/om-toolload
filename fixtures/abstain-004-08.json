@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-3282",
+  "carrier": "USPS",
+  "tracking_number": "9400462760675245598027",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-17T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "4650 Lakeview Dr",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53742"
+  },
+  "package": {
+    "weight_kg": 0.7,
+    "dims_cm": [
+      27,
+      31,
+      27
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-14T02:06:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-13T15:16:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-11T16:27:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-10T23:02:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-11T03:27:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_94f3f61a9ee9631ea65f",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 129,
+      "shard": 21
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 187,
+      "reset_s": 18
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-14T17:07:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_636cc2c4d3a16f5e",
+      "latency_ms": 84
+    },
+    {
+      "at": "2026-09-11T21:12:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_1447e805222d74f4",
+      "latency_ms": 684
+    },
+    {
+      "at": "2026-09-09T20:18:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_9d6a0f6b88d9e7e9",
+      "latency_ms": 180
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "update-002",
+  "category": "knowledge_update",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false,
+    "updateSource": "user"
+  },
+  "sessions": [
+    {
+      "at": "2026-09-02T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "My monitor arrived broken. Can you set up a replacement?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1607"
+          },
+          "fixture": "update-002-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-1607"
+          },
+          "fixture": "update-002-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Done, the replacement is created and a shipping label is ready. It'll go out in a couple of days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my laptop stand order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7781"
+          },
+          "fixture": "update-002-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-7781"
+          },
+          "fixture": "update-002-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Monday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my replacement monitor order?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1607"
+          },
+          "fixture": "update-002-05"
+        },
+        {
+          "role": "assistant",
+          "text": "Found it. It hasn't left the warehouse yet."
+        },
+        {
+          "role": "user",
+          "text": "Good. I just moved, so please send it to 1681 Lakeview Dr, Austin, TX 78710 instead."
+        },
+        {
+          "role": "assistant",
+          "text": "Done, I've updated the shipping address on the replacement."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-44514"
+          },
+          "fixture": "update-002-06"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "update-002-07"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8621"
+          },
+          "fixture": "update-002-08"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "update-002-09"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "Where is my replacement monitor shipping to? Just the street address.",
+  "expected": {
+    "type": "exact",
+    "value": "1681 Lakeview Dr"
+  },
+  "distractors": [
+    "1990 Harbor St"
+  ],
+  "abstainIsCorrect": false
+}

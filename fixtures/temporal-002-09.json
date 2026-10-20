@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1808",
+  "customer_id": "CUS-89877",
+  "status": "shipped",
+  "placed_at": "2026-09-14T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LS-ADJ",
+      "name": "aluminum laptop stand",
+      "qty": 1,
+      "unit_price": 39,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39,
+    "tax": 3.22,
+    "shipping": 5.99,
+    "total": 48.21
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0583",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "flags": {
+    "fraud_score": 0.162,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_96c52a0a71c4e5d0c796",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 245,
+      "shard": 44
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 172,
+      "reset_s": 29
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T08:14:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_8468f307f484e9cb",
+      "latency_ms": 273
+    },
+    {
+      "at": "2026-09-11T11:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_1119c987a533ed02",
+      "latency_ms": 369
+    },
+    {
+      "at": "2026-09-13T07:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_f390e71e9dd0e483",
+      "latency_ms": 545
+    },
+    {
+      "at": "2026-09-12T03:08:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_39853a8e07e5ffd5",
+      "latency_ms": 794
+    },
+    {
+      "at": "2026-09-13T08:18:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_a7bbe66106d7eef0",
+      "latency_ms": 42
+    },
+    {
+      "at": "2026-09-12T15:50:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_3f8ba2e245c8a6b6",
+      "latency_ms": 824
+    }
+  ]
+}

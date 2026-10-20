@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-8438",
+  "carrier": "USPS",
+  "tracking_number": "9400735812884701558458",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-08T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "8886 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85753"
+  },
+  "package": {
+    "weight_kg": 4.05,
+    "dims_cm": [
+      48,
+      11,
+      14
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-05T07:23:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-02T10:10:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-06T02:38:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-03T17:19:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-05T07:12:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-01T23:32:00.000Z",
+      "facility": "ATL-3-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_adbfd2ffcd2802c40826",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 208,
+      "shard": 56
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 221,
+      "reset_s": 45
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T01:17:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_0c3fa699ea05965b",
+      "latency_ms": 265
+    },
+    {
+      "at": "2026-09-02T13:05:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_423cd3e4a33722a0",
+      "latency_ms": 753
+    },
+    {
+      "at": "2026-09-02T06:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_5d8ce379506f5759",
+      "latency_ms": 260
+    }
+  ]
+}

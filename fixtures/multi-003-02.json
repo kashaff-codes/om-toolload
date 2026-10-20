@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4788",
+  "customer_id": "CUS-84717",
+  "status": "returned",
+  "placed_at": "2026-08-20T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "PC-11P",
+      "name": "phone case",
+      "qty": 1,
+      "unit_price": 24.99,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 24.99,
+    "tax": 2.06,
+    "shipping": 5.99,
+    "total": 33.04
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0981",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "flags": {
+    "fraud_score": 0.172,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c367b5eaef34ce4a335b",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 213,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 108,
+      "reset_s": 47
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-16T17:31:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_46ca575d44291dfb",
+      "latency_ms": 418
+    },
+    {
+      "at": "2026-08-16T06:44:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_17b4511a98afc8c0",
+      "latency_ms": 279
+    },
+    {
+      "at": "2026-08-15T16:08:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_0abdfd00c565c106",
+      "latency_ms": 123
+    },
+    {
+      "at": "2026-08-16T22:50:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_a597819146bb9cf2",
+      "latency_ms": 73
+    },
+    {
+      "at": "2026-08-16T09:58:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_34cbbca23d76af01",
+      "latency_ms": 21
+    },
+    {
+      "at": "2026-08-17T02:10:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_3fee4ac5d51d920f",
+      "latency_ms": 856
+    }
+  ]
+}

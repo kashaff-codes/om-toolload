@@ -1,0 +1,136 @@
+{
+  "id": "multi-008",
+  "category": "multi_session",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my smartwatch order? I'm doing my expense report."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4149"
+          },
+          "fixture": "multi-008-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "smartwatch invoice"
+          },
+          "fixture": "multi-008-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Here it is. It's delivered and the invoice is attached to your account."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another screen protector. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2620"
+          },
+          "fixture": "multi-008-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "screen protector order history"
+          },
+          "fixture": "multi-008-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last screen protector order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my SSD order? I'm doing my expense report."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2394"
+          },
+          "fixture": "multi-008-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "SSD invoice"
+          },
+          "fixture": "multi-008-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Here it is. It's delivered and the invoice is attached to your account."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-20T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-14723"
+          },
+          "fixture": "multi-008-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "multi-008-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "How much did I spend in total on the smartwatch and SSD orders combined?",
+  "expected": {
+    "type": "number",
+    "value": 388.6
+  },
+  "distractors": [
+    "358.99"
+  ],
+  "abstainIsCorrect": false
+}

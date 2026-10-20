@@ -1,0 +1,286 @@
+{
+ "b9841b79abed2fa2315f1e5d889a18d769e49b88b1df2320027111f1b96e9778": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "187bcba09758eb06b5af77f73e05ff84dcd4aa12117c6a9ac96467307e12380e": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "deda7342c841efea0752e4609ea4965491f19ecc40887a3da1b9d57343c5e968": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "17a46f0f9216359152ae280b6274b9a2fd24f1bdc4a4b1ad0a2c654448992cc8": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "ac3072aab4f8f510c022f574cf746e00c4f694781079c2fc26e26547cd03a02a": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "df509f2cb72aa5e6cd78ce7fa4390fc1b8a253bc7f9ab48dbaa028a2ae08e53e": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "ede961d3ab2c5dc6d5e781110f93d87068a095b50f4ff6580d0669d942ffabfc": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "7ea664c57702f66aaf2268022a7e9ea7c62173105ec25c052a69eeb50c9c149f": {
+  "verdict": "wrong",
+  "valueStated": "631340277603"
+ },
+ "7d0a52e293acfd38c7557e61875fa338a14b91ebc5e931becef1c64463d81128": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "65952c9b2665844612dc5849ac46bf97149b1b154418613ee70ece8317a670d5": {
+  "verdict": "correct",
+  "valueStated": "$257.64"
+ },
+ "2efcadc5804dc402e9346aba1d604a120d295ca2d6fee77e3599fca3c1f23b93": {
+  "verdict": "correct",
+  "valueStated": "257.64"
+ },
+ "41c7f9a413fb516152451ee743a3274d10d88bfd9871e9d790ea5c4adc8e4f59": {
+  "verdict": "wrong",
+  "valueStated": "257.46"
+ },
+ "c5b5baad326817888547070efc503ad803a4fd3cf64b29695bbddc28194e2442": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "d233db935ad241e9d20ca15032282c7ff71388866c0a329300cd74d451074eac": {
+  "verdict": "correct",
+  "valueStated": "TKT-486349"
+ },
+ "c8447404c5de9966e148c53407b13f2500872642c2b3431807499b9b92ac1075": {
+  "verdict": "correct",
+  "valueStated": "486349"
+ },
+ "eb9d44c97f7c89529db8e41d3e87045790c04aab1443b9f8a813223486cc04c7": {
+  "verdict": "wrong",
+  "valueStated": "TKT-486394"
+ },
+ "55fea005a299a82d397481012b3c479c7641f02845c30578ba11d4fc0da7e317": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "0b27944bcb0b7b2566bcb55a42959e4add870197a1371407c722c4365fef9dc0": {
+  "verdict": "correct",
+  "valueStated": "9602 Willow Ct"
+ },
+ "5e6ea34771f2282664defdf8fd2021a8bdd6b677d6c91e2c0c0fb9627a9799c3": {
+  "verdict": "correct",
+  "valueStated": "9602 Willow Ct"
+ },
+ "f751c524df25f9907d36ae10835bd04eabaf01aed5e80d80a63bd29330e613be": {
+  "verdict": "wrong",
+  "valueStated": "9620 Willow Ct"
+ },
+ "99438f18de8cdd4e124ecd213a6b621dc4808f3aea7985a9d8d3163bfe66bced": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "4c92c982751020876f186d7f9be7f11e5a4eecdd7d1bfe8cdad2f1b787b931f5": {
+  "verdict": "correct",
+  "valueStated": "ORD-9335"
+ },
+ "362dc35e3fef3eb20bd2e083b0b70fa03786e4bf068856fecd8b5c39fcb78a9f": {
+  "verdict": "correct",
+  "valueStated": "9335"
+ },
+ "2a22f9f6f1570b721890db6d86902fc7862a1b0751a138aa0b5cf1e1b420072f": {
+  "verdict": "wrong",
+  "valueStated": "ORD-9353"
+ },
+ "9d02d7c3a50c0298acae68f80a46445be37923cd745ed21a0210e316017eae5c": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "3e8b2c027e1f7d3c08f8300620a57ab8ac94aa8dd0ffb2326ee650aa6daac4b7": {
+  "verdict": "correct",
+  "valueStated": "2026-08-29"
+ },
+ "ee1b4582a47f6ef9f0883480a4b16391b38d1af54f281e018458da917e8ea5b8": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "40deb5fd9bac4271111e403a01358b98004b71bb17b630ff282889c8bb8ffe87": {
+  "verdict": "wrong",
+  "valueStated": "2026-08-30"
+ },
+ "ecb94f756b22481ab298e4998416c69eb7201fb0d80e9048d0e40be8c88f3b6f": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "6fd7a3eb6874ce3621b11e135ce22239b09d8c8e7dc55059f9b148249f0dbcf9": {
+  "verdict": "correct",
+  "valueStated": "$64.98"
+ },
+ "da487ecccb1325c9600cd718c2e5b7f69ff044fa1d5dfbe0ca0d0c4cb325aa63": {
+  "verdict": "correct",
+  "valueStated": "64.98"
+ },
+ "8eb743c20083539c2a15ebda8e7542d4e2d8c533b4d45da8177aca65e15fdd23": {
+  "verdict": "wrong",
+  "valueStated": "64.89"
+ },
+ "95a0cb47e96c71dc61f072418baf3b1370c1f67d122903e213499da062f05182": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "42477eba951d5b1aed3b5e5c0925eea9bb52fcb6e566364249c012b121136b03": {
+  "verdict": "correct",
+  "valueStated": "3787 Granite Blvd"
+ },
+ "7d6b78b3877e191f18e092bfd6744205d1de39798b47f78a1ed38b94c4b97dbd": {
+  "verdict": "correct",
+  "valueStated": "3787 Granite Blvd"
+ },
+ "1b7ce0a37c3fec26da239f805192012fd2b5ec93eef3c1fa89a6b74fe2f0e752": {
+  "verdict": "wrong",
+  "valueStated": "3778 Granite Blvd"
+ },
+ "27732d4fb7176ef5681e64ddf72f9a1d40c54d495225f79b33ba0441f57a80d9": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "92dfa134871ce31de9f7ea978f1751bca4806fa61bbf9cfcb274b2f370fbaefe": {
+  "verdict": "correct",
+  "valueStated": "698639583411"
+ },
+ "0c94ec1c8ff9c3dff1d5a19dedf4fc240db022d8dba687d261b331c43a75f72a": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "d586b1b42974eaf4c5047a20681e2d3db87884e8c6392009d50f1b40169bd8ac": {
+  "verdict": "wrong",
+  "valueStated": "698639583114"
+ },
+ "4eb54b2018dce4d6b333f74f2067e70aaa074b20fde28e23e4462aba1893b668": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "fe42ca9351eabcd91d97264331fd847d7beaee8be03bcd00afd981d75f313c02": {
+  "verdict": "correct",
+  "valueStated": "jon.smyth17@fastmail.com"
+ },
+ "30671c452c45aa358b559d78194e1b0b556a4aba0d21aeae58fb425212e777bd": {
+  "verdict": "correct",
+  "valueStated": "jon.smyth17@fastmail.com"
+ },
+ "b7b881d93cfa5f6014d1cc0ff6492b2f72d8c73ee9df58408c2e204ddc968b9e": {
+  "verdict": "wrong",
+  "valueStated": "jon.smyth71@fastmail.com"
+ },
+ "4686d866394935d368c2298283d7138c3bfa726ff43fc4e29d3c89fc7c9db930": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "c5d9dcc1a427a97ca49694087f44c2365fb72bf0867acf095167f93df17379d4": {
+  "verdict": "correct",
+  "valueStated": null
+ },
+ "fd796666f9830445d10a54987da677dd20910ff9af58a3ea4b418f3fea4af35f": {
+  "verdict": "wrong",
+  "valueStated": "BACKPACK20"
+ },
+ "692bd985427d1bcd99d1f45ee8340ad2a661f28c1000e71d836d54356464b26d": {
+  "verdict": "wrong",
+  "valueStated": "PACK15"
+ },
+ "c25c8d5e4f270516ca4cbdcc645297b1c9f8ef0165ec624de623ad257fe64b52": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "c8f499ffe4ec2633c01295136cda73da7cb6aa41ea5b9012577012d634f22239": {
+  "verdict": "wrong",
+  "valueStated": "FD123456789"
+ },
+ "d559c82cf63c897a404c858d63268d3249367694dc2ec916504324b67bd4b16e": {
+  "verdict": "wrong",
+  "valueStated": "341129737930"
+ },
+ "21d00f6bc81dcf1aa2482987bc2ef9ac549b953a4331d64300853dff0aad6059": {
+  "verdict": "wrong",
+  "valueStated": "COUPON15"
+ },
+ "482efba36e22b2ffc933e47d3453508d9ad2bd9888d45c4f8d04fe67f2d50570": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "27f3d70a4211169f883ce3a9b2723b5ac51c5db515ea041984e9aeac1e598206": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "1aa94c9d36cb3d020b2381eb7602a93acf7019946a1e29a257eae6b41a460857": {
+  "verdict": "correct",
+  "valueStated": "075250669204"
+ },
+ "992c935b0f1635adf4a49eb77944edcc59056e1b5208492d8c8dc5304c026af1": {
+  "verdict": "wrong",
+  "valueStated": "Z123456789US"
+ },
+ "2c6aaa33e88debb832539b3db53f3ffd75ff5a6b4ea54cce0e876e80c1a9df49": {
+  "verdict": "correct",
+  "valueStated": "075250669204"
+ },
+ "b21f22aaf2968f531a5192ecef0309b04eb3c2b27c6a0938e610f050b8088542": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "18dfefc7b878482ee9d767935484ceea2ac6fe4ca72c7bff636a706e0df9d6cb": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "f80c47def678bf67073f650b4c754c09c00ee3fccaf0c835de71c5ab89ce360f": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "bcc576886b5f14cf2a425958d4ca5142e2fc3b960554687aff5973ed83c41a09": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "a238ad8ce0ca5020811ff95257ee843dc50559d9d1355475a26a70b02a453822": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "ededf72a0da431c7e072c57a165f60100031b0e2c7940b2fa7957b800e7d610c": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "28f846623b1f10539cd323f43ccad4d19108facedcb51c548689621ae581e684": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "b91942ef019d846fb27db96fb72ba5de2774504b438711ffc96617bee98c0dda": {
+  "verdict": "correct",
+  "valueStated": "$64.98"
+ },
+ "657e8c7a1a0cd7b5d8638a7cb7fef22581e806149bec0a91365be7d17547eea3": {
+  "verdict": "correct",
+  "valueStated": "$64.98"
+ },
+ "02f17ab9e82222598a31f67a4bac83a4572077e69ada14764884410cf5e0ee7c": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "e8682b1f2c944e08f3c4fe27d05de8eeff6733f9d5370fccfcf355c6ef0df885": {
+  "verdict": "wrong",
+  "valueStated": "525 Beacon St."
+ },
+ "e9eaa1292212520374a7c75ff50c3debc31b44ec4af4f8592961f1eeb9babcba": {
+  "verdict": "wrong",
+  "valueStated": "1113 Oakwood Drive"
+ },
+ "3832ea04508b15199975a263ebde431ef40b88d5f357c13f6dc065c390047561": {
+  "verdict": "wrong",
+  "valueStated": "525 Beacon St, Madison, WI 53733"
+ },
+ "8b8250168f2a41b22734b8c9ffaae5a68f3ad241185ab054ddcf177bc338d12f": {
+  "verdict": "abstained",
+  "valueStated": null
+ }
+}

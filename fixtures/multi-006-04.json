@@ -1,0 +1,85 @@
+{
+  "query": "laptop stand order history",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b9033f4ac6aeb50edf48",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 198,
+      "shard": 20
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 357,
+      "reset_s": 10
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T09:19:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_e32ee1dcb8a582be",
+      "latency_ms": 892
+    },
+    {
+      "at": "2026-09-10T01:32:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_f261e83ce32f449c",
+      "latency_ms": 138
+    },
+    {
+      "at": "2026-09-09T07:17:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_2b1f40a9236b6fdd",
+      "latency_ms": 447
+    },
+    {
+      "at": "2026-09-07T14:40:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_d754194db846612a",
+      "latency_ms": 641
+    },
+    {
+      "at": "2026-09-10T00:45:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_e2747b165308bb3d",
+      "latency_ms": 157
+    },
+    {
+      "at": "2026-09-08T13:52:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_d47c4aacefca8744",
+      "latency_ms": 541
+    },
+    {
+      "at": "2026-09-05T23:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_8524f3af88303cb6",
+      "latency_ms": 466
+    },
+    {
+      "at": "2026-09-07T12:13:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_bdf39ba3f0f6cd5f",
+      "latency_ms": 201
+    },
+    {
+      "at": "2026-09-07T20:53:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_725d4c8984564d2e",
+      "latency_ms": 329
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "update-005",
+  "category": "knowledge_update",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false,
+    "updateSource": "tool"
+  },
+  "sessions": [
+    {
+      "at": "2026-09-05T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "My earbuds arrived broken. Can you set up a replacement?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9035"
+          },
+          "fixture": "update-005-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9035"
+          },
+          "fixture": "update-005-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Done, the replacement is created and a shipping label is ready. It'll go out in a couple of days."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another desk mat. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2834"
+          },
+          "fixture": "update-005-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "desk mat order history"
+          },
+          "fixture": "update-005-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last desk mat order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Any update on my replacement earbuds?"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9035"
+          },
+          "fixture": "update-005-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "earbuds replacement"
+          },
+          "fixture": "update-005-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It's moving and should arrive Tuesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another water bottle. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2767"
+          },
+          "fixture": "update-005-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "water bottle order history"
+          },
+          "fixture": "update-005-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last water bottle order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-14174"
+          },
+          "fixture": "update-005-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "update-005-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "Where is my replacement earbuds shipping to? Just the street address.",
+  "expected": {
+    "type": "exact",
+    "value": "5165 Beacon St"
+  },
+  "distractors": [
+    "9319 Granite Blvd"
+  ],
+  "abstainIsCorrect": false
+}

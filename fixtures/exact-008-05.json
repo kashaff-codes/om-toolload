@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-90077",
+  "name": "Omar Haddad",
+  "email": "omar.haddad5@proton.me",
+  "phone": "+1-555-628-7272",
+  "default_address": {
+    "line1": "6718 Juniper Ln",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78739"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_52efb47a00c832a2fc14",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 270,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 227,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T22:37:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_8fbd10fe71a371b3",
+      "latency_ms": 879
+    },
+    {
+      "at": "2026-09-08T18:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_efaff4330ebcd9dd",
+      "latency_ms": 623
+    },
+    {
+      "at": "2026-09-08T17:39:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_c1855ad8d0fbe4cd",
+      "latency_ms": 51
+    },
+    {
+      "at": "2026-09-11T13:46:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_8e892061fa6a7250",
+      "latency_ms": 63
+    },
+    {
+      "at": "2026-09-09T01:09:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_fc00810d48369f7d",
+      "latency_ms": 674
+    },
+    {
+      "at": "2026-09-11T09:06:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_dc2c0661086c1527",
+      "latency_ms": 799
+    },
+    {
+      "at": "2026-09-11T05:20:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_ca995b8573245315",
+      "latency_ms": 523
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2187",
+  "customer_id": "CUS-42404",
+  "status": "delivered",
+  "placed_at": "2026-08-19T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LS-ADJ",
+      "name": "aluminum laptop stand",
+      "qty": 1,
+      "unit_price": 39,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39,
+    "tax": 3.22,
+    "shipping": 5.99,
+    "total": 48.21
+  },
+  "payment": {
+    "method": "card",
+    "last4": "6564",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7465 Sparrow Pl",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53763"
+  },
+  "flags": {
+    "fraud_score": 0.006,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7089deb5b9ae36f4afda",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 568,
+      "shard": 38
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 293,
+      "reset_s": 59
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-17T00:47:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_3789c3ce8d98a811",
+      "latency_ms": 492
+    },
+    {
+      "at": "2026-08-14T00:01:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_b63c3a058cffdd80",
+      "latency_ms": 543
+    },
+    {
+      "at": "2026-08-19T10:21:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_1af08532af2b1c45",
+      "latency_ms": 315
+    },
+    {
+      "at": "2026-08-18T06:20:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_571e2d74c8ac164d",
+      "latency_ms": 28
+    },
+    {
+      "at": "2026-08-13T15:23:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_d7275d999d443dd6",
+      "latency_ms": 369
+    },
+    {
+      "at": "2026-08-15T20:23:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_baf16cf619fa9c5e",
+      "latency_ms": 590
+    }
+  ]
+}

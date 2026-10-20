@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-5865",
+  "carrier": "UPS",
+  "tracking_number": "1Z4D8F0B4463902893",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-13T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "package": {
+    "weight_kg": 0.35,
+    "dims_cm": [
+      38,
+      30,
+      9
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-09T22:11:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-07T14:34:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-11T08:41:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-09T12:20:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-11T03:25:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-10T19:19:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_2cbb1f66e9c99ce308b2",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 372,
+      "shard": 24
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 531,
+      "reset_s": 10
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T23:28:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_857b8e7ffdd772c3",
+      "latency_ms": 819
+    },
+    {
+      "at": "2026-09-08T16:24:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_360db6053725e2d2",
+      "latency_ms": 841
+    },
+    {
+      "at": "2026-09-09T05:05:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_69dbf88f6c5cee81",
+      "latency_ms": 195
+    }
+  ]
+}

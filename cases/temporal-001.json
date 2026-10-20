@@ -1,0 +1,167 @@
+{
+  "id": "temporal-001",
+  "category": "temporal",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my charger get delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5804"
+          },
+          "fixture": "temporal-001-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5804"
+          },
+          "fixture": "temporal-001-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, the carrier shows it as delivered to your front door."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-19404"
+          },
+          "fixture": "temporal-001-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "temporal-001-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my case get delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9260"
+          },
+          "fixture": "temporal-001-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9260"
+          },
+          "fixture": "temporal-001-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, the carrier shows it as delivered to your front door."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-19T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my USB-C hub order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6330"
+          },
+          "fixture": "temporal-001-07"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-6330"
+          },
+          "fixture": "temporal-001-08"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Thursday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-22T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another water bottle. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-6020"
+          },
+          "fixture": "temporal-001-09"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "water bottle order history"
+          },
+          "fixture": "temporal-001-10"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last water bottle order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "Which arrived first, the charger or the case?",
+  "expected": {
+    "type": "choice",
+    "value": "case",
+    "options": [
+      "charger",
+      "case"
+    ]
+  },
+  "distractors": [],
+  "abstainIsCorrect": false
+}

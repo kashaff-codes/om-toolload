@@ -1,0 +1,137 @@
+{
+  "id": "distractor-001",
+  "category": "distractor",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-04T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you check ORD-5643? That's my headphones."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5643"
+          },
+          "fixture": "distractor-001-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5643"
+          },
+          "fixture": "distractor-001-02"
+        },
+        {
+          "role": "assistant",
+          "text": "ORD-5643 is in transit with FedEx."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my HDMI cable order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1256"
+          },
+          "fixture": "distractor-001-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-1256"
+          },
+          "fixture": "distractor-001-04"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Thursday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-09T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you check ORD-5634? That's my earbuds."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5634"
+          },
+          "fixture": "distractor-001-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5634"
+          },
+          "fixture": "distractor-001-06"
+        },
+        {
+          "role": "assistant",
+          "text": "ORD-5634 is in transit with FedEx."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-15908"
+          },
+          "fixture": "distractor-001-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "distractor-001-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "What's the tracking number for ORD-5634?",
+  "expected": {
+    "type": "exact",
+    "value": "075250669204"
+  },
+  "distractors": [
+    "341129737930",
+    "075250669240"
+  ],
+  "abstainIsCorrect": false
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-86626",
+  "name": "Grace Mensah",
+  "email": "grace.mensah79@gmail.com",
+  "phone": "+1-555-521-4645",
+  "default_address": {
+    "line1": "9312 Foxglove Ter",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_18ba0aa9b0e62922c31c",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 288,
+      "shard": 27
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 641,
+      "reset_s": 60
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-15T02:35:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_1f85b574335de9ff",
+      "latency_ms": 715
+    },
+    {
+      "at": "2026-09-14T14:01:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_fc3a345a980b1401",
+      "latency_ms": 358
+    },
+    {
+      "at": "2026-09-13T23:36:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_2236f2dafa2f921b",
+      "latency_ms": 67
+    },
+    {
+      "at": "2026-09-17T06:05:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_34f70862ff735472",
+      "latency_ms": 318
+    },
+    {
+      "at": "2026-09-14T17:23:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_6c7230604d257205",
+      "latency_ms": 701
+    },
+    {
+      "at": "2026-09-18T01:49:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_087e82719b5da5bc",
+      "latency_ms": 236
+    },
+    {
+      "at": "2026-09-12T23:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_6b095cce650f4d5f",
+      "latency_ms": 793
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4570",
+  "customer_id": "CUS-97170",
+  "status": "shipped",
+  "placed_at": "2026-09-10T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "RT-AX6",
+      "name": "wifi router",
+      "qty": 1,
+      "unit_price": 179,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 179,
+    "tax": 14.77,
+    "shipping": 0,
+    "total": 193.77
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7382",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "5885 Granite Blvd",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80298"
+  },
+  "flags": {
+    "fraud_score": 0.07,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_0542b3afc8abdd211137",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 484,
+      "shard": 28
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 357,
+      "reset_s": 56
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T14:16:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_b04f87960b14a551",
+      "latency_ms": 262
+    },
+    {
+      "at": "2026-09-07T20:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_154477b31fbff4c7",
+      "latency_ms": 340
+    },
+    {
+      "at": "2026-09-10T07:22:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_e134d88436539553",
+      "latency_ms": 212
+    },
+    {
+      "at": "2026-09-05T02:46:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_1a9875c034f247f3",
+      "latency_ms": 411
+    },
+    {
+      "at": "2026-09-10T10:31:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_98dd241ceb137388",
+      "latency_ms": 244
+    },
+    {
+      "at": "2026-09-08T17:11:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_7c11c01cb1db8f34",
+      "latency_ms": 618
+    }
+  ]
+}

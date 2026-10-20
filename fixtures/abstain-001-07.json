@@ -1,0 +1,89 @@
+{
+  "order_id": "ORD-4518",
+  "customer_id": "CUS-39207",
+  "status": "delivered",
+  "placed_at": "2026-08-11T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HC-2M",
+      "name": "braided HDMI cable",
+      "qty": 1,
+      "unit_price": 14.99,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 14.99,
+    "tax": 1.24,
+    "shipping": 5.99,
+    "total": 22.22
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "3188",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "8886 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85753"
+  },
+  "flags": {
+    "fraud_score": 0.19,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_34bc8cb411514fb06b4b",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 599,
+      "shard": 19
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 761,
+      "reset_s": 21
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-06T02:15:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_ca212c4573ec9675",
+      "latency_ms": 786
+    },
+    {
+      "at": "2026-08-11T05:29:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_6433c4a25d2f2b29",
+      "latency_ms": 785
+    },
+    {
+      "at": "2026-08-06T07:21:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_52c8879c0d698624",
+      "latency_ms": 531
+    },
+    {
+      "at": "2026-08-05T21:47:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_26ad7689ecdb833a",
+      "latency_ms": 730
+    },
+    {
+      "at": "2026-08-06T02:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_ee13c6827f0ebae3",
+      "latency_ms": 78
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-90077",
+  "name": "Omar Haddad",
+  "email": "omar.haddad5@proton.me",
+  "phone": "+1-555-628-7272",
+  "default_address": {
+    "line1": "6718 Juniper Ln",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78739"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_244ad3c15c05eb1437be",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 589,
+      "shard": 49
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 848,
+      "reset_s": 30
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T22:33:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_417f92329dba1c80",
+      "latency_ms": 96
+    },
+    {
+      "at": "2026-09-08T22:01:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_5f748594c6323a14",
+      "latency_ms": 899
+    },
+    {
+      "at": "2026-09-08T09:42:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_59118f1be3e313d2",
+      "latency_ms": 636
+    },
+    {
+      "at": "2026-09-08T07:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_d2a4f38f5eafa115",
+      "latency_ms": 593
+    },
+    {
+      "at": "2026-09-06T12:18:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_ccebc722140fc5c0",
+      "latency_ms": 301
+    },
+    {
+      "at": "2026-09-06T20:14:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_485f40a3e6bdcfcb",
+      "latency_ms": 432
+    },
+    {
+      "at": "2026-09-08T17:16:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_0e9be6fbc0a90dd4",
+      "latency_ms": 65
+    }
+  ]
+}

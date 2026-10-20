@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-22380",
+  "name": "Liam Chen",
+  "email": "liam.chen64@gmail.com",
+  "phone": "+1-555-886-2649",
+  "default_address": {
+    "line1": "4888 Orchard Way",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4dddbd45e7ede93c974c",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 401,
+      "shard": 14
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 988,
+      "reset_s": 16
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-04T22:00:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_11206ef136f94463",
+      "latency_ms": 322
+    },
+    {
+      "at": "2026-09-05T05:03:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_2fd16be3020762b9",
+      "latency_ms": 546
+    },
+    {
+      "at": "2026-09-06T00:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_e0a5aa5275834eca",
+      "latency_ms": 182
+    },
+    {
+      "at": "2026-09-10T10:48:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_953a7aaca75f5e74",
+      "latency_ms": 733
+    },
+    {
+      "at": "2026-09-08T01:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_5b7b588f0ab6b5e7",
+      "latency_ms": 727
+    },
+    {
+      "at": "2026-09-09T06:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_e67c4da5453fb7cf",
+      "latency_ms": 319
+    },
+    {
+      "at": "2026-09-09T04:23:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_9aaf581e5d7ab78c",
+      "latency_ms": 179
+    }
+  ]
+}

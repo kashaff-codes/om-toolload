@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-42404",
+  "name": "Lucas Moreau",
+  "email": "lucas.moreau36@proton.me",
+  "phone": "+1-555-808-3113",
+  "default_address": {
+    "line1": "7465 Sparrow Pl",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53763"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": false,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_0b8ff50d6b4f748815ab",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 355,
+      "shard": 5
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 196,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T04:37:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_645a98d64bd3ab58",
+      "latency_ms": 165
+    },
+    {
+      "at": "2026-09-12T07:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_821d7c0e247e63e8",
+      "latency_ms": 390
+    },
+    {
+      "at": "2026-09-10T05:34:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_9382e23c67fadaaa",
+      "latency_ms": 822
+    },
+    {
+      "at": "2026-09-08T17:32:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_4e686bd6c012e6ff",
+      "latency_ms": 493
+    },
+    {
+      "at": "2026-09-13T07:49:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_e2b8f7bf8241ca02",
+      "latency_ms": 701
+    },
+    {
+      "at": "2026-09-10T19:11:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_9b3d0509e84c5be3",
+      "latency_ms": 432
+    },
+    {
+      "at": "2026-09-10T22:10:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_746be1d99c888140",
+      "latency_ms": 388
+    }
+  ]
+}

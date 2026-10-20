@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7296",
+  "customer_id": "CUS-41234",
+  "status": "shipped",
+  "placed_at": "2026-09-07T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "UH-7P",
+      "name": "7-port USB-C hub",
+      "qty": 1,
+      "unit_price": 54.99,
+      "fulfillment_center": "SEA-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 54.99,
+    "tax": 4.54,
+    "shipping": 0,
+    "total": 59.53
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "8428",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4650 Lakeview Dr",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53742"
+  },
+  "flags": {
+    "fraud_score": 0.051,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_467a8fae68bc15dbd98f",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 430,
+      "shard": 56
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 347,
+      "reset_s": 45
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-04T09:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_739c39461217c179",
+      "latency_ms": 844
+    },
+    {
+      "at": "2026-09-06T01:13:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_40aed5b4859f26e2",
+      "latency_ms": 234
+    },
+    {
+      "at": "2026-09-04T20:19:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_22317f58c7b1bf0e",
+      "latency_ms": 546
+    },
+    {
+      "at": "2026-09-02T09:42:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_b21cedfc92227d9e",
+      "latency_ms": 638
+    },
+    {
+      "at": "2026-09-02T19:11:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_666a1e336852bce0",
+      "latency_ms": 352
+    },
+    {
+      "at": "2026-09-02T10:12:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_34c7e1cc6a199d0e",
+      "latency_ms": 8
+    }
+  ]
+}

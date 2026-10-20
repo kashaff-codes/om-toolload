@@ -1,0 +1,85 @@
+{
+  "query": "laptop stand order history",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e606b80934b63f2a441d",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 596,
+      "shard": 55
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 577,
+      "reset_s": 53
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T01:49:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_5c610edd9e082264",
+      "latency_ms": 695
+    },
+    {
+      "at": "2026-09-04T03:18:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_9bc0f037cf9794d7",
+      "latency_ms": 322
+    },
+    {
+      "at": "2026-09-04T15:09:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_26610fac7574eaaf",
+      "latency_ms": 638
+    },
+    {
+      "at": "2026-09-05T11:37:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_e8584e0295862c0b",
+      "latency_ms": 622
+    },
+    {
+      "at": "2026-09-07T21:44:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_0a0ba0442ce8b8e5",
+      "latency_ms": 189
+    },
+    {
+      "at": "2026-09-04T16:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_aa8c7cf4e8a3c0c5",
+      "latency_ms": 759
+    },
+    {
+      "at": "2026-09-05T12:50:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_9f28d13692c6f358",
+      "latency_ms": 248
+    },
+    {
+      "at": "2026-09-08T11:03:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_ce2e0ecb5976f31d",
+      "latency_ms": 231
+    },
+    {
+      "at": "2026-09-08T07:04:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_95ce8d54207ff4fb",
+      "latency_ms": 92
+    }
+  ]
+}

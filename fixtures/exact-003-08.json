@@ -1,0 +1,89 @@
+{
+  "query": "open tickets",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-985830",
+      "order_id": "-",
+      "type": "newsletter",
+      "status": "open",
+      "refund_amount": null,
+      "created_at": "2026-09-11T15:00:00.000Z",
+      "summary": "Customer reported a minor account issue.",
+      "assignee": "billing-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_43afc3cf9c3fb8f36cdf",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 126,
+      "shard": 60
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 848,
+      "reset_s": 13
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-14T03:25:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_70c925777fa8d8e2",
+      "latency_ms": 485
+    },
+    {
+      "at": "2026-09-12T16:16:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_a0426a4ee28e2071",
+      "latency_ms": 836
+    },
+    {
+      "at": "2026-09-16T05:11:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_72365833f69e5be4",
+      "latency_ms": 723
+    },
+    {
+      "at": "2026-09-14T15:50:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_0d6d70d3df56b907",
+      "latency_ms": 514
+    },
+    {
+      "at": "2026-09-12T18:32:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_901c8df7c6e73513",
+      "latency_ms": 654
+    },
+    {
+      "at": "2026-09-17T12:49:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_37719d0b043476ed",
+      "latency_ms": 593
+    },
+    {
+      "at": "2026-09-13T19:12:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_061ea989253a61bf",
+      "latency_ms": 484
+    },
+    {
+      "at": "2026-09-16T06:07:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_3b9221c862894b32",
+      "latency_ms": 751
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2598",
+  "customer_id": "CUS-92816",
+  "status": "delivered",
+  "placed_at": "2026-08-25T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "TP-ALU",
+      "name": "aluminum tripod",
+      "qty": 1,
+      "unit_price": 45,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 45,
+    "tax": 3.71,
+    "shipping": 5.99,
+    "total": 54.7
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "8871",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4424 Harbor St",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78767"
+  },
+  "flags": {
+    "fraud_score": 0.076,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_32b71bbce48262de25de",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 275,
+      "shard": 52
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 418,
+      "reset_s": 50
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-19T16:47:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_dfeb0492a1feecde",
+      "latency_ms": 125
+    },
+    {
+      "at": "2026-08-24T03:18:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_a40cddfd2808898a",
+      "latency_ms": 194
+    },
+    {
+      "at": "2026-08-21T16:13:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_8cf8f034e2d8084b",
+      "latency_ms": 270
+    },
+    {
+      "at": "2026-08-21T06:51:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_944779a1d60489c6",
+      "latency_ms": 46
+    },
+    {
+      "at": "2026-08-23T19:00:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_2952a313ac7dae43",
+      "latency_ms": 541
+    },
+    {
+      "at": "2026-08-19T16:33:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_06ed8885933faac0",
+      "latency_ms": 216
+    }
+  ]
+}

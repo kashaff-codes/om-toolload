@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8438",
+  "customer_id": "CUS-39207",
+  "status": "shipped",
+  "placed_at": "2026-09-02T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CO-KIT",
+      "name": "cable organizer kit",
+      "qty": 1,
+      "unit_price": 18,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 18,
+    "tax": 1.49,
+    "shipping": 5.99,
+    "total": 25.48
+  },
+  "payment": {
+    "method": "card",
+    "last4": "5006",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "8886 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85753"
+  },
+  "flags": {
+    "fraud_score": 0.125,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c77d9a056f90e546e517",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 61,
+      "shard": 56
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 426,
+      "reset_s": 56
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T04:36:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_fd86d7b3eebb34e1",
+      "latency_ms": 532
+    },
+    {
+      "at": "2026-08-29T04:31:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_b5d8171b56e420d2",
+      "latency_ms": 281
+    },
+    {
+      "at": "2026-08-30T08:50:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_c6c5aa9272536dae",
+      "latency_ms": 147
+    },
+    {
+      "at": "2026-08-29T20:21:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_cc00f5c98c354db2",
+      "latency_ms": 851
+    },
+    {
+      "at": "2026-09-01T23:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_210abc8648a78dea",
+      "latency_ms": 373
+    },
+    {
+      "at": "2026-08-29T02:12:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_8b4ee36f22beae14",
+      "latency_ms": 784
+    }
+  ]
+}

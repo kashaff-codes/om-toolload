@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4703",
+  "customer_id": "CUS-84717",
+  "status": "returned",
+  "placed_at": "2026-08-26T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "MS-ERG",
+      "name": "ergonomic mouse",
+      "qty": 1,
+      "unit_price": 49.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 49.99,
+    "tax": 4.12,
+    "shipping": 5.99,
+    "total": 60.1
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "1598",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "flags": {
+    "fraud_score": 0.054,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_85f629776a465b649e53",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 531,
+      "shard": 40
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 458,
+      "reset_s": 7
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-21T22:51:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_6d7b7e1193952b66",
+      "latency_ms": 564
+    },
+    {
+      "at": "2026-08-25T04:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_2bab228628054acc",
+      "latency_ms": 721
+    },
+    {
+      "at": "2026-08-20T22:17:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_cf0535dc2caa5354",
+      "latency_ms": 566
+    },
+    {
+      "at": "2026-08-21T18:23:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_4ca27bef011d34ec",
+      "latency_ms": 238
+    },
+    {
+      "at": "2026-08-20T21:52:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_a57fd00315210211",
+      "latency_ms": 876
+    },
+    {
+      "at": "2026-08-22T05:58:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_fb63b19e66249912",
+      "latency_ms": 11
+    }
+  ]
+}

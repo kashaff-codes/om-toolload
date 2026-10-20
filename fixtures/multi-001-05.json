@@ -1,0 +1,89 @@
+{
+  "query": "case refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-670785",
+      "order_id": "ORD-8122",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 24.99,
+      "created_at": "2026-09-08T15:00:00.000Z",
+      "summary": "Refund for returned phone case.",
+      "assignee": "tier2-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_350ff3db37d48054c951",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 350,
+      "shard": 9
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 368,
+      "reset_s": 7
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-04T05:27:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_fe8e81bf33dfda51",
+      "latency_ms": 436
+    },
+    {
+      "at": "2026-09-06T04:54:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_fd043616b98cd63a",
+      "latency_ms": 224
+    },
+    {
+      "at": "2026-09-05T08:59:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_9bd3e6ea674cf050",
+      "latency_ms": 53
+    },
+    {
+      "at": "2026-09-08T15:03:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_c7ed7328eb167c8b",
+      "latency_ms": 20
+    },
+    {
+      "at": "2026-09-06T03:04:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_1de83278ded6b816",
+      "latency_ms": 141
+    },
+    {
+      "at": "2026-09-04T21:00:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_57a8bd69d5ad2036",
+      "latency_ms": 92
+    },
+    {
+      "at": "2026-09-04T10:01:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_c9255ca84b24982c",
+      "latency_ms": 15
+    },
+    {
+      "at": "2026-09-08T05:14:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_c3c7c4b54b0b5fd6",
+      "latency_ms": 724
+    }
+  ]
+}

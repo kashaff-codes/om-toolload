@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1081",
+  "customer_id": "CUS-84717",
+  "status": "delivered",
+  "placed_at": "2026-08-08T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "UH-7P",
+      "name": "7-port USB-C hub",
+      "qty": 1,
+      "unit_price": 54.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 54.99,
+    "tax": 4.54,
+    "shipping": 0,
+    "total": 59.53
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "6832",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "flags": {
+    "fraud_score": 0.149,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_f393e33e668e6a6c53b9",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 100,
+      "shard": 44
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 730,
+      "reset_s": 11
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-03T19:22:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_2665ef0f066bf06e",
+      "latency_ms": 126
+    },
+    {
+      "at": "2026-08-06T23:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_7dbd08a542a63e84",
+      "latency_ms": 695
+    },
+    {
+      "at": "2026-08-05T00:06:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_6d1f4fb55760a254",
+      "latency_ms": 764
+    },
+    {
+      "at": "2026-08-04T14:29:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_565fbd7752c0dffa",
+      "latency_ms": 288
+    },
+    {
+      "at": "2026-08-02T18:28:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_dc74115847b6fff5",
+      "latency_ms": 500
+    },
+    {
+      "at": "2026-08-03T15:25:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_5f05886cd3fb3e50",
+      "latency_ms": 245
+    }
+  ]
+}

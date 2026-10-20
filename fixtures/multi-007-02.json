@@ -1,0 +1,85 @@
+{
+  "query": "router invoice",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_725978c12d3f5db9f134",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 174,
+      "shard": 45
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 229,
+      "reset_s": 26
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T03:30:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_0279654488d854bf",
+      "latency_ms": 881
+    },
+    {
+      "at": "2026-09-06T13:56:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_d27e9e6f472f09f7",
+      "latency_ms": 676
+    },
+    {
+      "at": "2026-09-04T23:17:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_18a9da3ba6e1a8be",
+      "latency_ms": 298
+    },
+    {
+      "at": "2026-09-08T02:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_6d3fce6b23058961",
+      "latency_ms": 377
+    },
+    {
+      "at": "2026-09-05T20:27:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_9d625c17f7720c22",
+      "latency_ms": 521
+    },
+    {
+      "at": "2026-09-08T10:52:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_b84a3c89e83771c6",
+      "latency_ms": 745
+    },
+    {
+      "at": "2026-09-05T16:06:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_3660c3b32170132b",
+      "latency_ms": 612
+    },
+    {
+      "at": "2026-09-03T04:50:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_f2925569d5e51cc6",
+      "latency_ms": 724
+    },
+    {
+      "at": "2026-09-04T15:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_098df21c30f88978",
+      "latency_ms": 460
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-4997",
+  "customer_id": "CUS-59165",
+  "status": "returned",
+  "placed_at": "2026-08-22T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "PB-20K",
+      "name": "20000mAh power bank",
+      "qty": 1,
+      "unit_price": 42.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 42.99,
+    "tax": 3.55,
+    "shipping": 5.99,
+    "total": 52.53
+  },
+  "payment": {
+    "method": "card",
+    "last4": "2733",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7258 Maple Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78710"
+  },
+  "flags": {
+    "fraud_score": 0.067,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_cc4bd00aef4465007c47",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 262,
+      "shard": 22
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 119,
+      "reset_s": 43
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-17T15:04:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_1ac3a1e19a194c71",
+      "latency_ms": 175
+    },
+    {
+      "at": "2026-08-20T07:14:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_436f21c0d62f5789",
+      "latency_ms": 797
+    },
+    {
+      "at": "2026-08-16T15:31:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_7dc8b70f8c12597f",
+      "latency_ms": 54
+    },
+    {
+      "at": "2026-08-20T07:48:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_ec4b5e36f824bf1a",
+      "latency_ms": 670
+    },
+    {
+      "at": "2026-08-18T03:09:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_4a1d3d62382f3113",
+      "latency_ms": 110
+    },
+    {
+      "at": "2026-08-19T01:55:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_3bfafa0d2d4d5c32",
+      "latency_ms": 797
+    }
+  ]
+}

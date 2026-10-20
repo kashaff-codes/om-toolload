@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8122",
+  "customer_id": "CUS-23517",
+  "status": "returned",
+  "placed_at": "2026-08-25T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "PC-11P",
+      "name": "phone case",
+      "qty": 1,
+      "unit_price": 24.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 24.99,
+    "tax": 2.06,
+    "shipping": 5.99,
+    "total": 33.04
+  },
+  "payment": {
+    "method": "card",
+    "last4": "5661",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "704 Willow Ct",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43282"
+  },
+  "flags": {
+    "fraud_score": 0.112,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4d1c90886fbe9273ef94",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 118,
+      "shard": 19
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 499,
+      "reset_s": 17
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-22T19:00:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_3cb88f19a36ae7d8",
+      "latency_ms": 261
+    },
+    {
+      "at": "2026-08-20T01:02:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_b72153c5bcd71f1f",
+      "latency_ms": 532
+    },
+    {
+      "at": "2026-08-20T09:51:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_e683ee3505f0fce6",
+      "latency_ms": 71
+    },
+    {
+      "at": "2026-08-20T13:31:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_d3a5e4dcb0e47f45",
+      "latency_ms": 599
+    },
+    {
+      "at": "2026-08-22T17:34:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_209b9dad08fcb91a",
+      "latency_ms": 225
+    },
+    {
+      "at": "2026-08-25T14:54:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_9d7162dd88cff73b",
+      "latency_ms": 287
+    }
+  ]
+}

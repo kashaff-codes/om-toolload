@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-2834",
+  "customer_id": "CUS-14174",
+  "status": "delivered",
+  "placed_at": "2026-08-09T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "DM-90",
+      "name": "felt desk mat",
+      "qty": 1,
+      "unit_price": 29,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 29,
+    "tax": 2.39,
+    "shipping": 5.99,
+    "total": 37.38
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "3871",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9319 Granite Blvd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43220"
+  },
+  "flags": {
+    "fraud_score": 0.102,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_a3088533215f19b15626",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 223,
+      "shard": 60
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 750,
+      "reset_s": 22
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-08T02:16:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_2ced47272f88410e",
+      "latency_ms": 203
+    },
+    {
+      "at": "2026-08-07T06:10:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_484a4753d34ea89e",
+      "latency_ms": 75
+    },
+    {
+      "at": "2026-08-03T20:31:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_810a1b09ae723164",
+      "latency_ms": 676
+    },
+    {
+      "at": "2026-08-07T11:39:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_970a845bc0ac9ea8",
+      "latency_ms": 692
+    },
+    {
+      "at": "2026-08-04T08:52:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_df94ee4af669f19e",
+      "latency_ms": 286
+    },
+    {
+      "at": "2026-08-03T23:55:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_a066881f737f04e4",
+      "latency_ms": 421
+    }
+  ]
+}

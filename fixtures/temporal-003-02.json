@@ -1,0 +1,86 @@
+{
+  "order_id": "ORD-7490",
+  "carrier": "UPS",
+  "tracking_number": "1ZA090E38817905405",
+  "service_level": "ground",
+  "status": "delivered",
+  "estimated_delivery": "2026-09-08T15:00:00.000Z",
+  "delivered_at": "2026-09-08T15:00:00.000Z",
+  "destination": {
+    "line1": "1163 Copper Mill Rd",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27613"
+  },
+  "package": {
+    "weight_kg": 3.29,
+    "dims_cm": [
+      47,
+      32,
+      19
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-05T23:53:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-06T12:52:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-08T19:55:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-09T10:34:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-07T19:16:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-07T15:38:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_3145790df8b9caaf071f",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 361,
+      "shard": 16
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 432,
+      "reset_s": 12
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T16:42:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_5ae3a977370f50b4",
+      "latency_ms": 388
+    },
+    {
+      "at": "2026-09-05T23:22:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_e7668fe6b7e412e9",
+      "latency_ms": 681
+    }
+  ]
+}

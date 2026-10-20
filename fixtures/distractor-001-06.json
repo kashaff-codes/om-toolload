@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-5634",
+  "carrier": "FedEx",
+  "tracking_number": "075250669204",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-12T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "6727 Cedar Ridge Rd",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "package": {
+    "weight_kg": 1.87,
+    "dims_cm": [
+      47,
+      27,
+      7
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-08T08:19:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-10T13:10:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-08T10:36:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-06T19:09:00.000Z",
+      "facility": "RNO-2-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_8e08cf66b8c804debb2a",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 171,
+      "shard": 51
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 260,
+      "reset_s": 49
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T02:51:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_b4a361508dd69215",
+      "latency_ms": 38
+    },
+    {
+      "at": "2026-09-06T04:08:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_b8b0c6ad922a9c83",
+      "latency_ms": 266
+    },
+    {
+      "at": "2026-09-06T22:37:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_b4bae8c09b43cdbf",
+      "latency_ms": 710
+    },
+    {
+      "at": "2026-09-06T18:47:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_63c08a1de8fe619a",
+      "latency_ms": 899
+    }
+  ]
+}

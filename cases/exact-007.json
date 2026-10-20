@@ -1,0 +1,136 @@
+{
+  "id": "exact-007",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "large",
+    "position": "post_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-73231"
+          },
+          "fixture": "exact-007-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-007-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another coffee grinder. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5309"
+          },
+          "fixture": "exact-007-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "coffee grinder order history"
+          },
+          "fixture": "exact-007-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last coffee grinder order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-73231"
+          },
+          "fixture": "exact-007-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-007-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I need to double-check what I was charged for the SSDs I ordered."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8646"
+          },
+          "fixture": "exact-007-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "SSD billing"
+          },
+          "fixture": "exact-007-08"
+        },
+        {
+          "role": "assistant",
+          "text": "The payment was captured normally and there are no billing tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "How much was I charged in total for the SSD order?",
+  "expected": {
+    "type": "number",
+    "value": 238.13
+  },
+  "distractors": [
+    "219.98"
+  ],
+  "abstainIsCorrect": false
+}

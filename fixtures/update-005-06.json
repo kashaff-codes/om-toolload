@@ -1,0 +1,85 @@
+{
+  "query": "earbuds replacement",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_b21b8538493f16190b37",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 182,
+      "shard": 61
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 212,
+      "reset_s": 31
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T15:52:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_8cc9e6809c661ff0",
+      "latency_ms": 506
+    },
+    {
+      "at": "2026-09-05T20:31:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_09e367f53f863157",
+      "latency_ms": 120
+    },
+    {
+      "at": "2026-09-05T06:14:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_67a9c504d401007d",
+      "latency_ms": 537
+    },
+    {
+      "at": "2026-09-05T01:56:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_4860af8e9f2e1047",
+      "latency_ms": 390
+    },
+    {
+      "at": "2026-09-05T11:06:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_926df2442ae5d6f3",
+      "latency_ms": 669
+    },
+    {
+      "at": "2026-09-05T04:25:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_738d0f356c358393",
+      "latency_ms": 375
+    },
+    {
+      "at": "2026-09-07T20:15:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_9b78fa831644e52e",
+      "latency_ms": 647
+    },
+    {
+      "at": "2026-09-06T12:28:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_de8250ee9540c729",
+      "latency_ms": 295
+    },
+    {
+      "at": "2026-09-08T05:35:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_5bcb48ac2aafd4aa",
+      "latency_ms": 35
+    }
+  ]
+}

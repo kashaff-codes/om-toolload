@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5720",
+  "customer_id": "CUS-37990",
+  "status": "returned",
+  "placed_at": "2026-08-24T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SD-1TB",
+      "name": "1TB portable SSD",
+      "qty": 1,
+      "unit_price": 109.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 109.99,
+    "tax": 9.07,
+    "shipping": 0,
+    "total": 119.06
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "2542",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "6993 Harbor St",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85763"
+  },
+  "flags": {
+    "fraud_score": 0.028,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_fc43dd2b254fe1dcf1f1",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 483,
+      "shard": 31
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 929,
+      "reset_s": 58
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-23T06:18:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_29a49880d504967f",
+      "latency_ms": 182
+    },
+    {
+      "at": "2026-08-22T13:08:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_a9cca2a9b2ad643b",
+      "latency_ms": 561
+    },
+    {
+      "at": "2026-08-22T12:33:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_59f3175468464274",
+      "latency_ms": 787
+    },
+    {
+      "at": "2026-08-20T15:16:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_45c1bfd6c5200cbe",
+      "latency_ms": 483
+    },
+    {
+      "at": "2026-08-20T17:55:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_fc809a90a6c0cc4e",
+      "latency_ms": 270
+    },
+    {
+      "at": "2026-08-19T13:41:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_db97ac50c6450420",
+      "latency_ms": 151
+    }
+  ]
+}

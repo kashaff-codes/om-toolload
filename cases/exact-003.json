@@ -1,0 +1,149 @@
+{
+  "id": "exact-003",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": true
+  },
+  "sessions": [
+    {
+      "at": "2026-09-03T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Did my refund request for the backpack go through?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "backpack refund"
+          },
+          "fixture": "exact-003-01"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1130"
+          },
+          "fixture": "exact-003-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, it was approved and is being processed back to your card."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Quick check before I file this away: the reference is TKT-486349, right?"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, that matches what I have."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another cable organizer. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8686"
+          },
+          "fixture": "exact-003-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "cable organizer order history"
+          },
+          "fixture": "exact-003-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last cable organizer order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-14T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-26845"
+          },
+          "fixture": "exact-003-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-003-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-17T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-26845"
+          },
+          "fixture": "exact-003-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-003-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "What's the ticket number for my backpack refund?",
+  "expected": {
+    "type": "exact",
+    "value": "TKT-486349"
+  },
+  "distractors": [
+    "TKT-486394"
+  ],
+  "abstainIsCorrect": false
+}

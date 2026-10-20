@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8291",
+  "customer_id": "CUS-82168",
+  "status": "delivered",
+  "placed_at": "2026-09-09T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CH-65W",
+      "name": "65W charger",
+      "qty": 1,
+      "unit_price": 39.99,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 39.99,
+    "tax": 3.3,
+    "shipping": 5.99,
+    "total": 49.28
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "0189",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1215 Foxglove Ter",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80260"
+  },
+  "flags": {
+    "fraud_score": 0.09,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7e911fb976e69efe729d",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 482,
+      "shard": 63
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 164,
+      "reset_s": 57
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-09T09:17:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_8bf4967b53c94ee1",
+      "latency_ms": 541
+    },
+    {
+      "at": "2026-09-07T15:48:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_80ac52e182e33b64",
+      "latency_ms": 785
+    },
+    {
+      "at": "2026-09-04T18:07:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_2dd7f7d43ba379e1",
+      "latency_ms": 400
+    },
+    {
+      "at": "2026-09-07T01:47:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_2eeba0f137690035",
+      "latency_ms": 599
+    },
+    {
+      "at": "2026-09-04T14:59:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_21d84efc7a476bb3",
+      "latency_ms": 698
+    },
+    {
+      "at": "2026-09-04T00:50:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_9ddbb85b7ebaada5",
+      "latency_ms": 871
+    }
+  ]
+}

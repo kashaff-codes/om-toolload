@@ -1,0 +1,91 @@
+{
+  "order_id": "ORD-8836",
+  "carrier": "USPS",
+  "tracking_number": "9400257479730764467724",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-11T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9353 Copper Mill Rd",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27651"
+  },
+  "routing_note": "Destination updated via carrier portal (customer-initiated redirect).",
+  "package": {
+    "weight_kg": 3.85,
+    "dims_cm": [
+      27,
+      17,
+      10
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-06T22:18:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-05T08:12:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-06T13:09:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-09T14:37:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_53af53f4a924fce912c7",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 489,
+      "shard": 35
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 679,
+      "reset_s": 30
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-07T23:50:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_4f35d6b348c899cb",
+      "latency_ms": 601
+    },
+    {
+      "at": "2026-09-06T14:27:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_92340b8aeb4d792e",
+      "latency_ms": 629
+    },
+    {
+      "at": "2026-09-04T06:10:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_8050fe3fdf8e39de",
+      "latency_ms": 551
+    },
+    {
+      "at": "2026-09-08T12:40:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_fd4370fde7969802",
+      "latency_ms": 8
+    }
+  ]
+}

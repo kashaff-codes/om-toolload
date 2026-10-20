@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-7375",
+  "carrier": "FedEx",
+  "tracking_number": "404068569921",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-13T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "735 Sparrow Pl",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53755"
+  },
+  "package": {
+    "weight_kg": 0.87,
+    "dims_cm": [
+      46,
+      11,
+      29
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-09T01:29:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-10T15:32:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-10T07:24:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-07T13:47:00.000Z",
+      "facility": "ORD-7-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6aebbffa39823510b61b",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 559,
+      "shard": 6
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 908,
+      "reset_s": 52
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-10T00:17:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_2c9df96662c59f52",
+      "latency_ms": 194
+    },
+    {
+      "at": "2026-09-08T23:24:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_37e13c19b476d585",
+      "latency_ms": 144
+    },
+    {
+      "at": "2026-09-10T03:34:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_256181cf1852386d",
+      "latency_ms": 439
+    },
+    {
+      "at": "2026-09-10T13:32:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_e751cc1070c81495",
+      "latency_ms": 454
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "query": "desk mat order history",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e5231d60c9992a7c3b59",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 306,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 302,
+      "reset_s": 6
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T00:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_376409ecdf29511f",
+      "latency_ms": 21
+    },
+    {
+      "at": "2026-09-17T01:46:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_8833fa275ad99409",
+      "latency_ms": 478
+    },
+    {
+      "at": "2026-09-14T22:49:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_10dfe50cb6ee30e6",
+      "latency_ms": 447
+    },
+    {
+      "at": "2026-09-14T13:50:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_299054b403eef7b8",
+      "latency_ms": 845
+    },
+    {
+      "at": "2026-09-14T14:45:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_49c57024a76829f6",
+      "latency_ms": 21
+    },
+    {
+      "at": "2026-09-14T23:51:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_4df4f2f4ff285a13",
+      "latency_ms": 728
+    },
+    {
+      "at": "2026-09-15T08:26:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_0ae828df7a4fced3",
+      "latency_ms": 244
+    },
+    {
+      "at": "2026-09-14T16:19:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_4bd70cba2e910bf2",
+      "latency_ms": 380
+    },
+    {
+      "at": "2026-09-16T23:48:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_f9c8434d01684627",
+      "latency_ms": 346
+    }
+  ]
+}

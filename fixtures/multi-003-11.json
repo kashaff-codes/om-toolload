@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8423",
+  "customer_id": "CUS-84717",
+  "status": "shipped",
+  "placed_at": "2026-09-16T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "SP-GL2",
+      "name": "tempered glass screen protector",
+      "qty": 1,
+      "unit_price": 12.99,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 12.99,
+    "tax": 1.07,
+    "shipping": 5.99,
+    "total": 20.05
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "4043",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "flags": {
+    "fraud_score": 0.017,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_e8e0a2f5d4da9607fc21",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 30,
+      "shard": 31
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 704,
+      "reset_s": 60
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T14:18:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_bb120632d55fa691",
+      "latency_ms": 673
+    },
+    {
+      "at": "2026-09-13T02:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_157e48e6a426b6fd",
+      "latency_ms": 30
+    },
+    {
+      "at": "2026-09-12T04:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_3abd44df54ba9248",
+      "latency_ms": 131
+    },
+    {
+      "at": "2026-09-12T17:40:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_4a57149b28c71fce",
+      "latency_ms": 239
+    },
+    {
+      "at": "2026-09-16T07:21:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_9c4e85b8b1c24ce2",
+      "latency_ms": 149
+    },
+    {
+      "at": "2026-09-15T11:43:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_7b1609d4b4adce7f",
+      "latency_ms": 158
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-26845",
+  "name": "Priya Nair",
+  "email": "priya.nair51@outlook.com",
+  "phone": "+1-555-114-4988",
+  "default_address": {
+    "line1": "8991 Cedar Ridge Rd",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53741"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6b5ba1709ed97835d338",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 102,
+      "shard": 24
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 187,
+      "reset_s": 23
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T01:56:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_9dcc5df9468ba743",
+      "latency_ms": 702
+    },
+    {
+      "at": "2026-09-16T19:48:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_06002ab88e223ff3",
+      "latency_ms": 79
+    },
+    {
+      "at": "2026-09-15T21:24:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_49ccc793d5343c6e",
+      "latency_ms": 20
+    },
+    {
+      "at": "2026-09-16T12:50:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_2ae52c739f01338c",
+      "latency_ms": 16
+    },
+    {
+      "at": "2026-09-17T10:34:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_734745cf742265b4",
+      "latency_ms": 326
+    },
+    {
+      "at": "2026-09-16T12:49:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_b22c38696866ef96",
+      "latency_ms": 238
+    },
+    {
+      "at": "2026-09-16T19:35:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_afdc97589db64c3a",
+      "latency_ms": 799
+    }
+  ]
+}

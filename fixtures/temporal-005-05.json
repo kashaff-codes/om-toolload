@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7619",
+  "customer_id": "CUS-10583",
+  "status": "delivered",
+  "placed_at": "2026-08-09T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CO-KIT",
+      "name": "cable organizer kit",
+      "qty": 1,
+      "unit_price": 18,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 18,
+    "tax": 1.49,
+    "shipping": 5.99,
+    "total": 25.48
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "6345",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7384 Willow Ct",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78774"
+  },
+  "flags": {
+    "fraud_score": 0.153,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_de7d9773fbb426e6abbc",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 49,
+      "shard": 50
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 731,
+      "reset_s": 5
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-09T00:14:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_3f24b580381f325d",
+      "latency_ms": 616
+    },
+    {
+      "at": "2026-08-05T10:20:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_994498df59b741c2",
+      "latency_ms": 772
+    },
+    {
+      "at": "2026-08-05T16:18:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_5989ce4aa2633eac",
+      "latency_ms": 81
+    },
+    {
+      "at": "2026-08-08T00:35:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_4ff9f8600201efec",
+      "latency_ms": 210
+    },
+    {
+      "at": "2026-08-05T03:09:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_0eb1af9b1fff3558",
+      "latency_ms": 51
+    },
+    {
+      "at": "2026-08-08T07:38:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_7bdec51cd4214902",
+      "latency_ms": 13
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-3282",
+  "customer_id": "CUS-41234",
+  "status": "shipped",
+  "placed_at": "2026-09-11T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CO-KIT",
+      "name": "cable organizer kit",
+      "qty": 1,
+      "unit_price": 18,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 18,
+    "tax": 1.49,
+    "shipping": 5.99,
+    "total": 25.48
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "8866",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4650 Lakeview Dr",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53742"
+  },
+  "flags": {
+    "fraud_score": 0.154,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_3962812e5d8cba088b01",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 507,
+      "shard": 25
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 282,
+      "reset_s": 34
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T12:35:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_f4116ec685b8e4d3",
+      "latency_ms": 126
+    },
+    {
+      "at": "2026-09-08T01:12:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_75ad50586d80a13e",
+      "latency_ms": 716
+    },
+    {
+      "at": "2026-09-10T03:37:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_e49d13f7dab4bb89",
+      "latency_ms": 622
+    },
+    {
+      "at": "2026-09-09T05:34:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_82fd90ef5b70d6a2",
+      "latency_ms": 405
+    },
+    {
+      "at": "2026-09-09T05:50:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_225ef987e0cc9f71",
+      "latency_ms": 731
+    },
+    {
+      "at": "2026-09-08T15:25:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_6a78af9b33c69d1f",
+      "latency_ms": 117
+    }
+  ]
+}

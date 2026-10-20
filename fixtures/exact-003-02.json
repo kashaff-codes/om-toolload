@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-1130",
+  "customer_id": "CUS-26845",
+  "status": "returned",
+  "placed_at": "2026-08-14T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "BP-30L",
+      "name": "travel backpack",
+      "qty": 1,
+      "unit_price": 89.5,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 89.5,
+    "tax": 7.38,
+    "shipping": 0,
+    "total": 96.88
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "3332",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "8991 Cedar Ridge Rd",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53741"
+  },
+  "flags": {
+    "fraud_score": 0.18,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_38f20dee15ebea6822ac",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 421,
+      "shard": 62
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 703,
+      "reset_s": 43
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-10T17:43:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_2100c0fe77ffc9bb",
+      "latency_ms": 154
+    },
+    {
+      "at": "2026-08-12T15:49:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_31d32bbb85d4919a",
+      "latency_ms": 57
+    },
+    {
+      "at": "2026-08-12T05:27:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_7fbb68c1d67e99bd",
+      "latency_ms": 330
+    },
+    {
+      "at": "2026-08-10T11:36:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_d20735283d8cc259",
+      "latency_ms": 653
+    },
+    {
+      "at": "2026-08-12T19:31:00.000Z",
+      "actor": "svc-routing",
+      "action": "sync",
+      "request_id": "req_7324e7aa85cf408b",
+      "latency_ms": 899
+    },
+    {
+      "at": "2026-08-12T09:12:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_72b06d4b1e1f41a8",
+      "latency_ms": 473
+    }
+  ]
+}

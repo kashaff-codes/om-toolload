@@ -1,0 +1,136 @@
+{
+  "id": "multi-007",
+  "category": "multi_session",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my router order? I'm doing my expense report."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7280"
+          },
+          "fixture": "multi-007-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "router invoice"
+          },
+          "fixture": "multi-007-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Here it is. It's delivered and the invoice is attached to your account."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-11T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-82168"
+          },
+          "fixture": "multi-007-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "multi-007-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-16T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you pull up my charger order? I'm doing my expense report."
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8291"
+          },
+          "fixture": "multi-007-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "charger invoice"
+          },
+          "fixture": "multi-007-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Here it is. It's delivered and the invoice is attached to your account."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-20T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-82168"
+          },
+          "fixture": "multi-007-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "multi-007-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    }
+  ],
+  "question": "How much did I spend in total on the router and charger orders combined?",
+  "expected": {
+    "type": "number",
+    "value": 243.05
+  },
+  "distractors": [
+    "218.99"
+  ],
+  "abstainIsCorrect": false
+}

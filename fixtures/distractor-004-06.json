@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5702",
+  "customer_id": "CUS-37990",
+  "status": "returned",
+  "placed_at": "2026-08-30T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "KB-87T",
+      "name": "mechanical keyboard",
+      "qty": 1,
+      "unit_price": 119,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 119,
+    "tax": 9.82,
+    "shipping": 0,
+    "total": 128.82
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "5260",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "6993 Harbor St",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85763"
+  },
+  "flags": {
+    "fraud_score": 0.039,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_762353d36422dcb84b61",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 474,
+      "shard": 45
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 112,
+      "reset_s": 31
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-25T06:09:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_3b8ba172cae40a89",
+      "latency_ms": 46
+    },
+    {
+      "at": "2026-08-25T23:27:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_aebcae85fbf7c88c",
+      "latency_ms": 853
+    },
+    {
+      "at": "2026-08-25T12:50:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_659dc9201b95a769",
+      "latency_ms": 469
+    },
+    {
+      "at": "2026-08-27T18:23:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_7aa5d67bda6f14ae",
+      "latency_ms": 513
+    },
+    {
+      "at": "2026-08-26T16:39:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_338e4e88e1babd5e",
+      "latency_ms": 594
+    },
+    {
+      "at": "2026-08-26T10:28:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_2ccb3ca7c4095e4b",
+      "latency_ms": 112
+    }
+  ]
+}

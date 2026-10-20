@@ -1,0 +1,82 @@
+{
+  "query": "refund ORD-6893",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-477506",
+      "order_id": "ORD-6893",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 44.75,
+      "created_at": "2026-09-10T15:00:00.000Z",
+      "summary": "Partial refund for travel backpack (cosmetic damage).",
+      "assignee": "billing-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_560191670c8416d9a522",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 206,
+      "shard": 29
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 593,
+      "reset_s": 58
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T16:48:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_b0a3298169e81fb4",
+      "latency_ms": 479
+    },
+    {
+      "at": "2026-09-10T17:00:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_b587515aaba865c8",
+      "latency_ms": 216
+    },
+    {
+      "at": "2026-09-11T06:54:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_72b1f117b3c82cc3",
+      "latency_ms": 837
+    },
+    {
+      "at": "2026-09-10T02:27:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_a821ed5bd7ac6e05",
+      "latency_ms": 759
+    },
+    {
+      "at": "2026-09-09T20:35:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_5ae6b94db2951ae2",
+      "latency_ms": 768
+    },
+    {
+      "at": "2026-09-07T05:23:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_a4fac3f32c96c23b",
+      "latency_ms": 517
+    },
+    {
+      "at": "2026-09-09T13:20:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_3b9ff1f3d9d013b9",
+      "latency_ms": 122
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-8621",
+  "customer_id": "CUS-44514",
+  "status": "delivered",
+  "placed_at": "2026-08-18T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HC-2M",
+      "name": "braided HDMI cable",
+      "qty": 1,
+      "unit_price": 14.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 14.99,
+    "tax": 1.24,
+    "shipping": 5.99,
+    "total": 22.22
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "4930",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "1990 Harbor St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97232"
+  },
+  "flags": {
+    "fraud_score": 0.037,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4d5c598247d2f3fdbcde",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 286,
+      "shard": 6
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 293,
+      "reset_s": 19
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-14T08:28:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_49ba27a968347ad3",
+      "latency_ms": 195
+    },
+    {
+      "at": "2026-08-16T12:21:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_b2097b8402d23304",
+      "latency_ms": 754
+    },
+    {
+      "at": "2026-08-16T01:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_1531413b5cb2a61e",
+      "latency_ms": 886
+    },
+    {
+      "at": "2026-08-17T21:22:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_9a20e304328a5aa7",
+      "latency_ms": 246
+    },
+    {
+      "at": "2026-08-14T21:38:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_3915ba30b4269605",
+      "latency_ms": 660
+    },
+    {
+      "at": "2026-08-17T06:42:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_f2661729364e7b10",
+      "latency_ms": 477
+    }
+  ]
+}

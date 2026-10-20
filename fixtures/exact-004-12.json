@@ -1,0 +1,95 @@
+{
+  "order_id": "ORD-4612",
+  "carrier": "DHL",
+  "tracking_number": "JD014630120724",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-26T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "7775 Orchard Way",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27630"
+  },
+  "package": {
+    "weight_kg": 0.28,
+    "dims_cm": [
+      43,
+      38,
+      4
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-20T14:03:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-21T04:10:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-22T18:54:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-23T19:28:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-21T13:33:00.000Z",
+      "facility": "ATL-3-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_1e15b0c7c1d604d232c4",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 307,
+      "shard": 22
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 239,
+      "reset_s": 47
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-20T20:58:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_c4b54db8f450a461",
+      "latency_ms": 463
+    },
+    {
+      "at": "2026-09-19T07:37:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_a6b464c3ac16f527",
+      "latency_ms": 251
+    },
+    {
+      "at": "2026-09-24T11:50:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_d500fba088c5ef99",
+      "latency_ms": 832
+    },
+    {
+      "at": "2026-09-21T16:10:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_1268083bf45176d0",
+      "latency_ms": 857
+    }
+  ]
+}

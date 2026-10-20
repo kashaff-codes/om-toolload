@@ -1,0 +1,165 @@
+{
+  "id": "exact-001",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-01T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you check on my headphones order?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-8281"
+          },
+          "fixture": "exact-001-01"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-8281"
+          },
+          "fixture": "exact-001-02"
+        },
+        {
+          "role": "assistant",
+          "text": "It's in transit with FedEx, arriving Monday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another cable organizer. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-1354"
+          },
+          "fixture": "exact-001-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "cable organizer order history"
+          },
+          "fixture": "exact-001-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last cable organizer order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-31472"
+          },
+          "fixture": "exact-001-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-001-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another HDMI cable. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7556"
+          },
+          "fixture": "exact-001-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "HDMI cable order history"
+          },
+          "fixture": "exact-001-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last HDMI cable order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my water bottle order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9129"
+          },
+          "fixture": "exact-001-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9129"
+          },
+          "fixture": "exact-001-10"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with FedEx and is on schedule for Monday."
+        }
+      ]
+    }
+  ],
+  "question": "What's the tracking number for my headphones?",
+  "expected": {
+    "type": "exact",
+    "value": "631340277630"
+  },
+  "distractors": [
+    "631340277603"
+  ],
+  "abstainIsCorrect": false
+}

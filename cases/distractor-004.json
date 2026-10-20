@@ -1,0 +1,136 @@
+{
+  "id": "distractor-004",
+  "category": "distractor",
+  "tags": {
+    "outputSize": "large",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-07T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "What's the status of the refund on ORD-5720?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "refund ORD-5720"
+          },
+          "fixture": "distractor-004-01"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5720"
+          },
+          "fixture": "distractor-004-02"
+        },
+        {
+          "role": "assistant",
+          "text": "That refund is approved and on its way back to your card."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-37990"
+          },
+          "fixture": "distractor-004-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "distractor-004-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "What's the status of the refund on ORD-5702?"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "refund ORD-5702"
+          },
+          "fixture": "distractor-004-05"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5702"
+          },
+          "fixture": "distractor-004-06"
+        },
+        {
+          "role": "assistant",
+          "text": "That refund is approved and on its way back to your card."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-18T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another coffee grinder. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-2033"
+          },
+          "fixture": "distractor-004-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "coffee grinder order history"
+          },
+          "fixture": "distractor-004-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last coffee grinder order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    }
+  ],
+  "question": "How much was refunded on ORD-5702?",
+  "expected": {
+    "type": "number",
+    "value": 59.5
+  },
+  "distractors": [
+    "109.99"
+  ],
+  "abstainIsCorrect": false
+}

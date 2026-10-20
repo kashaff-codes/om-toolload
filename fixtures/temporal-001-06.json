@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-9260",
+  "carrier": "FedEx",
+  "tracking_number": "681202335402",
+  "service_level": "express",
+  "status": "delivered",
+  "estimated_delivery": "2026-08-29T15:00:00.000Z",
+  "delivered_at": "2026-08-29T15:00:00.000Z",
+  "destination": {
+    "line1": "4217 Orchard Way",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78765"
+  },
+  "package": {
+    "weight_kg": 2.51,
+    "dims_cm": [
+      13,
+      15,
+      30
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-12T22:06:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-12T10:54:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-12T01:01:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-11T16:44:00.000Z",
+      "facility": "RNO-2-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_7b5393dd1de1888e0c91",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 136,
+      "shard": 50
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 335,
+      "reset_s": 10
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T12:06:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_df05f1238027b952",
+      "latency_ms": 281
+    },
+    {
+      "at": "2026-09-09T14:17:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_98fa9ef40b1b92b4",
+      "latency_ms": 753
+    },
+    {
+      "at": "2026-09-12T08:53:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_2dfd9c75bdd901f7",
+      "latency_ms": 626
+    },
+    {
+      "at": "2026-09-10T19:36:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_b2cbf1d7a4d6dcae",
+      "latency_ms": 820
+    }
+  ]
+}

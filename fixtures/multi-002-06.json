@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7262",
+  "customer_id": "CUS-37577",
+  "status": "returned",
+  "placed_at": "2026-08-24T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LP-LED",
+      "name": "LED desk lamp",
+      "qty": 1,
+      "unit_price": 34.5,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 34.5,
+    "tax": 2.85,
+    "shipping": 5.99,
+    "total": 43.34
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "8579",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "2214 Lakeview Dr",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85725"
+  },
+  "flags": {
+    "fraud_score": 0.004,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_eff9e3764ccc9cf2509f",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 316,
+      "shard": 43
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 484,
+      "reset_s": 9
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-19T01:51:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_bb587d3fa55d6708",
+      "latency_ms": 168
+    },
+    {
+      "at": "2026-08-22T14:19:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_8fdee70fde0c03f1",
+      "latency_ms": 135
+    },
+    {
+      "at": "2026-08-23T21:10:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_f944f44a36247dc6",
+      "latency_ms": 418
+    },
+    {
+      "at": "2026-08-20T00:27:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_c1d7d027f4a97208",
+      "latency_ms": 595
+    },
+    {
+      "at": "2026-08-23T15:28:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_3c189b32f42763b2",
+      "latency_ms": 775
+    },
+    {
+      "at": "2026-08-22T04:46:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_7351e0d47a1354a9",
+      "latency_ms": 702
+    }
+  ]
+}

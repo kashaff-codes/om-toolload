@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-7043",
+  "customer_id": "CUS-22380",
+  "status": "delivered",
+  "placed_at": "2026-08-22T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "KB-87T",
+      "name": "mechanical keyboard",
+      "qty": 1,
+      "unit_price": 119,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 119,
+    "tax": 9.82,
+    "shipping": 0,
+    "total": 128.82
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0183",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4888 Orchard Way",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "flags": {
+    "fraud_score": 0.158,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c94126759e718a66c8a3",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 309,
+      "shard": 50
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 469,
+      "reset_s": 1
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-18T16:45:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_fb7388ade43a529f",
+      "latency_ms": 102
+    },
+    {
+      "at": "2026-08-21T14:54:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_2c79ab75c820eaac",
+      "latency_ms": 56
+    },
+    {
+      "at": "2026-08-19T02:57:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_b4c1a42b42318f08",
+      "latency_ms": 140
+    },
+    {
+      "at": "2026-08-18T16:15:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_f2f31a3af11c85b3",
+      "latency_ms": 395
+    },
+    {
+      "at": "2026-08-20T07:24:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_7f4072c07e4497da",
+      "latency_ms": 222
+    },
+    {
+      "at": "2026-08-20T22:00:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_a3484abc092bcf5a",
+      "latency_ms": 146
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5927",
+  "customer_id": "CUS-89877",
+  "status": "delivered",
+  "placed_at": "2026-09-06T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "LP-LED",
+      "name": "LED desk lamp",
+      "qty": 1,
+      "unit_price": 34.5,
+      "fulfillment_center": "ORD-7"
+    }
+  ],
+  "amounts": {
+    "subtotal": 34.5,
+    "tax": 2.85,
+    "shipping": 5.99,
+    "total": 43.34
+  },
+  "payment": {
+    "method": "paypal",
+    "last4": "7361",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9062 Copper Mill Rd",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83786"
+  },
+  "flags": {
+    "fraud_score": 0.026,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_438bd59d8c069ac00833",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 421,
+      "shard": 44
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 934,
+      "reset_s": 39
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T18:02:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_2db6924e2d073fc1",
+      "latency_ms": 201
+    },
+    {
+      "at": "2026-09-02T07:33:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_61cc0e3cc0b31f4f",
+      "latency_ms": 594
+    },
+    {
+      "at": "2026-09-04T19:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_cb2b74e7ae6a2d1b",
+      "latency_ms": 430
+    },
+    {
+      "at": "2026-09-01T01:35:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_c50abe6d708261b3",
+      "latency_ms": 399
+    },
+    {
+      "at": "2026-09-03T04:42:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_5f47cee5ab957e0d",
+      "latency_ms": 310
+    },
+    {
+      "at": "2026-09-01T04:41:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_c91d914339845fd1",
+      "latency_ms": 815
+    }
+  ]
+}

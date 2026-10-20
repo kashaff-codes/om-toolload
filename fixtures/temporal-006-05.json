@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-92816",
+  "name": "Yuki Tanaka",
+  "email": "yuki.tanaka49@outlook.com",
+  "phone": "+1-555-713-3619",
+  "default_address": {
+    "line1": "4424 Harbor St",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78767"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_0f2a29f460c9aaf9d97e",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 76,
+      "shard": 10
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 889,
+      "reset_s": 33
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T12:16:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "read",
+      "request_id": "req_99e0094d3356b0ac",
+      "latency_ms": 146
+    },
+    {
+      "at": "2026-09-07T01:13:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_62173c339e1e99c0",
+      "latency_ms": 36
+    },
+    {
+      "at": "2026-09-08T19:17:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_6de23683a02d3e49",
+      "latency_ms": 737
+    },
+    {
+      "at": "2026-09-05T17:14:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_d5dec31a4a247321",
+      "latency_ms": 242
+    },
+    {
+      "at": "2026-09-08T01:48:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_79b0faa3a9840838",
+      "latency_ms": 695
+    },
+    {
+      "at": "2026-09-05T10:40:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "reindex",
+      "request_id": "req_9cd57c52c448da30",
+      "latency_ms": 299
+    },
+    {
+      "at": "2026-09-08T14:11:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_6522a0d9442b60b7",
+      "latency_ms": 330
+    }
+  ]
+}

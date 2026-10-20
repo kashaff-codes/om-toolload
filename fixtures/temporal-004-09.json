@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-3164",
+  "customer_id": "CUS-22380",
+  "status": "delivered",
+  "placed_at": "2026-08-14T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "CO-KIT",
+      "name": "cable organizer kit",
+      "qty": 1,
+      "unit_price": 18,
+      "fulfillment_center": "ATL-3"
+    }
+  ],
+  "amounts": {
+    "subtotal": 18,
+    "tax": 1.49,
+    "shipping": 5.99,
+    "total": 25.48
+  },
+  "payment": {
+    "method": "card",
+    "last4": "7257",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "4888 Orchard Way",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "flags": {
+    "fraud_score": 0.066,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_9735ef5eb1ef43f3f70e",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 81,
+      "shard": 25
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 812,
+      "reset_s": 49
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-10T09:07:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "update",
+      "request_id": "req_bdd2dd31b671345f",
+      "latency_ms": 881
+    },
+    {
+      "at": "2026-08-13T22:06:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_15218980b24797f9",
+      "latency_ms": 309
+    },
+    {
+      "at": "2026-08-10T19:01:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_ce3555aeab526646",
+      "latency_ms": 467
+    },
+    {
+      "at": "2026-08-09T18:09:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_750d790f99f2d048",
+      "latency_ms": 755
+    },
+    {
+      "at": "2026-08-13T05:30:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_bc1b6a75bf59eb11",
+      "latency_ms": 637
+    },
+    {
+      "at": "2026-08-12T15:36:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_b0c5045aeedd9536",
+      "latency_ms": 143
+    }
+  ]
+}

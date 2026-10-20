@@ -1,0 +1,93 @@
+{
+  "order_id": "ORD-9129",
+  "carrier": "FedEx",
+  "tracking_number": "397759722037",
+  "service_level": "2day",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-15T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "2624 Maple Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97292"
+  },
+  "package": {
+    "weight_kg": 3.53,
+    "dims_cm": [
+      12,
+      36,
+      14
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-09T03:00:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-09T12:33:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-11T17:58:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-09T03:24:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-13T13:22:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "out_for_delivery",
+      "at": "2026-09-13T14:01:00.000Z",
+      "facility": "DFW-4-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_a347d625a72d01063fb7",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 274,
+      "shard": 41
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 356,
+      "reset_s": 35
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-11T23:10:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_f95b2ded48b052e9",
+      "latency_ms": 234
+    },
+    {
+      "at": "2026-09-11T22:33:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_a5110227ef80caa6",
+      "latency_ms": 250
+    },
+    {
+      "at": "2026-09-12T07:56:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_ba0c957d6a112667",
+      "latency_ms": 798
+    }
+  ]
+}

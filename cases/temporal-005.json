@@ -1,0 +1,136 @@
+{
+  "id": "temporal-005",
+  "category": "temporal",
+  "tags": {
+    "outputSize": "small",
+    "position": "post_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-02T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-10583"
+          },
+          "fixture": "temporal-005-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "temporal-005-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-05T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-10583"
+          },
+          "fixture": "temporal-005-03"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "temporal-005-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-10T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "I'm thinking of buying another cable organizer. What did I order last time, and is it delivered?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-7619"
+          },
+          "fixture": "temporal-005-05"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "cable organizer order history"
+          },
+          "fixture": "temporal-005-06"
+        },
+        {
+          "role": "assistant",
+          "text": "Your last cable organizer order was delivered without any issues, and there are no tickets on it."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-15T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "My speaker took a while. Did it finally arrive?"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5683"
+          },
+          "fixture": "temporal-005-07"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5683"
+          },
+          "fixture": "temporal-005-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, it was delivered, a little later than the original estimate. Sorry about the delay."
+        }
+      ]
+    }
+  ],
+  "question": "On what date was my speaker delivered?",
+  "expected": {
+    "type": "date",
+    "value": "2026-08-29"
+  },
+  "distractors": [
+    "2026-08-27"
+  ],
+  "abstainIsCorrect": false
+}

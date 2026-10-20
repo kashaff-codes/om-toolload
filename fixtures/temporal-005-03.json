@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-10583",
+  "name": "Daniel Okafor",
+  "email": "daniel.okafor77@gmail.com",
+  "phone": "+1-555-858-5680",
+  "default_address": {
+    "line1": "7384 Willow Ct",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78774"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": true,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_18e3d70b0f36fcc4b47d",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 540,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 267,
+      "reset_s": 7
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-04T01:55:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_329e96245efb5aaf",
+      "latency_ms": 676
+    },
+    {
+      "at": "2026-09-04T12:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_20f9291bdf2b4641",
+      "latency_ms": 49
+    },
+    {
+      "at": "2026-09-03T07:14:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_04c4e54ca99f9256",
+      "latency_ms": 272
+    },
+    {
+      "at": "2026-09-02T12:50:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_4d883eb53a475c74",
+      "latency_ms": 213
+    },
+    {
+      "at": "2026-09-03T20:20:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_95c7781275cf3829",
+      "latency_ms": 245
+    },
+    {
+      "at": "2026-09-04T11:42:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_c33869aeec21f20b",
+      "latency_ms": 496
+    },
+    {
+      "at": "2026-09-03T14:31:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_d6607c4972a3ce3c",
+      "latency_ms": 541
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-5024",
+  "carrier": "DHL",
+  "tracking_number": "JD014641149180",
+  "service_level": "express",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-03T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "1105 Foxglove Ter",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53761"
+  },
+  "package": {
+    "weight_kg": 3.51,
+    "dims_cm": [
+      26,
+      16,
+      7
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-08-30T22:23:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-08-30T06:20:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-30T14:31:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-08-29T03:14:00.000Z",
+      "facility": "RNO-2-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-01T11:50:00.000Z",
+      "facility": "EWR-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_2b157c7539e5f1e3089a",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 239,
+      "shard": 6
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 573,
+      "reset_s": 53
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T23:34:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_92acfc0677f0b744",
+      "latency_ms": 828
+    },
+    {
+      "at": "2026-08-27T03:52:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_d98a41e891015e2a",
+      "latency_ms": 599
+    },
+    {
+      "at": "2026-09-01T04:39:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_95564e8b54b54ad6",
+      "latency_ms": 653
+    }
+  ]
+}

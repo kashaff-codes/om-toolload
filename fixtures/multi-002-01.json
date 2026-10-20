@@ -1,0 +1,89 @@
+{
+  "query": "webcam refund",
+  "total": 1,
+  "results": [
+    {
+      "ticket_id": "TKT-249772",
+      "order_id": "ORD-9084",
+      "type": "refund",
+      "status": "approved",
+      "refund_amount": 69.99,
+      "created_at": "2026-09-02T15:00:00.000Z",
+      "summary": "Refund for returned 1080p webcam.",
+      "assignee": "tier1-queue"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_191637b7d59ed2b9b0ab",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 136,
+      "shard": 23
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 964,
+      "reset_s": 1
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-29T17:43:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_38590e760dd7990e",
+      "latency_ms": 246
+    },
+    {
+      "at": "2026-08-31T13:27:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_6ba0f9e9e899514b",
+      "latency_ms": 459
+    },
+    {
+      "at": "2026-08-29T23:52:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_7ac3ef199bed249f",
+      "latency_ms": 636
+    },
+    {
+      "at": "2026-09-02T12:13:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_a3b4f01897b3630e",
+      "latency_ms": 880
+    },
+    {
+      "at": "2026-08-30T14:36:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_98f5d439179da00a",
+      "latency_ms": 108
+    },
+    {
+      "at": "2026-09-01T08:56:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_ba887146dc7ec962",
+      "latency_ms": 423
+    },
+    {
+      "at": "2026-08-30T02:53:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_dd0fa25470169f3e",
+      "latency_ms": 326
+    },
+    {
+      "at": "2026-08-30T03:58:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_e988c63becfdd803",
+      "latency_ms": 127
+    }
+  ]
+}

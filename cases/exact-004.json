@@ -1,0 +1,194 @@
+{
+  "id": "exact-004",
+  "category": "exact_value",
+  "tags": {
+    "outputSize": "small",
+    "position": "pre_reflection",
+    "userRepeated": false
+  },
+  "sessions": [
+    {
+      "at": "2026-09-04T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you confirm my profile and any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-98521"
+          },
+          "fixture": "exact-004-01"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-004-02"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks good and nothing is open."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-08T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Is my monitor shipment on the way?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5495"
+          },
+          "fixture": "exact-004-03"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5495"
+          },
+          "fixture": "exact-004-04"
+        },
+        {
+          "role": "assistant",
+          "text": "Yes, it's on its way with USPS and should arrive Wednesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-12T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my laptop stand order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-9853"
+          },
+          "fixture": "exact-004-05"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-9853"
+          },
+          "fixture": "exact-004-06"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with USPS and is on schedule for Wednesday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-16T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Can you make sure my account details are up to date? Also, do I have any open tickets?"
+        },
+        {
+          "role": "tool",
+          "name": "getCustomer",
+          "args": {
+            "customerId": "CUS-98521"
+          },
+          "fixture": "exact-004-07"
+        },
+        {
+          "role": "tool",
+          "name": "searchTickets",
+          "args": {
+            "query": "open tickets"
+          },
+          "fixture": "exact-004-08"
+        },
+        {
+          "role": "assistant",
+          "text": "Your profile looks current, and you have one open account ticket that our team is working on."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-21T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my HDMI cable order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-5502"
+          },
+          "fixture": "exact-004-09"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-5502"
+          },
+          "fixture": "exact-004-10"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with UPS and is on schedule for Friday."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-23T15:00:00.000Z",
+      "turns": [
+        {
+          "role": "user",
+          "text": "Hey, can you check where my coffee grinder order is?"
+        },
+        {
+          "role": "tool",
+          "name": "getOrder",
+          "args": {
+            "orderId": "ORD-4612"
+          },
+          "fixture": "exact-004-11"
+        },
+        {
+          "role": "tool",
+          "name": "getShipment",
+          "args": {
+            "orderId": "ORD-4612"
+          },
+          "fixture": "exact-004-12"
+        },
+        {
+          "role": "assistant",
+          "text": "It shipped with DHL and is on schedule for Tuesday."
+        }
+      ]
+    }
+  ],
+  "question": "What street address is my monitor being shipped to?",
+  "expected": {
+    "type": "exact",
+    "value": "9602 Willow Ct"
+  },
+  "distractors": [
+    "7775 Orchard Way"
+  ],
+  "abstainIsCorrect": false
+}

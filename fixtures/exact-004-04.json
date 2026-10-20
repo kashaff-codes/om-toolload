@@ -1,0 +1,88 @@
+{
+  "order_id": "ORD-5495",
+  "carrier": "USPS",
+  "tracking_number": "9400884526493979603507",
+  "service_level": "ground",
+  "status": "in_transit",
+  "estimated_delivery": "2026-09-06T15:00:00.000Z",
+  "delivered_at": null,
+  "destination": {
+    "line1": "9602 Willow Ct",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83763"
+  },
+  "package": {
+    "weight_kg": 0.41,
+    "dims_cm": [
+      34,
+      30,
+      11
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-09-04T12:02:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-09-07T11:53:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-09-04T20:18:00.000Z",
+      "facility": "SEA-1-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-09-04T10:11:00.000Z",
+      "facility": "DFW-4-HUB"
+    },
+    {
+      "code": "in_transit",
+      "at": "2026-09-04T18:44:00.000Z",
+      "facility": "SEA-1-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4bba8f6e63dd66585504",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 464,
+      "shard": 23
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 591,
+      "reset_s": 59
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-04T14:42:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_6989b582340d5be2",
+      "latency_ms": 348
+    },
+    {
+      "at": "2026-09-06T05:43:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_3f445a084872a176",
+      "latency_ms": 603
+    },
+    {
+      "at": "2026-09-05T14:07:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "webhook_sent",
+      "request_id": "req_8b5842a54c1edd88",
+      "latency_ms": 348
+    }
+  ]
+}

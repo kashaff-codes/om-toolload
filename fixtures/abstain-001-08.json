@@ -1,0 +1,85 @@
+{
+  "query": "HDMI cable order history",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_c75d36128728d6674b0b",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 581,
+      "shard": 36
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 315,
+      "reset_s": 14
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-05T07:07:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_e1dfc6c0ecea08ea",
+      "latency_ms": 17
+    },
+    {
+      "at": "2026-09-05T16:28:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_805ae5126ee233f2",
+      "latency_ms": 679
+    },
+    {
+      "at": "2026-09-10T07:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_76c79006eab8d014",
+      "latency_ms": 686
+    },
+    {
+      "at": "2026-09-10T01:43:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "cache_refresh",
+      "request_id": "req_7a185dbca735505e",
+      "latency_ms": 237
+    },
+    {
+      "at": "2026-09-08T23:30:00.000Z",
+      "actor": "svc-notify",
+      "action": "update",
+      "request_id": "req_c72b9b38e75a291e",
+      "latency_ms": 723
+    },
+    {
+      "at": "2026-09-10T03:52:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_ce5d811fdfdaa28c",
+      "latency_ms": 619
+    },
+    {
+      "at": "2026-09-05T14:41:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_f7baaf15e09de5d0",
+      "latency_ms": 598
+    },
+    {
+      "at": "2026-09-07T21:22:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_809cca5ff782c005",
+      "latency_ms": 27
+    },
+    {
+      "at": "2026-09-07T03:01:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_b69374f70b5748d1",
+      "latency_ms": 635
+    }
+  ]
+}

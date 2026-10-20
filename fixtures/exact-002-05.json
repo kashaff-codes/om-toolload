@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-80717",
+  "name": "Tomas Garcia",
+  "email": "tomas.garcia96@fastmail.com",
+  "phone": "+1-555-668-8518",
+  "default_address": {
+    "line1": "9091 Orchard Way",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83764"
+  },
+  "member_since": "2023-04-11",
+  "tier": "standard",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_bf9a7f7515ee7b4be657",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 89,
+      "shard": 30
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 745,
+      "reset_s": 23
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-06T17:12:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_1246af11b700bd81",
+      "latency_ms": 705
+    },
+    {
+      "at": "2026-09-08T19:24:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_a892b4a807e46417",
+      "latency_ms": 809
+    },
+    {
+      "at": "2026-09-06T21:51:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_1cf4cd0a08c8d984",
+      "latency_ms": 621
+    },
+    {
+      "at": "2026-09-05T04:19:00.000Z",
+      "actor": "agent-portal",
+      "action": "webhook_sent",
+      "request_id": "req_87074479e0fc75c9",
+      "latency_ms": 332
+    },
+    {
+      "at": "2026-09-04T03:47:00.000Z",
+      "actor": "svc-routing",
+      "action": "webhook_sent",
+      "request_id": "req_73cbcb43a94c5d2c",
+      "latency_ms": 589
+    },
+    {
+      "at": "2026-09-06T08:40:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_0cba3057a96bc2e6",
+      "latency_ms": 200
+    },
+    {
+      "at": "2026-09-05T07:14:00.000Z",
+      "actor": "svc-billing",
+      "action": "update",
+      "request_id": "req_54e06174fa196211",
+      "latency_ms": 270
+    }
+  ]
+}

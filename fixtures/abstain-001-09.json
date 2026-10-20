@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-39207",
+  "name": "Zara Ahmed",
+  "email": "zara.ahmed37@gmail.com",
+  "phone": "+1-555-403-1644",
+  "default_address": {
+    "line1": "8886 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85753"
+  },
+  "member_since": "2023-04-11",
+  "tier": "plus",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_9fa9975c377c0bb349bb",
+    "region": "eu-west-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 472,
+      "shard": 7
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 923,
+      "reset_s": 29
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-08T01:11:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_e17147fc4fcd2c08",
+      "latency_ms": 326
+    },
+    {
+      "at": "2026-09-10T22:32:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_33922648422a7f10",
+      "latency_ms": 32
+    },
+    {
+      "at": "2026-09-08T07:40:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_238e85bc48e5c82d",
+      "latency_ms": 401
+    },
+    {
+      "at": "2026-09-09T03:55:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_0502cb0ca5a5f24d",
+      "latency_ms": 89
+    },
+    {
+      "at": "2026-09-09T04:43:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_aeb490599e83848e",
+      "latency_ms": 441
+    },
+    {
+      "at": "2026-09-09T11:38:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_a46d135a04c2b937",
+      "latency_ms": 33
+    },
+    {
+      "at": "2026-09-10T11:01:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_ed97fd0301ab7cfc",
+      "latency_ms": 320
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5502",
+  "customer_id": "CUS-98521",
+  "status": "shipped",
+  "placed_at": "2026-09-15T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HC-2M",
+      "name": "braided HDMI cable",
+      "qty": 1,
+      "unit_price": 14.99,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 14.99,
+    "tax": 1.24,
+    "shipping": 5.99,
+    "total": 22.22
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "7453",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7775 Orchard Way",
+    "city": "Raleigh",
+    "state": "NC",
+    "zip": "27630"
+  },
+  "flags": {
+    "fraud_score": 0.107,
+    "priority": true
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_464263597368be943868",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 516,
+      "shard": 48
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 526,
+      "reset_s": 26
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-12T18:54:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_e76611dbaff89ac5",
+      "latency_ms": 697
+    },
+    {
+      "at": "2026-09-13T20:39:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_1245bee533922221",
+      "latency_ms": 500
+    },
+    {
+      "at": "2026-09-10T11:50:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_1e7a223852cf942f",
+      "latency_ms": 740
+    },
+    {
+      "at": "2026-09-14T03:16:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_cdd3b7818091c2db",
+      "latency_ms": 57
+    },
+    {
+      "at": "2026-09-15T02:58:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_8a33322c904c3fdc",
+      "latency_ms": 237
+    },
+    {
+      "at": "2026-09-11T01:57:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_b35e624463a4fd20",
+      "latency_ms": 480
+    }
+  ]
+}

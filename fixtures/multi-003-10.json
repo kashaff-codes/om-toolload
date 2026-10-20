@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5207",
+  "customer_id": "CUS-84717",
+  "status": "delivered",
+  "placed_at": "2026-07-20T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "TP-ALU",
+      "name": "aluminum tripod",
+      "qty": 1,
+      "unit_price": 45,
+      "fulfillment_center": "RNO-2"
+    }
+  ],
+  "amounts": {
+    "subtotal": 45,
+    "tax": 3.71,
+    "shipping": 5.99,
+    "total": 54.7
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "2680",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9845 Orchard Way",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80224"
+  },
+  "flags": {
+    "fraud_score": 0.064,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_d9b07bbed5012fefeedd",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 51,
+      "shard": 20
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 436,
+      "reset_s": 37
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-07-15T18:22:00.000Z",
+      "actor": "svc-billing",
+      "action": "read",
+      "request_id": "req_4de1a93dc90c12e4",
+      "latency_ms": 385
+    },
+    {
+      "at": "2026-07-14T18:47:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_3a385528291ad462",
+      "latency_ms": 741
+    },
+    {
+      "at": "2026-07-19T11:45:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_abf33566b5e3883a",
+      "latency_ms": 43
+    },
+    {
+      "at": "2026-07-17T19:51:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_76fd2f95ebde066f",
+      "latency_ms": 387
+    },
+    {
+      "at": "2026-07-18T09:23:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_1a92eb5a8ad0fe6f",
+      "latency_ms": 605
+    },
+    {
+      "at": "2026-07-18T07:03:00.000Z",
+      "actor": "svc-routing",
+      "action": "cache_refresh",
+      "request_id": "req_a4a1041fc6daab5f",
+      "latency_ms": 513
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "order_id": "ORD-6193",
+  "carrier": "UPS",
+  "tracking_number": "1Z347DA19893712324",
+  "service_level": "express",
+  "status": "delivered",
+  "estimated_delivery": "2026-08-26T15:00:00.000Z",
+  "delivered_at": "2026-08-26T15:00:00.000Z",
+  "destination": {
+    "line1": "8886 Granite Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "zip": "85753"
+  },
+  "package": {
+    "weight_kg": 1.17,
+    "dims_cm": [
+      41,
+      23,
+      11
+    ]
+  },
+  "events": [
+    {
+      "code": "label_created",
+      "at": "2026-08-28T21:25:00.000Z",
+      "facility": "ORD-7-HUB"
+    },
+    {
+      "code": "picked_up",
+      "at": "2026-08-29T18:12:00.000Z",
+      "facility": "EWR-1-HUB"
+    },
+    {
+      "code": "arrived_at_facility",
+      "at": "2026-08-29T19:44:00.000Z",
+      "facility": "ATL-3-HUB"
+    },
+    {
+      "code": "departed_facility",
+      "at": "2026-08-31T22:17:00.000Z",
+      "facility": "ATL-3-HUB"
+    }
+  ],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_4d2aec42d7ac0d18301a",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 364,
+      "shard": 23
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 263,
+      "reset_s": 46
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T18:56:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_c5d6b6cd2c49603f",
+      "latency_ms": 823
+    },
+    {
+      "at": "2026-08-28T05:41:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_6cb25b80b87eba36",
+      "latency_ms": 794
+    },
+    {
+      "at": "2026-08-29T23:17:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_70e630f02a5dcecf",
+      "latency_ms": 300
+    },
+    {
+      "at": "2026-08-31T07:33:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_f23139de20ce2081",
+      "latency_ms": 711
+    }
+  ]
+}

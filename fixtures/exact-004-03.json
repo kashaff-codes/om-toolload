@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5495",
+  "customer_id": "CUS-98521",
+  "status": "shipped",
+  "placed_at": "2026-09-02T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "MN-27Q",
+      "name": "27-inch monitor",
+      "qty": 1,
+      "unit_price": 329,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 329,
+    "tax": 27.14,
+    "shipping": 0,
+    "total": 356.14
+  },
+  "payment": {
+    "method": "card",
+    "last4": "8158",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9602 Willow Ct",
+    "city": "Boise",
+    "state": "ID",
+    "zip": "83763"
+  },
+  "flags": {
+    "fraud_score": 0.115,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_fa3b1746bf40e2a60c76",
+    "region": "us-west-2",
+    "cache": {
+      "hit": true,
+      "ttl_s": 538,
+      "shard": 42
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 804,
+      "reset_s": 11
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-28T08:02:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_76a5c93088dd1b0f",
+      "latency_ms": 92
+    },
+    {
+      "at": "2026-08-28T22:24:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_c1857fa385f66373",
+      "latency_ms": 304
+    },
+    {
+      "at": "2026-08-30T16:39:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_d4a002bf9debd499",
+      "latency_ms": 832
+    },
+    {
+      "at": "2026-08-28T18:21:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_64fb475467b297b1",
+      "latency_ms": 149
+    },
+    {
+      "at": "2026-08-28T23:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_debf92c574e7f737",
+      "latency_ms": 799
+    },
+    {
+      "at": "2026-08-31T21:26:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_841dffb62b4cebba",
+      "latency_ms": 528
+    }
+  ]
+}

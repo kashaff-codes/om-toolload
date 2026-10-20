@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-3028",
+  "customer_id": "CUS-30209",
+  "status": "delivered",
+  "placed_at": "2026-08-13T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HC-2M",
+      "name": "braided HDMI cable",
+      "qty": 1,
+      "unit_price": 14.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 14.99,
+    "tax": 1.24,
+    "shipping": 5.99,
+    "total": 22.22
+  },
+  "payment": {
+    "method": "card",
+    "last4": "7154",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7447 Lakeview Dr",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43274"
+  },
+  "flags": {
+    "fraud_score": 0.051,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_8ad7f5681ebb5cad9a84",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 425,
+      "shard": 13
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 359,
+      "reset_s": 44
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-09T03:19:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_d719210f22e516c7",
+      "latency_ms": 189
+    },
+    {
+      "at": "2026-08-10T22:00:00.000Z",
+      "actor": "svc-billing",
+      "action": "sync",
+      "request_id": "req_2aed364a97e67755",
+      "latency_ms": 754
+    },
+    {
+      "at": "2026-08-08T01:00:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_19048a3151e37c74",
+      "latency_ms": 581
+    },
+    {
+      "at": "2026-08-12T15:31:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_b0dae323981fe349",
+      "latency_ms": 590
+    },
+    {
+      "at": "2026-08-07T17:36:00.000Z",
+      "actor": "agent-portal",
+      "action": "update",
+      "request_id": "req_5762b2d6ae13a38d",
+      "latency_ms": 635
+    },
+    {
+      "at": "2026-08-11T17:02:00.000Z",
+      "actor": "agent-portal",
+      "action": "read",
+      "request_id": "req_8eef445f3750ee03",
+      "latency_ms": 866
+    }
+  ]
+}

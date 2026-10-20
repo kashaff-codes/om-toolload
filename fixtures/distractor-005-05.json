@@ -1,0 +1,85 @@
+{
+  "customer_id": "CUS-22131",
+  "name": "John Smith",
+  "email": "john.smith44@outlook.com",
+  "phone": "+1-555-245-9764",
+  "default_address": {
+    "line1": "735 Sparrow Pl",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53755"
+  },
+  "member_since": "2023-04-11",
+  "tier": "pro",
+  "preferences": {
+    "marketing_opt_in": true,
+    "sms": false,
+    "language": "en-US"
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_05b6618036574ff516b4",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 422,
+      "shard": 32
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 243,
+      "reset_s": 42
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-13T06:54:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_858d1ccfe1e7376e",
+      "latency_ms": 827
+    },
+    {
+      "at": "2026-09-12T13:53:00.000Z",
+      "actor": "svc-routing",
+      "action": "update",
+      "request_id": "req_fac7cfd079e4abf3",
+      "latency_ms": 691
+    },
+    {
+      "at": "2026-09-11T10:52:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "cache_refresh",
+      "request_id": "req_7a0a6e7ac07f885c",
+      "latency_ms": 874
+    },
+    {
+      "at": "2026-09-12T04:39:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_f06a756662cf67af",
+      "latency_ms": 789
+    },
+    {
+      "at": "2026-09-12T01:35:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_da36c140fdb2b434",
+      "latency_ms": 495
+    },
+    {
+      "at": "2026-09-11T11:05:00.000Z",
+      "actor": "svc-billing",
+      "action": "webhook_sent",
+      "request_id": "req_427a4eb4c49f45d1",
+      "latency_ms": 801
+    },
+    {
+      "at": "2026-09-15T06:40:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "webhook_sent",
+      "request_id": "req_f252e0e80744562b",
+      "latency_ms": 433
+    }
+  ]
+}

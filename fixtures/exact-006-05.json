@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-5929",
+  "customer_id": "CUS-86626",
+  "status": "delivered",
+  "placed_at": "2026-08-16T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "HC-2M",
+      "name": "braided HDMI cable",
+      "qty": 1,
+      "unit_price": 14.99,
+      "fulfillment_center": "EWR-1"
+    }
+  ],
+  "amounts": {
+    "subtotal": 14.99,
+    "tax": 1.24,
+    "shipping": 5.99,
+    "total": 22.22
+  },
+  "payment": {
+    "method": "card",
+    "last4": "0673",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "9312 Foxglove Ter",
+    "city": "Columbus",
+    "state": "OH",
+    "zip": "43299"
+  },
+  "flags": {
+    "fraud_score": 0.199,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_5621e1fbb559795bbc65",
+    "region": "us-east-1",
+    "cache": {
+      "hit": true,
+      "ttl_s": 541,
+      "shard": 44
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 779,
+      "reset_s": 49
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-14T05:40:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_5979ddf03a32f50c",
+      "latency_ms": 718
+    },
+    {
+      "at": "2026-08-14T07:34:00.000Z",
+      "actor": "svc-notify",
+      "action": "sync",
+      "request_id": "req_663055d5b4290824",
+      "latency_ms": 620
+    },
+    {
+      "at": "2026-08-12T11:59:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_7df094861333b0ca",
+      "latency_ms": 531
+    },
+    {
+      "at": "2026-08-11T19:15:00.000Z",
+      "actor": "svc-routing",
+      "action": "reindex",
+      "request_id": "req_bdd77d70626c68c0",
+      "latency_ms": 77
+    },
+    {
+      "at": "2026-08-14T02:44:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "read",
+      "request_id": "req_0822815fb74bc213",
+      "latency_ms": 464
+    },
+    {
+      "at": "2026-08-11T11:46:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_fadffcbe737a8b23",
+      "latency_ms": 582
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "query": "screen protector order history",
+  "total": 0,
+  "results": [],
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_6454232242c470a1c936",
+    "region": "us-west-2",
+    "cache": {
+      "hit": false,
+      "ttl_s": 298,
+      "shard": 29
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 801,
+      "reset_s": 33
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-09-01T06:52:00.000Z",
+      "actor": "svc-notify",
+      "action": "reindex",
+      "request_id": "req_3dd8842941ed4199",
+      "latency_ms": 545
+    },
+    {
+      "at": "2026-09-01T11:17:00.000Z",
+      "actor": "agent-portal",
+      "action": "cache_refresh",
+      "request_id": "req_acd49ed5bbf9fdcc",
+      "latency_ms": 317
+    },
+    {
+      "at": "2026-09-01T07:46:00.000Z",
+      "actor": "svc-billing",
+      "action": "reindex",
+      "request_id": "req_8693e6e15ba00037",
+      "latency_ms": 748
+    },
+    {
+      "at": "2026-09-02T15:05:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_da92c2b9862baf06",
+      "latency_ms": 838
+    },
+    {
+      "at": "2026-09-05T18:38:00.000Z",
+      "actor": "svc-notify",
+      "action": "cache_refresh",
+      "request_id": "req_c08aaae406ea16de",
+      "latency_ms": 821
+    },
+    {
+      "at": "2026-09-04T18:58:00.000Z",
+      "actor": "svc-routing",
+      "action": "read",
+      "request_id": "req_f547fc92ced5000b",
+      "latency_ms": 393
+    },
+    {
+      "at": "2026-08-31T18:41:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "sync",
+      "request_id": "req_f37054ed1e07a53e",
+      "latency_ms": 364
+    },
+    {
+      "at": "2026-09-04T10:45:00.000Z",
+      "actor": "svc-notify",
+      "action": "read",
+      "request_id": "req_3bcb00cecf1f6aa2",
+      "latency_ms": 380
+    },
+    {
+      "at": "2026-09-05T11:09:00.000Z",
+      "actor": "agent-portal",
+      "action": "reindex",
+      "request_id": "req_fa5aeef26ee083fd",
+      "latency_ms": 179
+    }
+  ]
+}

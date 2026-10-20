@@ -1,0 +1,96 @@
+{
+  "order_id": "ORD-6893",
+  "customer_id": "CUS-88264",
+  "status": "returned",
+  "placed_at": "2026-08-29T15:00:00.000Z",
+  "currency": "USD",
+  "line_items": [
+    {
+      "sku": "BP-30L",
+      "name": "travel backpack",
+      "qty": 1,
+      "unit_price": 89.5,
+      "fulfillment_center": "DFW-4"
+    }
+  ],
+  "amounts": {
+    "subtotal": 89.5,
+    "tax": 7.38,
+    "shipping": 0,
+    "total": 96.88
+  },
+  "payment": {
+    "method": "apple_pay",
+    "last4": "0864",
+    "captured": true
+  },
+  "ship_to": {
+    "line1": "7197 Cedar Ridge Rd",
+    "city": "Madison",
+    "state": "WI",
+    "zip": "53763"
+  },
+  "flags": {
+    "fraud_score": 0.031,
+    "priority": false
+  },
+  "_meta": {
+    "api_version": "2026-07-01",
+    "request_id": "req_ff71d5375565407de402",
+    "region": "us-east-1",
+    "cache": {
+      "hit": false,
+      "ttl_s": 554,
+      "shard": 16
+    },
+    "rate_limit": {
+      "limit": 1000,
+      "remaining": 541,
+      "reset_s": 49
+    }
+  },
+  "audit_log": [
+    {
+      "at": "2026-08-27T18:58:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "sync",
+      "request_id": "req_3b51d94036530d60",
+      "latency_ms": 808
+    },
+    {
+      "at": "2026-08-24T21:32:00.000Z",
+      "actor": "svc-fraud-check",
+      "action": "reindex",
+      "request_id": "req_72599ad04375eb63",
+      "latency_ms": 515
+    },
+    {
+      "at": "2026-08-27T08:16:00.000Z",
+      "actor": "svc-notify",
+      "action": "webhook_sent",
+      "request_id": "req_24b7463ef92c32c4",
+      "latency_ms": 524
+    },
+    {
+      "at": "2026-08-26T11:45:00.000Z",
+      "actor": "agent-portal",
+      "action": "sync",
+      "request_id": "req_d11f20309cccde7c",
+      "latency_ms": 849
+    },
+    {
+      "at": "2026-08-27T00:55:00.000Z",
+      "actor": "svc-fulfillment",
+      "action": "update",
+      "request_id": "req_a074c70f7e0fa17d",
+      "latency_ms": 840
+    },
+    {
+      "at": "2026-08-27T14:07:00.000Z",
+      "actor": "svc-billing",
+      "action": "cache_refresh",
+      "request_id": "req_fae4aad482732a2a",
+      "latency_ms": 492
+    }
+  ]
+}
