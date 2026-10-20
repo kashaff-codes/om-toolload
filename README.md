@@ -15,8 +15,8 @@ models behind Mastra's headline; see [Limitations](#limitations).
 
 **Headline:** _filled in after the main run._ <!-- one sentence, sized to 40 cases -->
 
-Pre-registration: [PREREGISTRATION.md](PREREGISTRATION.md) (commit: _link the hash of
-the commit that added it_).
+Pre-registration: [PREREGISTRATION.md](PREREGISTRATION.md), committed in `9cfdf78`
+before any main-run result existed.
 
 <!-- report:start -->
 _Run `pnpm bench` then `pnpm report` to fill this section._
