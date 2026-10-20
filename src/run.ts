@@ -4,12 +4,13 @@
 //   pnpm bench --dry               5 cases, 1 run
 //   pnpm bench --conditions C4,C5,C6 --runs 3
 //   pnpm bench --resume <runId>    skip rows already in the ledger for that run id
+//   pnpm bench:observer            Observer-size check: C4, C5 with a hosted Observer
 import { appendFileSync, copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { parseArgs } from 'node:util'
 import { Agent } from '@mastra/core/agent'
 import { estimateTokenCount } from 'tokenx'
 import { ALL_CONDITIONS, type ConditionId, INGEST_GROUP, MAIN_CONDITIONS, OM_THRESHOLDS, RECENT_MESSAGES, buildMemory, emptyStats, type OMStats } from './conditions.js'
-import { actorModel, env, sampling } from './models.js'
+import { actorModel, env, observerName, sampling, usd } from './models.js'
 import { Case, LedgerRow } from './schema.js'
 import { judgeLabel, judgeScorer, spend } from './scorers/judge.js'
 import { scoreExact, valuePresent } from './scorers/exact.js'
@@ -30,8 +31,12 @@ const { values: args } = parseArgs({
     cases: { type: 'string' },
     resume: { type: 'string' },
     'no-judge': { type: 'boolean', default: false },
+    // Observer + Reflector model (a Mastra router id); the agent stays local
+    observer: { type: 'string' },
+    ledger: { type: 'string', default: 'results/ledger.jsonl' },
   },
 })
+if (args.observer) env.observerModel = args.observer
 
 const loadCases = () => readdirSync('cases').filter(f => f.endsWith('.json')).sort().map(f => Case.parse(JSON.parse(readFileSync(`cases/${f}`, 'utf8'))))
 
@@ -39,7 +44,7 @@ function versions(): Record<string, string> {
   const v = (p: string) => JSON.parse(readFileSync(`node_modules/${p}/package.json`, 'utf8')).version as string
   return {
     '@mastra/core': v('@mastra/core'), '@mastra/memory': v('@mastra/memory'), '@mastra/libsql': v('@mastra/libsql'),
-    actor: env.ollamaModel, observer: env.ollamaModel, judge: env.judgeModel, numCtx: String(env.numCtx),
+    actor: env.ollamaModel, observer: observerName(), judge: env.judgeModel, numCtx: String(env.numCtx),
     omMessageTokens: String(OM_THRESHOLDS.messageTokens), omObservationTokens: String(OM_THRESHOLDS.observationTokens), recentMessages: String(RECENT_MESSAGES),
   }
 }
@@ -51,6 +56,7 @@ async function ingest(group: string, c: Case, sessions: Awaited<ReturnType<typeo
   const cond = INGEST_AS[group]!
   const file = `${dir}/${group}-${c.id}.db`
   const stats = emptyStats()
+  const t0 = Date.now()
   const { storage, memory } = buildMemory(cond, file, stats, 'ingest')
   await memory.createThread({ threadId: c.id, resourceId: RESOURCE, title: c.id })
   const om = usesOM(cond) ? await memory.omEngine : null
@@ -65,7 +71,7 @@ async function ingest(group: string, c: Case, sessions: Awaited<ReturnType<typeo
     }
   }
   await storage.close()
-  return { file, stats, firstReflectionAfterSession }
+  return { file, stats, firstReflectionAfterSession, ingestMs: Date.now() - t0 }
 }
 
 async function ask(cond: ConditionId, c: Case, file: string) {
@@ -125,7 +131,10 @@ async function main() {
   const ver = versions()
 
   mkdirSync('results/transcripts', { recursive: true })
-  const LEDGER = 'results/ledger.jsonl'
+  const LEDGER = args.ledger!
+  // hosted Observer spend, capped like the judge's
+  let observerUsd = 0
+  const hostedObserver = env.observerModel.startsWith('anthropic/') ? env.observerModel.slice('anthropic/'.length) : null
   const done = new Set<string>()
   if (args.resume && existsSync(LEDGER))
     for (const line of readFileSync(LEDGER, 'utf8').split('\n').filter(Boolean)) {
@@ -142,6 +151,10 @@ async function main() {
   for (let run = 1; run <= runs; run++) {
     sampling.seed = run
     for (const c of cases) {
+      if (hostedObserver && observerUsd >= env.costCapUsd) {
+        console.error(`observer spend $${observerUsd.toFixed(4)} reached COST_CAP_USD; stopping`)
+        break
+      }
       unitsDone++
       if (!conds.some(k => !done.has(`${run}|${k}|${c.id}`))) continue
       const t0 = Date.now()
@@ -166,8 +179,8 @@ async function main() {
     }
     tryRm(`runs/${runId}/r${run}`)
   }
-  appendFileSync('results/costs.jsonl', JSON.stringify({ runId, judgeCalls: spend.calls, judgeCached: spend.cached, judgeUsd: +spend.usd.toFixed(4), at: new Date().toISOString() }) + '\n')
-  console.log(`done. judge: ${spend.calls} calls, ${spend.cached} cached, $${spend.usd.toFixed(4)}`)
+  appendFileSync('results/costs.jsonl', JSON.stringify({ runId, judgeCalls: spend.calls, judgeCached: spend.cached, judgeUsd: +spend.usd.toFixed(4), ...(hostedObserver ? { observer: env.observerModel, observerUsd: +observerUsd.toFixed(4) } : {}), at: new Date().toISOString() }) + '\n')
+  console.log(`done. judge: ${spend.calls} calls, ${spend.cached} cached, $${spend.usd.toFixed(4)}${hostedObserver ? `; observer $${observerUsd.toFixed(4)}` : ''}`)
   process.exit(0)
 
   async function runCase(run: number, c: Case) {
@@ -182,7 +195,9 @@ async function main() {
     const ingested = new Map<string, Awaited<ReturnType<typeof ingest>>>()
     for (const g of new Set(todo.map(k => INGEST_GROUP[k]))) {
       const t0 = Date.now()
-      ingested.set(g, await ingest(g, c, sessions, dir))
+      const ing = await ingest(g, c, sessions, dir)
+      ingested.set(g, ing)
+      if (hostedObserver) observerUsd += usd(hostedObserver, ing.stats.observerInputTokens + ing.stats.reflectorInputTokens, ing.stats.observerOutputTokens + ing.stats.reflectorOutputTokens)
       console.log(`  [r${run} ${c.id}] ingested ${g} in ${((Date.now() - t0) / 1000).toFixed(1)}s`)
     }
 
@@ -207,6 +222,7 @@ async function main() {
         finalObservationTokens: a.observations ? estimateTokenCount(a.observations) : 0,
         firstReflectionAfterSession: usesOM(k) ? ing.firstReflectionAfterSession : null,
         valueInThread,
+        ingestMs: ing.ingestMs,
         valueInObservations: a.observations !== null ? valuePresent(a.observations, c.expected) : null,
         recallCalls: a.recallCalls, latencyMs: a.latencyMs, judgeUsd: +spend.usd.toFixed(6),
         versions: ver, seed: run, at: new Date().toISOString(),

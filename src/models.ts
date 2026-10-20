@@ -12,6 +12,9 @@ try {
 export const env = {
   ollamaBaseURL: process.env.OLLAMA_BASE_URL ?? 'http://localhost:11434/api',
   ollamaModel: process.env.OLLAMA_MODEL ?? 'llama3.1:8b',
+  // Observer and Reflector. Local by default; a Mastra router id such as
+  // 'anthropic/claude-haiku-5-5' runs them hosted (the Observer-size check).
+  observerModel: process.env.OBSERVER_MODEL ?? '',
   numCtx: Number(process.env.OLLAMA_NUM_CTX ?? 12288),
   judgeModel: process.env.JUDGE_MODEL ?? 'claude-haiku-5-5',
   costCapUsd: Number(process.env.COST_CAP_USD ?? 2),
@@ -36,7 +39,8 @@ const ollamaFetch: typeof fetch = async (input, init) => {
 const ollama = createOllama({ baseURL: env.ollamaBaseURL, fetch: ollamaFetch })
 
 export const actorModel = () => ollama(env.ollamaModel)
-export const omModel = () => ollama(env.ollamaModel)
+export const omModel = () => (env.observerModel ? env.observerModel : ollama(env.ollamaModel))
+export const observerName = () => env.observerModel || env.ollamaModel
 
 let anthropic: Anthropic | undefined
 export const anthropicClient = () => {

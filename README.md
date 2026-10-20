@@ -82,6 +82,7 @@ cp .env.example .env
 | `pnpm bench --dry` | 5 cases, 1 run, C1-C4 (add `--conditions C1,C2,C3,C4,C5,C6` for all) |
 | `pnpm bench` | All 40 cases, C1-C4, 3 runs |
 | `pnpm bench:fix` | C5 and C6, 3 runs |
+| `pnpm bench:observer` | Observer-size check: C4 and C5 on 10 cases with `claude-haiku-5-5` as Observer, agent still local (about $0.15) |
 | `pnpm report` | Tables into `results/` and this README |
 | `pnpm build:cases` | Regenerates `cases/` and `fixtures/` (same seed, same bytes) |
 
@@ -101,7 +102,7 @@ several hours. If your GPU can't hold the model at a 12k context (`ollama ps` sh
 share), Ollama's `OLLAMA_FLASH_ATTENTION=1` and `OLLAMA_KV_CACHE_TYPE=q8_0` server settings
 shrink the KV cache.
 
-**Cost.** Only the judge calls a paid API. Verdicts are cached by (question, expected,
+**Cost.** Only the judge (and, in the Observer-size check, the hosted Observer) calls a paid API. Verdicts are cached by (question, expected,
 answer), and the runner stops judging once `COST_CAP_USD` (default $2) is spent. The
 scorer audit costs under a cent.
 
@@ -112,7 +113,8 @@ scorer audit costs under a cent.
 - One domain (e-commerce support), one actor model, one observer model, and both are a
   local 8B model, much weaker than the gpt-5-mini / gemini-2.5-flash pair Mastra
   benchmarked. Some of what this repo measures is the 8B Observer's summarizing, not OM's
-  design.
+  design; the Observer-size check reruns C4 and C5 on 10 cases with a hosted Observer to
+  size that effect.
 - Threads are 4k-8.5k tokens with OM thresholds scaled to 3,000 / 1,500 so that observation
   and reflection both fire. OM's defaults (30k / 40k) never trigger on threads this short,
   so the default-threshold check was dropped.

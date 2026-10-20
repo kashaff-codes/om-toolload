@@ -122,6 +122,27 @@ secondary. The audit table ships either way.
 - If multi-session or update misses dominate, lead with C6.
 - Run both either way. The headline fix is whichever wins on accuracy per actor input token.
 
+## Amendment 1: Observer-size check (2026-10-20)
+
+Added while the C1-C4 main run was in progress (17 of 40 cases logged, none analysed),
+after an outside review of the pilot asked whether OM's dropped values come from OM's design
+or from a small local Observer. Mastra's reported numbers use gemini-2.5-flash as Observer.
+
+- Cases: the 10 cases the scorer audit uses (`exact-001` to `exact-005`, `temporal-004`,
+  `multi-001`, `update-001`, `distractor-001`, `distractor-005`), chosen before this check.
+- Conditions: C4 and C5, one run, seed 1, the same thresholds and hooks as the main run.
+- Change: Observer and Reflector on `claude-haiku-5-5` (Mastra router id
+  `anthropic/claude-haiku-5-5`); the agent stays on local llama3.1:8b. Ledger:
+  `results/observer-check.jsonl`, compared case by case with run 1 of the main run.
+- Reported: correct and silent-failure counts, how often the value was kept in the log,
+  how many threads reflected, and ingestion time, per Observer.
+- Reading rule: if C4 with the hosted Observer still trails C1 on these cases by at least
+  half the gap the local Observer shows, the drops are attributed mainly to OM's design on
+  tool output; otherwise, mainly to Observer size. With 10 cases this is a check, not a
+  test; it is reported beside the main results, never in place of them.
+- A one-case smoke test (`exact-001`, C4) was run to confirm the setup before this was
+  written; its result is not part of the check.
+
 ## Cut lines, if compute runs short
 
 1. Run C1-C4 once before running them three times.

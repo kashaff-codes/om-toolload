@@ -17,7 +17,8 @@
     "report": "tsx src/report.ts",
     "spike": "tsx scripts/spike.ts",
     "typecheck": "tsc",
-    "test": "vitest run"
+    "test": "vitest run",
+    "bench:observer": "tsx src/run.ts --conditions C4,C5 --runs 1 --observer anthropic/claude-haiku-5-5 --ledger results/observer-check.jsonl --cases exact-001,exact-002,exact-003,exact-004,exact-005,temporal-004,multi-001,update-001,distractor-001,distractor-005"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.135.0",

@@ -201,6 +201,35 @@ if (conds.includes('C4')) {
   summary.c4Failures = fails.map(r => ({ caseId: r.caseId, run: r.run, label: label(r) }))
 }
 
+// ---- Observer-size check (pre-registration amendment 1): same cases, hosted Observer ----
+const OBS_CHECK = 'results/observer-check.jsonl'
+if (existsSync(OBS_CHECK)) {
+  const hosted = readFileSync(OBS_CHECK, 'utf8').trim().split('\n').filter(Boolean).map(l => LedgerRow.parse(JSON.parse(l)))
+  const ids = [...new Set(hosted.map(r => r.caseId))].sort()
+  const local = (k: string) => rows.filter(r => r.condition === k && r.run === 1 && ids.includes(r.caseId))
+  const line = (who: string, k: string, rs: LedgerRow[]) => {
+    const answerable = rs.filter(r => r.valueInThread === true && r.valueInObservations !== null)
+    const ms = rs.map(r => r.ingestMs).filter((x): x is number => x !== null)
+    return `| ${who} | ${k} ${CONDITION_LABELS[k as ConditionId]} | ${rs.filter(r => label(r) === 'correct').length} of ${rs.length} | ${rs.filter(r => label(r) === 'silent_failure').length} | ${answerable.length ? `${answerable.filter(r => r.valueInObservations).length} of ${answerable.length}` : 'n/a'} | ${rs.filter(r => r.reflectionCycles > 0).length} of ${rs.length} | ${ms.length ? `${(median(ms) / 1000).toFixed(0)}s` : 'not recorded'} |`
+  }
+  out.push(`\n#### Observer-size check (${ids.length} cases, run 1)\n`)
+  out.push(`Pre-registration amendment 1. The agent stays on ${hosted[0]?.versions.actor}; only the Observer and Reflector change, from the local model to ${hosted[0]?.versions.observer}. If the C4 gap to C1 holds, the drops are OM's design on tool output; if it closes, retention depends on Observer size.\n`)
+  out.push('| Observer | Condition | Correct | Silent failures | Value kept in the log | Threads with a reflection | Ingestion (median) |')
+  out.push('|---|---|---|---|---|---|---|')
+  const c1 = local('C1')
+  if (c1.length) out.push(`| (none) | C1 ${CONDITION_LABELS.C1} | ${c1.filter(r => label(r) === 'correct').length} of ${c1.length} | ${c1.filter(r => label(r) === 'silent_failure').length} | | | |`)
+  const check: Record<string, unknown> = {}
+  for (const k of ['C4', 'C5']) {
+    const h = hosted.filter(r => r.condition === k)
+    if (!h.length) continue
+    const l = local(k)
+    if (l.length) out.push(line(l[0]!.versions.observer ?? 'local', k, l))
+    out.push(line(h[0]!.versions.observer!, k, h))
+    check[k] = { hostedCorrect: h.filter(r => label(r) === 'correct').length, localCorrect: l.filter(r => label(r) === 'correct').length, n: h.length, localN: l.length }
+  }
+  summary.observerCheck = { cases: ids, ...check }
+}
+
 const errors = existsSync('results/errors.jsonl') ? readFileSync('results/errors.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(e => summary.runIds instanceof Array && (summary.runIds as string[]).includes(e.runId)) : []
 if (errors.length) out.push(`\n${errors.length} case run${errors.length > 1 ? 's' : ''} failed twice and ${errors.length > 1 ? 'are' : 'is'} missing from these tables (\`results/errors.jsonl\`): ${errors.map(e => `${e.caseId} r${e.run}`).join(', ')}.`)
 

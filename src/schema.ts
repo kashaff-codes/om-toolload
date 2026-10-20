@@ -81,6 +81,8 @@ export const LedgerRow = z.object({
   // observation log the actor read? Null when not applicable (no single value, or no OM).
   valueInThread: z.boolean().nullable().default(null),
   valueInObservations: z.boolean().nullable().default(null),
+  // wall time to seed and observe this condition's database (shared by C4 and C6)
+  ingestMs: z.number().nullable().default(null),
   recallCalls: z.number(),
   latencyMs: z.number(),
   judgeUsd: z.number(),
