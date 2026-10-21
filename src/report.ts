@@ -22,6 +22,10 @@ else {
   for (const r of all) if (!latest.has(r.condition) || r.runId > latest.get(r.condition)!) latest.set(r.condition, r.runId)
   rows = all.filter(r => latest.get(r.condition) === r.runId)
 }
+// a case run that failed twice can leave rows for the conditions answered before the
+// failure; drop them so every condition is compared on the same cases
+const failed = existsSync('results/errors.jsonl') ? readFileSync('results/errors.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)) : []
+rows = rows.filter(r => !failed.some(e => e.runId === r.runId && e.run === r.run && e.caseId === r.caseId))
 const label = (r: LedgerRow): Label => (primary === 'judge' ? r.judgeLabel ?? r.exactLabel : r.exactLabel)
 const conds = (['C1', 'C2', 'C3', 'C4', 'C5', 'C6'] as ConditionId[]).filter(k => rows.some(r => r.condition === k))
 const cases = new Map(readFileSyncCases().map(c => [c.id, c]))
@@ -38,6 +42,9 @@ const runAcc = (k: ConditionId) => {
   const runs = [...new Set(rows.filter(r => r.condition === k).map(r => r.run))]
   return runs.map(run => mean(rows.filter(r => r.condition === k && r.run === run).map(r => (label(r) === 'correct' ? 1 : 0))))
 }
+// with one run each per-case score is 0 or 1, so small groups read better as counts
+const nRunsAll = new Set(rows.map(r => `${r.runId}|${r.run}`)).size
+const share = (xs: number[]) => (!xs.length ? 'n/a' : nRunsAll === 1 ? `${xs.filter(x => x === 1).length} of ${xs.length}` : pct(mean(xs)))
 const pct = (x: number) => (Number.isNaN(x) ? 'n/a' : `${(x * 100).toFixed(0)}%`)
 const ci = (c: { point: number; lo: number; hi: number }) => `${pct(c.point)} [${pct(c.lo)}, ${pct(c.hi)}]`
 const signed = (c: { point: number; lo: number; hi: number }) => {
@@ -65,7 +72,7 @@ for (const k of conds) {
   const correct = kRows(k).filter(r => label(r) === 'correct').length
   const perCorrect = correct ? kRows(k).reduce((a, r) => a + r.actorInputTokens, 0) / correct : NaN
   main[k] = { accuracy: acc, runSd: sd(runAcc(k)), silentFailureRate: silent, abstentionRate: abst, medianActorInputTokens: tok, inputTokensPerCorrect: perCorrect, n: ids.length }
-  out.push(`| ${k} ${CONDITION_LABELS[k]} | ${ci(acc)} | ${(sd(runAcc(k)) * 100).toFixed(1)} pts | ${pct(silent)} | ${pct(abst)} | ${num(tok)} | ${num(perCorrect)} |`)
+  out.push(`| ${k} ${CONDITION_LABELS[k]} | ${ci(acc)} | ${runAcc(k).length > 1 ? `${(sd(runAcc(k)) * 100).toFixed(1)} pts` : '-'} | ${pct(silent)} | ${pct(abst)} | ${num(tok)} | ${num(perCorrect)} |`)
 }
 summary.main = main
 writeFileSync('results/accuracy-vs-tokens.svg', chartSvg(conds.map(k => ({ k, acc: (main[k] as any).accuracy, tokens: (main[k] as any).medianActorInputTokens }))))
@@ -82,7 +89,7 @@ for (const cat of CATS) {
   if (!ids.length) continue
   const cells = conds.map(k => {
     const xs = perCase(k, ids.filter(id => caseIdsFor(k).includes(id)))
-    return xs.length ? pct(mean(xs)) : 'n/a'
+    return share(xs)
   })
   byCat[cat] = Object.fromEntries(conds.map((k, i) => [k, cells[i]]))
   out.push(`| ${cat} | ${ids.length} | ${cells.join(' | ')} |`)
@@ -168,6 +175,12 @@ if (conds.includes('C1') && conds.includes('C4')) {
   const d = pairedBootstrap(perCase('C4', ids), perCase('C1', ids))
   out.push(`\nC4 vs C1 (RQ1): ${signed(d)}, McNemar p = ${mcnemar(perCase('C4', ids).map(x => x >= 0.5), perCase('C1', ids).map(x => x >= 0.5)).p.toFixed(3)}.`)
   summary.c4VsC1 = d
+  // not a pre-registered test: silent failures were pre-registered as a rate, not a comparison
+  const s4 = perCase('C4', ids, 'silent_failure').map(x => x >= 0.5)
+  const s1 = perCase('C1', ids, 'silent_failure').map(x => x >= 0.5)
+  const sm = mcnemar(s4, s1)
+  out.push(`\nSilent failures, C4 vs C1 (exploratory): ${s4.filter(Boolean).length} vs ${s1.filter(Boolean).length} of ${ids.length} cases; C4 only ${s4.filter((x, i) => x && !s1[i]).length}, C1 only ${s1.filter((x, i) => x && !s4[i]).length}, McNemar p = ${sm.p.toFixed(3)}.`)
+  summary.c4VsC1Silent = { c4: s4.filter(Boolean).length, c1: s1.filter(Boolean).length, n: ids.length, mcnemar: sm }
 }
 if (conds.includes('C4')) {
   const ids = caseIdsFor('C4')
@@ -177,7 +190,7 @@ if (conds.includes('C4')) {
       const g = f(cases.get(id)!)
       if (g) groups.set(g, [...(groups.get(g) ?? []), id])
     }
-    return `${name}: ${[...groups].map(([g, gi]) => `${g} ${pct(mean(perCase('C4', gi)))} (n=${gi.length})`).join(', ')}`
+    return `${name}: ${[...groups].map(([g, gi]) => `${g} ${share(perCase('C4', gi))}`).join(', ')}`
   }
   out.push('\n#### C4 slices (hypotheses RQ1, RQ3, RQ4)\n')
   out.push(`- ${slice('Tool-output size', c => c.tags.outputSize)}`)
@@ -233,8 +246,10 @@ if (existsSync(OBS_CHECK)) {
 const errors = existsSync('results/errors.jsonl') ? readFileSync('results/errors.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(e => summary.runIds instanceof Array && (summary.runIds as string[]).includes(e.runId)) : []
 if (errors.length) out.push(`\n${errors.length} case run${errors.length > 1 ? 's' : ''} failed twice and ${errors.length > 1 ? 'are' : 'is'} missing from these tables (\`results/errors.jsonl\`): ${errors.map(e => `${e.caseId} r${e.run}`).join(', ')}.`)
 
-const judgeUsd = existsSync('results/costs.jsonl') ? readFileSync('results/costs.jsonl', 'utf8').trim().split('\n').filter(Boolean).reduce((a, l) => a + JSON.parse(l).judgeUsd, 0) : 0
-out.push(`\nTotal Anthropic spend logged (judge only, all runs): $${judgeUsd.toFixed(4)}. Actor, Observer and Reflector run locally on Ollama.`)
+const costs = existsSync('results/costs.jsonl') ? readFileSync('results/costs.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)) : []
+const judgeUsd = costs.reduce((a, c) => a + c.judgeUsd, 0)
+const observerUsd = costs.reduce((a, c) => a + (c.observerUsd ?? 0), 0)
+out.push(`\nTotal Anthropic spend logged, all runs: $${(judgeUsd + observerUsd).toFixed(4)} (judge $${judgeUsd.toFixed(4)}${observerUsd ? `, hosted Observer in the Observer-size check $${observerUsd.toFixed(4)}` : ''}). Everything else runs locally on Ollama.`)
 
 const md = out.join('\n')
 writeFileSync('results/report.md', md + '\n')

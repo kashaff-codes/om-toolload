@@ -1,0 +1,216 @@
+{
+  "primaryScorer": "judge",
+  "runIds": [
+    "2026-10-20T16-13-16-128Z"
+  ],
+  "versions": {
+    "@mastra/core": "1.78.0",
+    "@mastra/memory": "1.38.0",
+    "@mastra/libsql": "1.26.2",
+    "actor": "llama3.1:8b",
+    "observer": "llama3.1:8b",
+    "judge": "claude-haiku-5-5",
+    "numCtx": "12288",
+    "omMessageTokens": "3000",
+    "omObservationTokens": "1500",
+    "recentMessages": "4"
+  },
+  "main": {
+    "C1": {
+      "accuracy": {
+        "point": 0.6052631578947368,
+        "lo": 0.4473684210526316,
+        "hi": 0.7631578947368421
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.10526315789473684,
+      "abstentionRate": 0.2894736842105263,
+      "medianActorInputTokens": 7894,
+      "inputTokensPerCorrect": 12855.521739130434,
+      "n": 38
+    },
+    "C2": {
+      "accuracy": {
+        "point": 0.23684210526315788,
+        "lo": 0.10526315789473684,
+        "hi": 0.3684210526315789
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.21052631578947367,
+      "abstentionRate": 0.5526315789473685,
+      "medianActorInputTokens": 2474,
+      "inputTokensPerCorrect": 10896.888888888889,
+      "n": 38
+    },
+    "C3": {
+      "accuracy": {
+        "point": 0.5789473684210527,
+        "lo": 0.42105263157894735,
+        "hi": 0.7368421052631579
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.10526315789473684,
+      "abstentionRate": 0.3157894736842105,
+      "medianActorInputTokens": 7824,
+      "inputTokensPerCorrect": 13087.863636363636,
+      "n": 38
+    },
+    "C4": {
+      "accuracy": {
+        "point": 0.4473684210526316,
+        "lo": 0.2894736842105263,
+        "hi": 0.6052631578947368
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.4473684210526316,
+      "abstentionRate": 0.10526315789473684,
+      "medianActorInputTokens": 2168,
+      "inputTokensPerCorrect": 5336.764705882353,
+      "n": 38
+    }
+  },
+  "byCategory": {
+    "exact_value": {
+      "C1": "7 of 10",
+      "C2": "1 of 10",
+      "C3": "6 of 10",
+      "C4": "5 of 10"
+    },
+    "multi_session": {
+      "C1": "1 of 8",
+      "C2": "0 of 8",
+      "C3": "0 of 8",
+      "C4": "2 of 8"
+    },
+    "knowledge_update": {
+      "C1": "1 of 4",
+      "C2": "0 of 4",
+      "C3": "1 of 4",
+      "C4": "1 of 4"
+    },
+    "temporal": {
+      "C1": "4 of 6",
+      "C2": "1 of 6",
+      "C3": "5 of 6",
+      "C4": "2 of 6"
+    },
+    "distractor": {
+      "C1": "6 of 6",
+      "C2": "3 of 6",
+      "C3": "6 of 6",
+      "C4": "4 of 6"
+    },
+    "abstention": {
+      "C1": "4 of 4",
+      "C2": "4 of 4",
+      "C3": "4 of 4",
+      "C4": "3 of 4"
+    }
+  },
+  "compression": {
+    "C4": {
+      "perCycleMedian": 4.644552669552669,
+      "perCycleMin": 0.6628134447803663,
+      "perCycleMax": 13.830275229357799,
+      "endToEndMedian": 8.961850506951967,
+      "reflectedShare": 0.47368421052631576
+    }
+  },
+  "lossAttribution": {
+    "C4": {
+      "keptShare": 0.6086956521739131,
+      "answerable": 23,
+      "nonCorrect": 21,
+      "dropped": 9,
+      "missed": 2
+    }
+  },
+  "c4VsC1": {
+    "point": -0.15789473684210525,
+    "lo": -0.34210526315789475,
+    "hi": 0
+  },
+  "c4VsC1Silent": {
+    "c4": 17,
+    "c1": 4,
+    "n": 38,
+    "mcnemar": {
+      "b": 14,
+      "c": 1,
+      "p": 0.0009765625000000009
+    }
+  },
+  "c4Failures": [
+    {
+      "caseId": "abstain-002",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "distractor-003",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "distractor-006",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "exact-002",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "exact-007",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "multi-008",
+      "run": 1,
+      "label": "abstained"
+    },
+    {
+      "caseId": "temporal-001",
+      "run": 1,
+      "label": "abstained"
+    },
+    {
+      "caseId": "temporal-002",
+      "run": 1,
+      "label": "silent_failure"
+    },
+    {
+      "caseId": "update-001",
+      "run": 1,
+      "label": "silent_failure"
+    }
+  ],
+  "observerCheck": {
+    "cases": [
+      "distractor-001",
+      "distractor-005",
+      "exact-001",
+      "exact-002",
+      "exact-003",
+      "exact-004",
+      "exact-005",
+      "multi-001",
+      "temporal-004",
+      "update-001"
+    ],
+    "C4": {
+      "hostedCorrect": 10,
+      "localCorrect": 6,
+      "n": 10,
+      "localN": 10
+    },
+    "C5": {
+      "hostedCorrect": 9,
+      "localCorrect": 0,
+      "n": 10,
+      "localN": 0
+    }
+  }
+}
