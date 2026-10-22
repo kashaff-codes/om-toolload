@@ -1,7 +1,8 @@
 {
   "primaryScorer": "judge",
   "runIds": [
-    "2026-10-20T16-13-16-128Z"
+    "2026-10-20T16-13-16-128Z",
+    "2026-10-21T21-13-02-372Z"
   ],
   "versions": {
     "@mastra/core": "1.78.0",
@@ -67,6 +68,32 @@
       "medianActorInputTokens": 2168,
       "inputTokensPerCorrect": 5336.764705882353,
       "n": 38
+    },
+    "C5": {
+      "accuracy": {
+        "point": 0.7631578947368421,
+        "lo": 0.631578947368421,
+        "hi": 0.8947368421052632
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.18421052631578946,
+      "abstentionRate": 0.05263157894736842,
+      "medianActorInputTokens": 2266,
+      "inputTokensPerCorrect": 3394.4137931034484,
+      "n": 38
+    },
+    "C6": {
+      "accuracy": {
+        "point": 0.2631578947368421,
+        "lo": 0.13157894736842105,
+        "hi": 0.39473684210526316
+      },
+      "runSd": 0,
+      "silentFailureRate": 0.18421052631578946,
+      "abstentionRate": 0.5526315789473685,
+      "medianActorInputTokens": 6025.5,
+      "inputTokensPerCorrect": 24346.1,
+      "n": 38
     }
   },
   "byCategory": {
@@ -74,37 +101,49 @@
       "C1": "7 of 10",
       "C2": "1 of 10",
       "C3": "6 of 10",
-      "C4": "5 of 10"
+      "C4": "5 of 10",
+      "C5": "9 of 10",
+      "C6": "4 of 10"
     },
     "multi_session": {
       "C1": "1 of 8",
       "C2": "0 of 8",
       "C3": "0 of 8",
-      "C4": "2 of 8"
+      "C4": "2 of 8",
+      "C5": "3 of 8",
+      "C6": "0 of 8"
     },
     "knowledge_update": {
       "C1": "1 of 4",
       "C2": "0 of 4",
       "C3": "1 of 4",
-      "C4": "1 of 4"
+      "C4": "1 of 4",
+      "C5": "3 of 4",
+      "C6": "1 of 4"
     },
     "temporal": {
       "C1": "4 of 6",
       "C2": "1 of 6",
       "C3": "5 of 6",
-      "C4": "2 of 6"
+      "C4": "2 of 6",
+      "C5": "5 of 6",
+      "C6": "1 of 6"
     },
     "distractor": {
       "C1": "6 of 6",
       "C2": "3 of 6",
       "C3": "6 of 6",
-      "C4": "4 of 6"
+      "C4": "4 of 6",
+      "C5": "6 of 6",
+      "C6": "2 of 6"
     },
     "abstention": {
       "C1": "4 of 4",
       "C2": "4 of 4",
       "C3": "4 of 4",
-      "C4": "3 of 4"
+      "C4": "3 of 4",
+      "C5": "3 of 4",
+      "C6": "2 of 4"
     }
   },
   "compression": {
@@ -114,6 +153,20 @@
       "perCycleMax": 13.830275229357799,
       "endToEndMedian": 8.961850506951967,
       "reflectedShare": 0.47368421052631576
+    },
+    "C5": {
+      "perCycleMedian": 3.8257381952399134,
+      "perCycleMin": 0.5757156048014774,
+      "perCycleMax": 8.724418604651163,
+      "endToEndMedian": 6.798888851907698,
+      "reflectedShare": 0.5526315789473685
+    },
+    "C6": {
+      "perCycleMedian": 4.7941637788710825,
+      "perCycleMin": 0.6667260737836392,
+      "perCycleMax": 14.576402321083172,
+      "endToEndMedian": 9.064019991080094,
+      "reflectedShare": 0.39473684210526316
     }
   },
   "lossAttribution": {
@@ -123,6 +176,48 @@
       "nonCorrect": 21,
       "dropped": 9,
       "missed": 2
+    },
+    "C5": {
+      "keptShare": 0.9130434782608695,
+      "answerable": 23,
+      "nonCorrect": 9,
+      "dropped": 2,
+      "missed": 0
+    },
+    "C6": {
+      "keptShare": 0.7391304347826086,
+      "answerable": 23,
+      "nonCorrect": 28,
+      "dropped": 6,
+      "missed": 9
+    }
+  },
+  "fixes": {
+    "C5": {
+      "accuracyDelta": {
+        "point": 0.3157894736842105,
+        "lo": 0.13157894736842105,
+        "hi": 0.5
+      },
+      "mcnemar": {
+        "b": 15,
+        "c": 3,
+        "p": 0.007537841796874995
+      },
+      "silentFailureDelta": -0.26315789473684215
+    },
+    "C6": {
+      "accuracyDelta": {
+        "point": -0.18421052631578946,
+        "lo": -0.39473684210526316,
+        "hi": 0.02631578947368421
+      },
+      "mcnemar": {
+        "b": 5,
+        "c": 12,
+        "p": 0.1434631347656251
+      },
+      "silentFailureDelta": -0.26315789473684215
     }
   },
   "c4VsC1": {
@@ -208,9 +303,9 @@
     },
     "C5": {
       "hostedCorrect": 9,
-      "localCorrect": 0,
+      "localCorrect": 8,
       "n": 10,
-      "localN": 0
+      "localN": 10
     }
   }
 }

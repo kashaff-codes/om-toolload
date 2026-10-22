@@ -23,9 +23,11 @@ else {
   rows = all.filter(r => latest.get(r.condition) === r.runId)
 }
 // a case run that failed twice can leave rows for the conditions answered before the
-// failure; drop them so every condition is compared on the same cases
-const failed = existsSync('results/errors.jsonl') ? readFileSync('results/errors.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)) : []
-rows = rows.filter(r => !failed.some(e => e.runId === r.runId && e.run === r.run && e.caseId === r.caseId))
+// failure, and other runs may have answered it fine; drop the case everywhere so every
+// condition is compared on the same cases
+const runIds = new Set(rows.map(r => r.runId))
+const failed = existsSync('results/errors.jsonl') ? readFileSync('results/errors.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(e => runIds.has(e.runId)) : []
+rows = rows.filter(r => !failed.some(e => e.run === r.run && e.caseId === r.caseId))
 const label = (r: LedgerRow): Label => (primary === 'judge' ? r.judgeLabel ?? r.exactLabel : r.exactLabel)
 const conds = (['C1', 'C2', 'C3', 'C4', 'C5', 'C6'] as ConditionId[]).filter(k => rows.some(r => r.condition === k))
 const cases = new Map(readFileSyncCases().map(c => [c.id, c]))
@@ -43,7 +45,7 @@ const runAcc = (k: ConditionId) => {
   return runs.map(run => mean(rows.filter(r => r.condition === k && r.run === run).map(r => (label(r) === 'correct' ? 1 : 0))))
 }
 // with one run each per-case score is 0 or 1, so small groups read better as counts
-const nRunsAll = new Set(rows.map(r => `${r.runId}|${r.run}`)).size
+const nRunsAll = Math.max(1, ...[...new Set(rows.map(r => r.condition))].map(k => new Set(rows.filter(r => r.condition === k).map(r => r.run)).size))
 const share = (xs: number[]) => (!xs.length ? 'n/a' : nRunsAll === 1 ? `${xs.filter(x => x === 1).length} of ${xs.length}` : pct(mean(xs)))
 const pct = (x: number) => (Number.isNaN(x) ? 'n/a' : `${(x * 100).toFixed(0)}%`)
 const ci = (c: { point: number; lo: number; hi: number }) => `${pct(c.point)} [${pct(c.lo)}, ${pct(c.hi)}]`
@@ -181,6 +183,12 @@ if (conds.includes('C1') && conds.includes('C4')) {
   const sm = mcnemar(s4, s1)
   out.push(`\nSilent failures, C4 vs C1 (exploratory): ${s4.filter(Boolean).length} vs ${s1.filter(Boolean).length} of ${ids.length} cases; C4 only ${s4.filter((x, i) => x && !s1[i]).length}, C1 only ${s1.filter((x, i) => x && !s4[i]).length}, McNemar p = ${sm.p.toFixed(3)}.`)
   summary.c4VsC1Silent = { c4: s4.filter(Boolean).length, c1: s1.filter(Boolean).length, n: ids.length, mcnemar: sm }
+}
+// not pre-registered either: the fixes were pre-registered against C4 only
+for (const k of fixes) {
+  const ids = common(['C1', k])
+  const d = pairedBootstrap(perCase(k, ids), perCase('C1', ids))
+  out.push(`\n${k} vs C1 (exploratory): ${signed(d)}, McNemar p = ${mcnemar(perCase(k, ids).map(x => x >= 0.5), perCase('C1', ids).map(x => x >= 0.5)).p.toFixed(3)}.`)
 }
 if (conds.includes('C4')) {
   const ids = caseIdsFor('C4')

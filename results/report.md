@@ -6,19 +6,21 @@
 | C2 Truncated (last 4) | 24% [11%, 37%] | - | 21% | 55% | 2,474 | 10,897 |
 | C3 Semantic recall | 58% [42%, 74%] | - | 11% | 32% | 7,824 | 13,088 |
 | C4 Observational Memory | 45% [29%, 61%] | - | 45% | 11% | 2,168 | 5,337 |
+| C5 OM + pinned values | 76% [63%, 89%] | - | 18% | 5% | 2,266 | 3,394 |
+| C6 OM + retrieval | 26% [13%, 39%] | - | 18% | 55% | 6,026 | 24,346 |
 
 ![Accuracy against the median actor input tokens per question, with 95% CIs](results/accuracy-vs-tokens.svg)
 
 #### Accuracy by category
 
-| Category | n | C1 | C2 | C3 | C4 |
-|---|---|---|---|---|---|
-| exact_value | 10 | 7 of 10 | 1 of 10 | 6 of 10 | 5 of 10 |
-| multi_session | 8 | 1 of 8 | 0 of 8 | 0 of 8 | 2 of 8 |
-| knowledge_update | 4 | 1 of 4 | 0 of 4 | 1 of 4 | 1 of 4 |
-| temporal | 6 | 4 of 6 | 1 of 6 | 5 of 6 | 2 of 6 |
-| distractor | 6 | 6 of 6 | 3 of 6 | 6 of 6 | 4 of 6 |
-| abstention | 4 | 4 of 4 | 4 of 4 | 4 of 4 | 3 of 4 |
+| Category | n | C1 | C2 | C3 | C4 | C5 | C6 |
+|---|---|---|---|---|---|---|---|
+| exact_value | 10 | 7 of 10 | 1 of 10 | 6 of 10 | 5 of 10 | 9 of 10 | 4 of 10 |
+| multi_session | 8 | 1 of 8 | 0 of 8 | 0 of 8 | 2 of 8 | 3 of 8 | 0 of 8 |
+| knowledge_update | 4 | 1 of 4 | 0 of 4 | 1 of 4 | 1 of 4 | 3 of 4 | 1 of 4 |
+| temporal | 6 | 4 of 6 | 1 of 6 | 5 of 6 | 2 of 6 | 5 of 6 | 1 of 6 |
+| distractor | 6 | 6 of 6 | 3 of 6 | 6 of 6 | 4 of 6 | 6 of 6 | 2 of 6 |
+| abstention | 4 | 4 of 4 | 4 of 4 | 4 of 4 | 3 of 4 | 3 of 4 | 2 of 4 |
 
 #### Scorer audit (40 planted answers with known labels)
 
@@ -31,7 +33,7 @@
 
 Judge (claude-haiku-5-5) false-pass rate on near-misses: **0%**; false-fail rate on correct answers: 10%. Exact scorer false-fail rate: 50% (it cannot read paraphrases). Pre-registered rule: if the judge passes more than 1 in 10 near-misses, the exact scorer is primary. Primary here: **judge**.
 
-On the 152 real answers, the two scorers agree on 95% of labels.
+On the 228 real answers, the two scorers agree on 95% of labels.
 
 #### Compression on tool-heavy threads
 
@@ -40,6 +42,8 @@ Per-cycle ratio = tokens of messages handed to the Observer / tokens of observat
 | Condition | Per-cycle ratio: median (range) | End-to-end ratio: median (range) | Observation cycles (median) | Threads with a reflection | Observer + reflector tokens per thread (median) |
 |---|---|---|---|---|---|
 | C4 Observational Memory | 4.6x (0.7-13.8) | 9.0x (4.3-38.1) | 2 | 18/38 | 25,766 |
+| C5 OM + pinned values | 3.8x (0.6-8.7) | 6.8x (3.2-14.8) | 2 | 21/38 | 26,359 |
+| C6 OM + retrieval | 4.8x (0.7-14.6) | 9.1x (4.1-53.8) | 2 | 15/38 | 24,207 |
 
 #### Where the value was lost
 
@@ -48,10 +52,23 @@ For OM conditions, each answer is checked for whether the expected value is lite
 | Condition | Value kept in the log | Non-correct answers | Dropped by OM | Kept, actor missed | Not attributable |
 |---|---|---|---|---|---|
 | C4 Observational Memory | 61% (14/23) | 21 | 9 | 2 | 10 |
+| C5 OM + pinned values | 91% (21/23) | 9 | 2 | 0 | 7 |
+| C6 OM + retrieval | 74% (17/23) | 28 | 6 | 9 | 13 |
+
+#### Fixes vs C4 (paired over the same cases)
+
+| Fix | Accuracy delta [95% CI] | McNemar p | Silent-failure delta | End-to-end compression | Actor input tokens (median) | Recall calls / question | Latency (median) |
+|---|---|---|---|---|---|---|---|
+| C5 OM + pinned values | +32 pts [+13, +50] | 0.008 | -26 pts | 6.8x (C4 9.0x) | 2,266 (C4 2,168) | 0.00 | 2.6s |
+| C6 OM + retrieval | -18 pts [-39, +3] | 0.143 | -26 pts | 9.1x (C4 9.0x) | 6,026 (C4 2,168) | 0.63 | 3.5s |
 
 C4 vs C1 (RQ1): -16 pts [-34, +0], McNemar p = 0.146.
 
 Silent failures, C4 vs C1 (exploratory): 17 vs 4 of 38 cases; C4 only 14, C1 only 1, McNemar p = 0.001.
+
+C5 vs C1 (exploratory): +16 pts [-3, +34], McNemar p = 0.180.
+
+C6 vs C1 (exploratory): -34 pts [-50, -18], McNemar p = 0.001.
 
 #### C4 slices (hypotheses RQ1, RQ3, RQ4)
 
@@ -76,8 +93,9 @@ Pre-registration amendment 1. The agent stays on llama3.1:8b; only the Observer 
 | (none) | C1 Full context | 8 of 10 | 1 | | | |
 | llama3.1:8b | C4 Observational Memory | 6 of 10 | 4 | 7 of 9 | 4 of 10 | not recorded |
 | anthropic/claude-haiku-5-5 | C4 Observational Memory | 10 of 10 | 0 | 9 of 9 | 1 of 10 | 11s |
+| llama3.1:8b | C5 OM + pinned values | 8 of 10 | 1 | 8 of 9 | 5 of 10 | 101s |
 | anthropic/claude-haiku-5-5 | C5 OM + pinned values | 9 of 10 | 0 | 9 of 9 | 6 of 10 | 12s |
 
 2 case runs failed twice and are missing from these tables (`results/errors.jsonl`): update-003 r1, update-004 r1.
 
-Total Anthropic spend logged, all runs: $0.1061 (judge $0.0111, hosted Observer in the Observer-size check $0.0950). Everything else runs locally on Ollama.
+Total Anthropic spend logged, all runs: $0.1107 (judge $0.0157, hosted Observer in the Observer-size check $0.0950). Everything else runs locally on Ollama.
