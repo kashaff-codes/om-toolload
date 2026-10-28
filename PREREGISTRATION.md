@@ -143,6 +143,15 @@ or from a small local Observer. Mastra's reported numbers use gemini-2.5-flash a
 - A one-case smoke test (`exact-001`, C4) was run to confirm the setup before this was
   written; its result is not part of the check.
 
+## Exploratory follow-up: hosted Observer on all cases (2026-10-28)
+
+Not pre-registered. Added after every main result above was seen, to test whether the
+10-case Observer-size check holds at full size. C4 and C5 rerun on the 38 cases that
+completed in the main run, one run, seed 1, with `claude-haiku-5-5` as Observer and
+Reflector and the agent on local llama3.1:8b, as in amendment 1. Ledger:
+`results/observer-full.jsonl`. Reported beside the main results as exploratory, with the
+same tables, and never used to replace them.
+
 ## Cut lines, if compute runs short
 
 1. Run C1-C4 once before running them three times.

@@ -222,10 +222,15 @@ if (conds.includes('C4')) {
   summary.c4Failures = fails.map(r => ({ caseId: r.caseId, run: r.run, label: label(r) }))
 }
 
-// ---- Observer-size check (pre-registration amendment 1): same cases, hosted Observer ----
-const OBS_CHECK = 'results/observer-check.jsonl'
-if (existsSync(OBS_CHECK)) {
-  const hosted = readFileSync(OBS_CHECK, 'utf8').trim().split('\n').filter(Boolean).map(l => LedgerRow.parse(JSON.parse(l)))
+// ---- hosted-Observer reruns of C4/C5 on the same cases, compared with the local run 1 ----
+// amendment 1 is the pre-registered 10-case check; the full rerun was added afterwards
+const OBSERVER_RUNS = [
+  { file: 'results/observer-check.jsonl', key: 'observerCheck', title: 'Observer-size check', why: 'Pre-registration amendment 1.' },
+  { file: 'results/observer-full.jsonl', key: 'observerFull', title: 'Hosted Observer on all cases (exploratory)', why: 'Not pre-registered: added after the main results were seen, to test whether the 10-case check holds at full size.' },
+]
+for (const { file, key, title, why } of OBSERVER_RUNS) {
+  if (!existsSync(file)) continue
+  const hosted = readFileSync(file, 'utf8').trim().split('\n').filter(Boolean).map(l => LedgerRow.parse(JSON.parse(l)))
   const ids = [...new Set(hosted.map(r => r.caseId))].sort()
   const local = (k: string) => rows.filter(r => r.condition === k && r.run === 1 && ids.includes(r.caseId))
   const line = (who: string, k: string, rs: LedgerRow[]) => {
@@ -233,8 +238,8 @@ if (existsSync(OBS_CHECK)) {
     const ms = rs.map(r => r.ingestMs).filter((x): x is number => x !== null)
     return `| ${who} | ${k} ${CONDITION_LABELS[k as ConditionId]} | ${rs.filter(r => label(r) === 'correct').length} of ${rs.length} | ${rs.filter(r => label(r) === 'silent_failure').length} | ${answerable.length ? `${answerable.filter(r => r.valueInObservations).length} of ${answerable.length}` : 'n/a'} | ${rs.filter(r => r.reflectionCycles > 0).length} of ${rs.length} | ${ms.length ? `${(median(ms) / 1000).toFixed(0)}s` : 'not recorded'} |`
   }
-  out.push(`\n#### Observer-size check (${ids.length} cases, run 1)\n`)
-  out.push(`Pre-registration amendment 1. The agent stays on ${hosted[0]?.versions.actor}; only the Observer and Reflector change, from the local model to ${hosted[0]?.versions.observer}. If the C4 gap to C1 holds, the drops are OM's design on tool output; if it closes, retention depends on Observer size.\n`)
+  out.push(`\n#### ${title} (${ids.length} cases, run 1)\n`)
+  out.push(`${why} The agent stays on ${hosted[0]?.versions.actor}; only the Observer and Reflector change, from the local model to ${hosted[0]?.versions.observer}. If the C4 gap to C1 holds, the drops are OM's design on tool output; if it closes, retention depends on Observer size.\n`)
   out.push('| Observer | Condition | Correct | Silent failures | Value kept in the log | Threads with a reflection | Ingestion (median) |')
   out.push('|---|---|---|---|---|---|---|')
   const c1 = local('C1')
@@ -248,7 +253,23 @@ if (existsSync(OBS_CHECK)) {
     out.push(line(h[0]!.versions.observer!, k, h))
     check[k] = { hostedCorrect: h.filter(r => label(r) === 'correct').length, localCorrect: l.filter(r => label(r) === 'correct').length, n: h.length, localN: l.length }
   }
-  summary.observerCheck = { cases: ids, ...check }
+  // paired comparisons, only once there are enough cases for an interval to mean something
+  const hostedC4 = hosted.filter(r => r.condition === 'C4')
+  if (hostedC4.length >= 20) {
+    const ok = (rs: LedgerRow[]) => (id: string) => (rs.some(r => r.caseId === id && label(r) === 'correct') ? 1 : 0)
+    const both = (other: LedgerRow[]) => ids.filter(id => hostedC4.some(r => r.caseId === id) && other.some(r => r.caseId === id))
+    const cmp = (name: string, other: LedgerRow[]) => {
+      const ps = both(other)
+      const a = ps.map(ok(hostedC4)), b = ps.map(ok(other))
+      const d = pairedBootstrap(a, b)
+      out.push(`- Hosted-Observer C4 vs ${name}: ${signed(d)}, McNemar p ${(p => (p < 0.001 ? '< 0.001' : `= ${p.toFixed(3)}`))(mcnemar(a.map(x => x === 1), b.map(x => x === 1)).p)} (${ps.length} cases)`)
+      return d
+    }
+    out.push('')
+    check.vsLocalC4 = cmp('local-Observer C4', local('C4'))
+    check.vsC1 = cmp('C1 full context', c1)
+  }
+  summary[key] = { cases: ids, ...check }
 }
 
 const errors = existsSync('results/errors.jsonl') ? readFileSync('results/errors.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(e => summary.runIds instanceof Array && (summary.runIds as string[]).includes(e.runId)) : []
@@ -257,7 +278,7 @@ if (errors.length) out.push(`\n${errors.length} case run${errors.length > 1 ? 's
 const costs = existsSync('results/costs.jsonl') ? readFileSync('results/costs.jsonl', 'utf8').trim().split('\n').filter(Boolean).map(l => JSON.parse(l)) : []
 const judgeUsd = costs.reduce((a, c) => a + c.judgeUsd, 0)
 const observerUsd = costs.reduce((a, c) => a + (c.observerUsd ?? 0), 0)
-out.push(`\nTotal Anthropic spend logged, all runs: $${(judgeUsd + observerUsd).toFixed(4)} (judge $${judgeUsd.toFixed(4)}${observerUsd ? `, hosted Observer in the Observer-size check $${observerUsd.toFixed(4)}` : ''}). Everything else runs locally on Ollama.`)
+out.push(`\nTotal Anthropic spend logged, all runs: $${(judgeUsd + observerUsd).toFixed(4)} (judge $${judgeUsd.toFixed(4)}${observerUsd ? `, hosted Observer runs $${observerUsd.toFixed(4)}` : ''}). Everything else runs locally on Ollama.`)
 
 const md = out.join('\n')
 writeFileSync('results/report.md', md + '\n')

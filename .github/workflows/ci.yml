@@ -1,5 +1,8 @@
 name: ci
 on: [push, pull_request]
+# the job only reads the code; the default token gets nothing it could write with
+permissions:
+  contents: read
 jobs:
   test:
     runs-on: ubuntu-latest

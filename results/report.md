@@ -96,6 +96,21 @@ Pre-registration amendment 1. The agent stays on llama3.1:8b; only the Observer 
 | llama3.1:8b | C5 OM + pinned values | 8 of 10 | 1 | 8 of 9 | 5 of 10 | 101s |
 | anthropic/claude-haiku-5-5 | C5 OM + pinned values | 9 of 10 | 0 | 9 of 9 | 6 of 10 | 12s |
 
+#### Hosted Observer on all cases (exploratory) (38 cases, run 1)
+
+Not pre-registered: added after the main results were seen, to test whether the 10-case check holds at full size. The agent stays on llama3.1:8b; only the Observer and Reflector change, from the local model to anthropic/claude-haiku-5-5. If the C4 gap to C1 holds, the drops are OM's design on tool output; if it closes, retention depends on Observer size.
+
+| Observer | Condition | Correct | Silent failures | Value kept in the log | Threads with a reflection | Ingestion (median) |
+|---|---|---|---|---|---|---|
+| (none) | C1 Full context | 23 of 38 | 4 | | | |
+| llama3.1:8b | C4 Observational Memory | 17 of 38 | 17 | 14 of 23 | 18 of 38 | not recorded |
+| anthropic/claude-haiku-5-5 | C4 Observational Memory | 35 of 38 | 3 | 23 of 23 | 1 of 38 | 13s |
+| llama3.1:8b | C5 OM + pinned values | 29 of 38 | 7 | 21 of 23 | 21 of 38 | 100s |
+| anthropic/claude-haiku-5-5 | C5 OM + pinned values | 34 of 38 | 4 | 23 of 23 | 20 of 38 | 18s |
+
+- Hosted-Observer C4 vs local-Observer C4: +47 pts [+32, +63], McNemar p < 0.001 (38 cases)
+- Hosted-Observer C4 vs C1 full context: +32 pts [+16, +47], McNemar p = 0.002 (38 cases)
+
 2 case runs failed twice and are missing from these tables (`results/errors.jsonl`): update-003 r1, update-004 r1.
 
-Total Anthropic spend logged, all runs: $0.1107 (judge $0.0157, hosted Observer in the Observer-size check $0.0950). Everything else runs locally on Ollama.
+Total Anthropic spend logged, all runs: $0.4605 (judge $0.0200, hosted Observer runs $0.4405). Everything else runs locally on Ollama.

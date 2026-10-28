@@ -1018,5 +1018,257 @@
  "0c52c5473177caf061cd8db0373ebc350b4fdaadf9b553e9bd09f2ad6341e556": {
   "verdict": "abstained",
   "valueStated": null
+ },
+ "4802aad52539f748ffc1b06fb3a94827e123d8939c2c9e6f56c455d4d23b48d8": {
+  "verdict": "correct",
+  "valueStated": null
+ },
+ "a540e64d68ae782ff849399eb620aa1735db8133adddd9ec0404e10c4645b2fa": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "f77875f45a81ec332621b1cd5d25321d93ac07e14a49a44751b9a7d4a1ce34fb": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "78ed888c0cde80bf648712a1dda2658cea31b1c083903882632df3e7c0c4cdae": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "c52680426d159e706e12c28b3ca0c1ad0ed6b02448d30132f38c2b4ddf197032": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "19dd2afe1845f290642353e3ddc13583bc7435ed26cda6da45351be46e7bbe28": {
+  "verdict": "correct",
+  "valueStated": null
+ },
+ "c8abf667a3000371afb52d611373091809aeb504f469871ad6970da4988cfc9d": {
+  "verdict": "abstained",
+  "valueStated": null
+ },
+ "fe105e746a0714bf46cf889ab6d13c5624c9295281d19fca8b62f4020e658df0": {
+  "verdict": "wrong",
+  "valueStated": "WA-12345"
+ },
+ "deaa24f700d768487c1861b8bff226b8a3b245ea1c4efa89d6a9a3927f1670ad": {
+  "verdict": "correct",
+  "valueStated": "145750781868"
+ },
+ "bde2c522f4a37b0453cbe8df0716f0ce48f6af1258404dfaf68b0fe5469477f9": {
+  "verdict": "correct",
+  "valueStated": "44.75"
+ },
+ "b90c2d88a238cc0c2f666dbe7373292212dfd4d64ad00242725b82a2d9739500": {
+  "verdict": "correct",
+  "valueStated": "$44.75"
+ },
+ "b16deb6ab85a9b5c76376319a300072e34931395ce3dfca51116b186f4595c70": {
+  "verdict": "correct",
+  "valueStated": "$59.50"
+ },
+ "799630622b0a6204ff29369c2445793b1ef38644f955e039a677f6d8c832aabf": {
+  "verdict": "correct",
+  "valueStated": "$59.50"
+ },
+ "ddd764c7ee65947b239c48732e5045dbeb887ff873d617ed42e10f917e7769d8": {
+  "verdict": "correct",
+  "valueStated": "jon.smyth58@fastmail.com"
+ },
+ "6ecb08d5f5a748fb4dff1bc964efe14f18d91c6b158001521b57162c2c0f7a65": {
+  "verdict": "correct",
+  "valueStated": "katherine.lee27@fastmail.com"
+ },
+ "f44161889ee7d760d49cc802c446e3685cccab7d71b03cff7edd73540c115a85": {
+  "verdict": "correct",
+  "valueStated": "katherine.lee27@fastmail.com"
+ },
+ "c229f07692fd538835daa102a0d587a9561b295de10055da8b8f3772bce4c5d5": {
+  "verdict": "correct",
+  "valueStated": "631340277630"
+ },
+ "fc9ef128d76af36619fec743a72a95e30207cf67de88e30aa2af1133cb89994c": {
+  "verdict": "correct",
+  "valueStated": "$257.64 USD"
+ },
+ "6cd79676b84a45d4db82185df6e62463e5d793f20be2f7bba30e60ba7bf40988": {
+  "verdict": "correct",
+  "valueStated": "257.64"
+ },
+ "604731554274f12c665667cda678693122ace8dd965be4b83d12e751a5ca4a33": {
+  "verdict": "correct",
+  "valueStated": "9602 Willow Ct"
+ },
+ "d734a9c481216390fb21ff72428a2d6fb9fc356d13517731bc074e8a1cbae007": {
+  "verdict": "correct",
+  "valueStated": "9602 Willow Ct, Boise, ID 83763"
+ },
+ "6e739caf09b16f647d106f1084683bbc11ef837337f4472b0171f3b5728aa38d": {
+  "verdict": "correct",
+  "valueStated": "ORD-9335"
+ },
+ "979423cf73793dc2549b9503dbf2108bc7f6f6ae8c87b402e977fdeff8115502": {
+  "verdict": "correct",
+  "valueStated": "167374719284"
+ },
+ "e6563c544ffc13f6f0ad7df1245796c93a8b2c0074af473b5098411891c0d41e": {
+  "verdict": "correct",
+  "valueStated": "167374719284"
+ },
+ "1b12a825a081ad0e724ddc31d48bac8c43118b047daf52da0863ee4f8c3499a0": {
+  "verdict": "correct",
+  "valueStated": "238.13"
+ },
+ "d6176ab2df8d883ae972917d15a721c1840520e5807d96763fb3827e6aa643b9": {
+  "verdict": "correct",
+  "valueStated": "$238.13"
+ },
+ "6699ef49f1f622f88f8e462c99eb5cf9134d7dcc3394e5e63c6cb0a020896497": {
+  "verdict": "correct",
+  "valueStated": "8279 Cedar Ridge Rd, Madison WI 53746"
+ },
+ "567f99c57509af10cd2d93fcb3a89752e038cb2803ef6bae96d01a3dca7cc4cb": {
+  "verdict": "correct",
+  "valueStated": "8279 Cedar Ridge Rd, Madison, WI 53746"
+ },
+ "b7a40279902a97b7706bccdfe93d779413ad47f55ebe35190ddfda6c1f518fd3": {
+  "verdict": "correct",
+  "valueStated": "ORD-1416"
+ },
+ "d46072b003e6921f3e0e2953f56a70dafdd3876e2b337998a24d0b5ef3f2678c": {
+  "verdict": "correct",
+  "valueStated": "ORD-1416"
+ },
+ "aeeca201208160da4908eb8e3d7c40726c16e2862eb9982ddeb51f03b8661e73": {
+  "verdict": "correct",
+  "valueStated": "$64.98"
+ },
+ "3cbeaec323b6b55ac1fd986195269993e6917df57fb7ae3f271a4ae14cef2626": {
+  "verdict": "correct",
+  "valueStated": "64.98"
+ },
+ "e8bc33bc3a7543627a3f2c3ef6b627958f39b9f21d9fe88846c0b929982408c4": {
+  "verdict": "wrong",
+  "valueStated": "104.49 total implied, but agent stated $69.99 and $34.50 (sum $104.49); no single total committed"
+ },
+ "037ccc1b1ad6bc423fbbcc611898ae18e2ca3e0c1ff644c8b5cdfe343dce3c2c": {
+  "verdict": "correct",
+  "valueStated": "104.49"
+ },
+ "4466b80c012848d4235ce3223e35b4a5cfaf982a35a76417367a8f94d0222b9f": {
+  "verdict": "correct",
+  "valueStated": "117.97"
+ },
+ "b32d050879764ea2187f2314dd76d07b1c1d46050b48064631b47d45954aef84": {
+  "verdict": "correct",
+  "valueStated": "117.97"
+ },
+ "09582243b2387f2d67d9a09447890e85d512b3c546912fffdc96c6664cad7962": {
+  "verdict": "correct",
+  "valueStated": "189.44"
+ },
+ "0d021776ddeb08bc41a0707040e1286c28991e720a5c4a22657c9a90ed4f0fe9": {
+  "verdict": "wrong",
+  "valueStated": "ORD-3792: $89.50, ORD-7024: $59.95"
+ },
+ "3f210237bf75f47d51e9739f0814bac4fec88e300b3c21f8934f7d1e7b2fc250": {
+  "verdict": "correct",
+  "valueStated": "77.49"
+ },
+ "858f6e32f39c4b9825039da251041c67a652c990bc8684851f103c60281186da": {
+  "verdict": "correct",
+  "valueStated": "77.49"
+ },
+ "0782e7db5b9e04a00ff1bdfed586a37b1e0e4723abac3def1ce24f7eb67be4a8": {
+  "verdict": "wrong",
+  "valueStated": "404.76"
+ },
+ "6b2aa8aace8e84659c70dc702cd3d63dab7430d5e4f845346218083dd43b4fbc": {
+  "verdict": "correct",
+  "valueStated": "431.90"
+ },
+ "96c8d1e96e0fc06b743a8cf7f2ccf985a8bc344c23e8a1574324696963c2048e": {
+  "verdict": "correct",
+  "valueStated": "243.05"
+ },
+ "abf8e29374172686ee3aca4c59a5d85f04654e50f1d948742dcd9cf048013b5f": {
+  "verdict": "correct",
+  "valueStated": "243.05"
+ },
+ "c548ad3fae4526c6e42d924d9c69405d7b21bfd5ed1f388e7d558fa282ce5cae": {
+  "verdict": "correct",
+  "valueStated": "388.60"
+ },
+ "301967d1c86690a1d78753b205c17f35c7cee8d0bc5c7c966a9cdb33b5000efd": {
+  "verdict": "wrong",
+  "valueStated": "368.06"
+ },
+ "28ee5a6cfd9940195ff40fdb0e3ce0159bb557bfd6423ecf06038952e65ea74e": {
+  "verdict": "correct",
+  "valueStated": "case"
+ },
+ "502d5af44c8fa2f8ec5b9f1ffbac380f2c7fd31eb4ec86de848374dc6a6ff4b2": {
+  "verdict": "correct",
+  "valueStated": "case"
+ },
+ "f4db0f321322ad9b9422f34f5e42b5c4a7b5af17a2dc2ba5aacb4d4c7b380c52": {
+  "verdict": "wrong",
+  "valueStated": "desk lamp"
+ },
+ "2839e166ccd0ed764a9dbfd60270ab107d5489bbf573a351f038437ed79991b1": {
+  "verdict": "correct",
+  "valueStated": "mouse"
+ },
+ "39f96e2b4e3b2e32ff7996735018deb3e2ef1a8a541cca35080827e8d94c6044": {
+  "verdict": "correct",
+  "valueStated": "power bank"
+ },
+ "7df318968748850e53d253209ccd9110440135f4150032874db9156f61139ca6": {
+  "verdict": "correct",
+  "valueStated": "power bank"
+ },
+ "176735f4c940ef785a99386b361469bdcce0a38a72d1a47b9092e1f8ceeb95d8": {
+  "verdict": "correct",
+  "valueStated": "Aug 29, 2026"
+ },
+ "cc09dc4910a193523d6fc02f1308eb33c29e4cef39839a8cab54d70a32d09aec": {
+  "verdict": "correct",
+  "valueStated": "Aug 29, 2026"
+ },
+ "a4445e5b090bbad44727e658c8605b3ed4eb04a721210a8fc33db75fdf8c0df9": {
+  "verdict": "correct",
+  "valueStated": "2026-08-29"
+ },
+ "4275223e9f48a51995551bf32eb614ac80105562ed7069a00d3f3ed248ab2bec": {
+  "verdict": "correct",
+  "valueStated": "2026-08-29"
+ },
+ "6db56891b57f95a05c780b77fc8a0199eea2554ad1e3fb79d8b193a53f805ff2": {
+  "verdict": "correct",
+  "valueStated": "2026-09-01"
+ },
+ "40f3bb0b961581b7987e4b04725ca68ca3b2c38500b4f5668fe08e68917d96e9": {
+  "verdict": "correct",
+  "valueStated": "Sep 1, 2026"
+ },
+ "a067da15b7120804f3b180e42b56807ab87d37a1bf16a5594ef60551435f8881": {
+  "verdict": "correct",
+  "valueStated": "4773 Willow Ct"
+ },
+ "c12a043b0b5a0412f78e60982c5346f7b9c484ed45a5f10f68399bd8d95329ab": {
+  "verdict": "correct",
+  "valueStated": "4773 Willow Ct"
+ },
+ "bf7166ddadc18f8f5e3bcd4d4fa04aa20e2999c00e4fe69d801d9c2b79615fcb": {
+  "verdict": "wrong",
+  "valueStated": "1990 Harbor St."
+ },
+ "429727ba541fe03d6a00024f4fc6fef69a51cffeabd8f93fd8e216a1910aec1d": {
+  "verdict": "correct",
+  "valueStated": "5165 Beacon St."
+ },
+ "99da5d479e7211c0bc7c4f8eda916550ecc865fd6fe2fc4170c63012156d898a": {
+  "verdict": "correct",
+  "valueStated": "9400376839233127200714"
  }
 }

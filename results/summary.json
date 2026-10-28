@@ -307,5 +307,69 @@
       "n": 10,
       "localN": 10
     }
+  },
+  "observerFull": {
+    "cases": [
+      "abstain-001",
+      "abstain-002",
+      "abstain-003",
+      "abstain-004",
+      "distractor-001",
+      "distractor-002",
+      "distractor-003",
+      "distractor-004",
+      "distractor-005",
+      "distractor-006",
+      "exact-001",
+      "exact-002",
+      "exact-003",
+      "exact-004",
+      "exact-005",
+      "exact-006",
+      "exact-007",
+      "exact-008",
+      "exact-009",
+      "exact-010",
+      "multi-001",
+      "multi-002",
+      "multi-003",
+      "multi-004",
+      "multi-005",
+      "multi-006",
+      "multi-007",
+      "multi-008",
+      "temporal-001",
+      "temporal-002",
+      "temporal-003",
+      "temporal-004",
+      "temporal-005",
+      "temporal-006",
+      "update-001",
+      "update-002",
+      "update-005",
+      "update-006"
+    ],
+    "C4": {
+      "hostedCorrect": 35,
+      "localCorrect": 17,
+      "n": 38,
+      "localN": 38
+    },
+    "C5": {
+      "hostedCorrect": 34,
+      "localCorrect": 29,
+      "n": 38,
+      "localN": 38
+    },
+    "vsLocalC4": {
+      "point": 0.47368421052631576,
+      "lo": 0.3157894736842105,
+      "hi": 0.631578947368421
+    },
+    "vsC1": {
+      "point": 0.3157894736842105,
+      "lo": 0.15789473684210525,
+      "hi": 0.47368421052631576
+    }
   }
 }
