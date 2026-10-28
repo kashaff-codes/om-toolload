@@ -4,6 +4,8 @@ A small benchmark that asks whether Mastra's Observational Memory (OM) keeps exa
 from tool-call outputs (order IDs, tracking numbers, amounts, addresses, dates), and what
 that costs in tokens.
 
+**Demo video (2:41):** https://youtu.be/xpHd0-6P4N8
+
 Mastra's OM post reports 94.87% on LongMemEval and calls the 5-40x compression figure on
 tool-heavy workloads anecdotal. LongMemEval has no tool outputs. This repo measures that
 gap with 40 known-answer support-agent threads, six memory conditions, two scorers, an
